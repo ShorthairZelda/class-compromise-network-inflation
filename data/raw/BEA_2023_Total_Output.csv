@@ -1,0 +1,72 @@
+Row_Industry,Industry_Title,Total_Output,Imports,Import_Ratio
+Ind_1,Farms,546787.0,57493.0,0.10514697679333058
+Ind_2,"Forestry, fishing, and related activities",76994.0,19276.0,0.25035717068537344
+Ind_3,Oil and gas extraction,404948.0,175862.0,0.4342829202751112
+Ind_4,"Mining, except oil and gas",113217.0,6445.0,0.05692608000515006
+Ind_5,Support activities for mining,131833.0,1522.0,0.011544909089442362
+Ind_6,Utilities,819391.0,3474.0,0.004239734144011541
+Ind_7,Construction,2468340.0,0.0,0.0
+Ind_8,Wood products,164292.0,24518.0,0.14923429016538092
+Ind_9,Nonmetallic mineral products,156575.0,32651.0,0.20853265208233412
+Ind_10,Primary metals,316749.0,101074.0,0.319098087127918
+Ind_11,Fabricated metal products,411747.0,89621.0,0.21766035939492537
+Ind_12,Machinery,434041.0,233266.0,0.5374284917771882
+Ind_13,Computer and electronic products,342239.0,398909.0,1.1655860378239604
+Ind_14,"Electrical equipment, appliances, and components",162537.0,168788.0,1.0384589354975269
+Ind_15,"Motor vehicles, bodies and trailers, and parts",748581.0,418772.0,0.5594210913707943
+Ind_16,Other transportation equipment,391933.0,57136.0,0.14578001852320221
+Ind_17,Furniture and related products,79195.0,49357.0,0.6232337900041262
+Ind_18,Miscellaneous manufacturing,172137.0,124903.0,0.7256022818991523
+Ind_19,Food and beverage and tobacco products,1191694.0,145770.0,0.12232166982453355
+Ind_20,Textile mills and textile product mills,47177.0,35552.0,0.75358755324091
+Ind_21,Apparel and leather and allied products,27061.0,146055.0,5.3972506557260544
+Ind_22,Paper products,201003.0,28123.0,0.13991333462615027
+Ind_23,Printing and related support activities,73721.0,3050.0,0.04137220059357073
+Ind_24,Petroleum and coal products,765774.0,80716.0,0.10540446659183335
+Ind_25,Chemical products,946566.0,350741.0,0.3705404588793908
+Ind_26,Plastics and rubber products,291238.0,73802.0,0.2534078657309369
+Ind_27,Wholesale trade,2786616.0,81633.0,0.029294671386359192
+Ind_28,Motor vehicle and parts dealers,469495.0,0.0,0.0
+Ind_29,Food and beverage stores,326259.0,0.0,0.0
+Ind_30,General merchandise stores,300340.0,0.0,0.0
+Ind_31,Other retail,1553654.0,0.0,0.0
+Ind_32,Air transportation,305952.0,63639.0,0.20800321619009515
+Ind_33,Rail transportation,90449.0,636.0,0.007031586861026307
+Ind_34,Water transportation,68878.0,15757.0,0.22876680507231967
+Ind_35,Truck transportation,489298.0,7747.0,0.015832887115794805
+Ind_36,Transit and ground passenger transportation,159651.0,0.0,0.0
+Ind_37,Pipeline transportation,75076.0,0.0,0.0
+Ind_38,Other transportation and support activities,391415.0,3889.0,0.009935745947370601
+Ind_39,Warehousing and storage,188013.0,0.0,0.0
+Ind_40,"Publishing industries, except internet (includes software)",493955.0,5676.0,0.011490925286693139
+Ind_41,Motion picture and sound recording industries,200156.0,14872.0,0.07430204440499259
+Ind_42,Broadcasting and telecommunications,794607.0,132.0,0.00016611985547551668
+Ind_43,"Data processing, internet publishing, and other information services",601028.0,2531.0,0.004211118283999729
+Ind_44,"Federal Reserve banks, credit intermediation, and related activities",1321992.0,11591.0,0.008767829154784017
+Ind_45,"Securities, commodity contracts, and investments",813877.0,48.0,5.897697072154763e-05
+Ind_46,Insurance carriers and related activities,1378718.0,63774.0,0.04625601464545596
+Ind_47,"Funds, trusts, and other financial vehicles",246519.0,0.0,0.0
+Ind_48,Housing,2907957.0,0.0,0.0
+Ind_49,Other real estate,2016870.0,0.0,0.0
+Ind_50,Rental and leasing services and lessors of intangible assets,738005.0,0.0,0.0
+Ind_51,Legal services,447048.0,5583.0,0.0124885918290374
+Ind_52,Computer systems design and related services,785351.0,47177.0,0.06007122929739687
+Ind_53,"Miscellaneous professional, scientific, and technical services",3108477.0,120252.0,0.038685182486459226
+Ind_54,Management of companies and enterprises,759207.0,0.0,0.0
+Ind_55,Administrative and support services,1262174.0,4354.0,0.0034496036204172725
+Ind_56,Waste management and remediation services,190652.0,525.0,0.0027537083271995375
+Ind_57,Educational services,496427.0,2506.0,0.005048073533460009
+Ind_58,Ambulatory health care services,1510102.0,441.0,0.00029203325338269067
+Ind_59,Hospitals,1432694.0,10011.0,0.006987535370423141
+Ind_60,Nursing and residential care facilities,318089.0,126.0,0.0003961155525642317
+Ind_61,Social assistance,337000.0,0.0,0.0
+Ind_62,"Performing arts, spectator sports, museums, and related activities",262772.0,2150.0,0.008181998081956288
+Ind_63,"Amusements, gambling, and recreation industries",310548.0,2.0,6.440228241668147e-06
+Ind_64,Accommodation,310621.0,0.0,0.0
+Ind_65,Food services and drinking places,1470463.0,0.0,0.0
+Ind_66,"Other services, except government",1219055.0,4502.0,0.003693024514887603
+Ind_67,Federal general government (defense),783196.0,0.0,0.0
+Ind_68,Federal general government (nondefense),536983.0,0.0,0.0
+Ind_69,Federal government enterprises,80518.0,233.0,0.0028937628852816295
+Ind_70,State and local general government,2403775.0,0.0,0.0
+Ind_71,State and local government enterprises,136636.0,0.0,0.0

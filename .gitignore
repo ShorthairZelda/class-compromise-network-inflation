@@ -1,0 +1,30 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.synctex(busy)
+*.xdv
+*.fls
+*.fdb_latexmk
+
+# R history/session data
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Large raw archive files
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
