@@ -160,8 +160,73 @@ sar_model <- lagsarlm(
 )
 print(summary(sar_model))
 
-# 6. 保存分析面板数据
+# 6. 计算分布滞后空间溢出模型 (Lag 6 & Lag 12)
+cat("\nCalculating Lagged Spatial Spillover Models...\n")
+cpi_wide <- cpi_panel_final %>%
+  select(Time_Index, Sector_Type, Inflation) %>%
+  pivot_wider(names_from = Sector_Type, values_from = Inflation) %>%
+  arrange(Time_Index)
+
+sectors_order <- c("Apparel", "Durables", "Rent", "Medical")
+W_ordered <- W[sectors_order, sectors_order]
+
+spatial_lag_matrix <- matrix(0, nrow=nrow(cpi_wide), ncol=4, dimnames=list(NULL, paste0("W_Inflation_", sectors_order)))
+for (t in 1:nrow(cpi_wide)) {
+  P_t <- as.numeric(cpi_wide[t, sectors_order])
+  if (!any(is.na(P_t))) {
+    spatial_lag_matrix[t, ] <- as.numeric(W_ordered %*% P_t)
+  } else {
+    spatial_lag_matrix[t, ] <- NA
+  }
+}
+
+cpi_wide_with_lags <- cbind(cpi_wide, spatial_lag_matrix)
+
+cpi_long_lags <- cpi_wide_with_lags %>%
+  pivot_longer(
+    cols = all_of(sectors_order),
+    names_to = "Sector_Type",
+    values_to = "Inflation"
+  ) %>%
+  mutate(
+    W_Inflation = case_when(
+      Sector_Type == "Apparel" ~ W_Inflation_Apparel,
+      Sector_Type == "Durables" ~ W_Inflation_Durables,
+      Sector_Type == "Rent" ~ W_Inflation_Rent,
+      Sector_Type == "Medical" ~ W_Inflation_Medical
+    )
+  ) %>%
+  select(Time_Index, Sector_Type, Inflation, W_Inflation)
+
+cpi_final_lags <- cpi_panel_final %>%
+  select(Time_Index, Sector_Type, Year, Month, Direct_Shock_Index, Tariff_Intensity) %>%
+  inner_join(cpi_long_lags, by = c("Time_Index", "Sector_Type")) %>%
+  arrange(Sector_Type, Time_Index) %>%
+  group_by(Sector_Type) %>%
+  mutate(
+    W_Inflation_lag6 = lag(W_Inflation, 6),
+    W_Inflation_lag12 = lag(W_Inflation, 12)
+  ) %>%
+  filter(!is.na(W_Inflation_lag12))
+
+cat("\n--- Running Lagged Spatial Regression (Lag 6) ---\n")
+sar_lag6_model <- lm(
+  Inflation ~ W_Inflation_lag6 + Direct_Shock_Index + Tariff_Intensity + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
+  data = cpi_final_lags
+)
+print(summary(sar_lag6_model))
+
+cat("\n--- Running Lagged Spatial Regression (Lag 12) ---\n")
+sar_lag12_model <- lm(
+  Inflation ~ W_Inflation_lag12 + Direct_Shock_Index + Tariff_Intensity + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
+  data = cpi_final_lags
+)
+print(summary(sar_lag12_model))
+
+# 7. 保存分析数据与 RData
 dir.create("data/processed", showWarnings = FALSE)
 write.csv(cpi_panel_final, "data/processed/cpi_spatial_panel.csv", row.names=FALSE)
-save(W, sar_model, file = "data/processed/spatial_regression_results.RData")
+write.csv(cpi_final_lags, "data/processed/cpi_spatial_panel_lags.csv", row.names=FALSE)
+save(W, sar_model, sar_lag6_model, sar_lag12_model, file = "data/processed/spatial_regression_results.RData")
 cat("Saved analysis results and spatial panel to data/processed/\n")
+
