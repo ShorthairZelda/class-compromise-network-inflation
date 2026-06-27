@@ -9,10 +9,48 @@ library(ggplot2)
 
 set.ZeroPolicyOption(TRUE)
 
-cat("1. Loading BEA and BLS raw data...\n")
+cat("1. Loading BEA, BLS, and FEDFUNDS raw data...\n")
 dom_use <- read.csv("data/raw/BEA_2023_Domestic_Use.csv")
 total_out_df <- read.csv("data/raw/BEA_2023_Total_Output.csv")
 cpi_data <- read.csv("data/raw/bls_cpi_real_raw.csv")
+imp_use <- read.csv("data/raw/BEA_2023_Import_Use.csv")
+fedfunds <- read.csv("data/raw/fedfunds.csv")
+pctr <- read.csv("data/raw/pctr.csv")
+dspi <- read.csv("data/raw/dspi.csv")
+
+# 转换美联储基金利率日期
+fedfunds <- fedfunds %>%
+  mutate(
+    Date = as.Date(observation_date),
+    Year = as.integer(format(Date, "%Y")),
+    Month = as.integer(format(Date, "%m")),
+    FEDFUNDS = as.numeric(FEDFUNDS)
+  ) %>%
+  select(Year, Month, FEDFUNDS)
+
+# 转换财政转移支付（YoY 增长率）
+pctr <- pctr %>%
+  mutate(
+    Date = as.Date(observation_date),
+    Year = as.integer(format(Date, "%Y")),
+    Month = as.integer(format(Date, "%m")),
+    PCTR = as.numeric(PCTR)
+  ) %>%
+  arrange(Date) %>%
+  mutate(PCTR_growth = (PCTR - lag(PCTR, 12)) / lag(PCTR, 12) * 100) %>%
+  select(Year, Month, PCTR_growth)
+
+# 转换个人可支配收入（YoY 增长率）
+dspi <- dspi %>%
+  mutate(
+    Date = as.Date(observation_date),
+    Year = as.integer(format(Date, "%Y")),
+    Month = as.integer(format(Date, "%m")),
+    DSPI = as.numeric(DSPI)
+  ) %>%
+  arrange(Date) %>%
+  mutate(DSPI_growth = (DSPI - lag(DSPI, 12)) / lag(DSPI, 12) * 100) %>%
+  select(Year, Month, DSPI_growth)
 
 ind_names <- unique(dom_use$Row_Industry)
 
@@ -115,24 +153,33 @@ tariff_shock_vector <- c(
   "2024" = 19.3, "2025" = 19.3
 )
 
-imp_use <- read.csv("data/raw/BEA_2023_Import_Use.csv")
 imp_sums <- imp_use %>%
   group_by(Row_Industry) %>%
   summarize(Direct_Shock = sum(Value))
 
+downstream_shock <- rowSums(L)
+
 avg_direct_shocks <- numeric(4)
 names(avg_direct_shocks) <- names(group_list)
+avg_network_centrality <- numeric(4)
+names(avg_network_centrality) <- names(group_list)
 for (g_name in names(group_list)) {
   avg_direct_shocks[g_name] <- mean(imp_sums$Direct_Shock[imp_sums$Row_Industry %in% group_list[[g_name]]], na.rm=TRUE)
+  avg_network_centrality[g_name] <- mean(downstream_shock[ind_names %in% group_list[[g_name]]], na.rm=TRUE)
 }
 
 cpi_panel <- cpi_panel %>%
   ungroup() %>%
   mutate(
     Direct_Shock_Index = avg_direct_shocks[Sector_Type],
+    Network_Centrality = avg_network_centrality[Sector_Type],
     Tariff_Intensity = tariff_shock_vector[as.character(Year)] - 3.1,
+    Labor_Reproduction_Shock = Network_Centrality * Tariff_Intensity,
     Time_Index = (Year - 2015) * 12 + Month
-  )
+  ) %>%
+  left_join(fedfunds, by = c("Year", "Month")) %>%
+  left_join(pctr, by = c("Year", "Month")) %>%
+  left_join(dspi, by = c("Year", "Month"))
 
 cpi_panel_sorted <- cpi_panel %>%
   arrange(Time_Index, Sector_Type)
@@ -150,10 +197,10 @@ num_t <- length(valid_times)
 W_panel <- kronecker(diag(num_t), W)
 listw_panel <- mat2listw(W_panel, style="W")
 
-# 5. 面板自回归估计 (SAR)
-cat("\nRunning stacked Panel Spatial Lag (SAR) Model...\n")
+# 5. 面板自回归估计 (SAR) - 控制 FEDFUNDS, PCTR_growth 并修正固定效应共线性
+cat("\nRunning stacked Panel Spatial Lag (SAR) Model with FFR + PCTR_growth Control...\n")
 sar_model <- lagsarlm(
-  Inflation ~ Direct_Shock_Index + Tariff_Intensity + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
+  Inflation ~ Labor_Reproduction_Shock + FEDFUNDS + PCTR_growth + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
   data = cpi_panel_final,
   listw = listw_panel,
   zero.policy = TRUE
@@ -199,7 +246,7 @@ cpi_long_lags <- cpi_wide_with_lags %>%
   select(Time_Index, Sector_Type, Inflation, W_Inflation)
 
 cpi_final_lags <- cpi_panel_final %>%
-  select(Time_Index, Sector_Type, Year, Month, Direct_Shock_Index, Tariff_Intensity) %>%
+  select(Time_Index, Sector_Type, Year, Month, Direct_Shock_Index, Network_Centrality, Tariff_Intensity, Labor_Reproduction_Shock, FEDFUNDS) %>%
   inner_join(cpi_long_lags, by = c("Time_Index", "Sector_Type")) %>%
   arrange(Sector_Type, Time_Index) %>%
   group_by(Sector_Type) %>%
@@ -211,14 +258,14 @@ cpi_final_lags <- cpi_panel_final %>%
 
 cat("\n--- Running Lagged Spatial Regression (Lag 6) ---\n")
 sar_lag6_model <- lm(
-  Inflation ~ W_Inflation_lag6 + Direct_Shock_Index + Tariff_Intensity + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
+  Inflation ~ W_Inflation_lag6 + Labor_Reproduction_Shock + FEDFUNDS + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
   data = cpi_final_lags
 )
 print(summary(sar_lag6_model))
 
 cat("\n--- Running Lagged Spatial Regression (Lag 12) ---\n")
 sar_lag12_model <- lm(
-  Inflation ~ W_Inflation_lag12 + Direct_Shock_Index + Tariff_Intensity + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
+  Inflation ~ W_Inflation_lag12 + Labor_Reproduction_Shock + FEDFUNDS + as.factor(Sector_Type) + as.factor(Year) + as.factor(Month),
   data = cpi_final_lags
 )
 print(summary(sar_lag12_model))
@@ -229,4 +276,5 @@ write.csv(cpi_panel_final, "data/processed/cpi_spatial_panel.csv", row.names=FAL
 write.csv(cpi_final_lags, "data/processed/cpi_spatial_panel_lags.csv", row.names=FALSE)
 save(W, sar_model, sar_lag6_model, sar_lag12_model, file = "data/processed/spatial_regression_results.RData")
 cat("Saved analysis results and spatial panel to data/processed/\n")
+
 
