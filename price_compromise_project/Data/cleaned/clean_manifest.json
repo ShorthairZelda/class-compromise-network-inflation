@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-06-27T17:02:56.501062+00:00",
+  "project_root": "/Users/linian/Desktop/PROJ_completed/proj_class_compromise",
+  "counts": {
+    "bea_use_summary_2019_long.csv": 5183,
+    "bea_input_coefficients_2019.csv": 5183,
+    "bea_industry_output_2019.csv": 71,
+    "bea_gross_output_price_index_annual_2016_2025.csv": 999,
+    "bea_intermediate_inputs_price_index_annual_2016_2025.csv": 999,
+    "bea_naics_concordance_clean.csv": 505,
+    "bls_ces_wages_monthly_clean.csv": 4560,
+    "bls_ces_wages_annual_2016_2025.csv": 380,
+    "bls_qcew_private_industry_wages_annual_2016_2025.csv": 21275,
+    "rtp_tariffs_naics_clean.csv": 686,
+    "ustr_301_links_clean.csv": 156
+  }
+}

@@ -1,0 +1,43 @@
+Table 4. Event-study estimates by pre/post Section 301 exposure
+
+                                               Output event
+Dependent Var.:                   Gross output price growth
+                                                           
+direct_exposure_max x year = 2018          -0.0103 (0.0210)
+direct_exposure_max x year = 2019          -0.2192 (0.1853)
+direct_exposure_max x year = 2020          -0.3249 (0.2823)
+direct_exposure_max x year = 2021         0.3196** (0.1519)
+direct_exposure_max x year = 2022        0.2659*** (0.0935)
+direct_exposure_max x year = 2023          -0.2711 (0.2436)
+direct_exposure_max x year = 2024          -0.2555 (0.1801)
+direct_exposure_max x year = 2025          -0.1699 (0.1754)
+Fixed-Effects:                    -------------------------
+industry_fe                                             Yes
+year                                                    Yes
+_________________________________ _________________________
+S.E.: Clustered                             by: industry_fe
+Observations                                            594
+R2                                                  0.30662
+Within R2                                           0.10660
+
+                                                      Input event
+Dependent Var.:                   Intermediate input price growth
+                                                                 
+direct_exposure_max x year = 2018                -0.0056 (0.0315)
+direct_exposure_max x year = 2019                -0.2252 (0.1514)
+direct_exposure_max x year = 2020                -0.3240 (0.2367)
+direct_exposure_max x year = 2021              0.3969*** (0.1087)
+direct_exposure_max x year = 2022              0.2214*** (0.0771)
+direct_exposure_max x year = 2023                -0.3177 (0.2137)
+direct_exposure_max x year = 2024               -0.2233* (0.1151)
+direct_exposure_max x year = 2025                -0.1139 (0.1752)
+Fixed-Effects:                     ------------------------------
+industry_fe                                                   Yes
+year                                                          Yes
+_________________________________  ______________________________
+S.E.: Clustered                                   by: industry_fe
+Observations                                                  594
+R2                                                        0.57825
+Within R2                                                 0.24539
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

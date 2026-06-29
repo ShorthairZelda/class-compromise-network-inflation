@@ -1,0 +1,37 @@
+# macOS and editor files
+.DS_Store
+*.swp
+*.tmp
+
+# Python/R cache
+__pycache__/
+*.py[cod]
+.Rhistory
+.RData
+.Rproj.user/
+
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Large raw downloads and replication archives
+data/bea/raw/
+price_compromise_project/Data/dataverse_files/
+price_compromise_project/Data/bea/raw/
+price_compromise_project/Data/*/raw/
+price_compromise_project/data/raw/
+*.dta
+*.zip
+
+# Keep generated final reports/figures, but ignore transient system files
+price_compromise_project/output/rebuild/.DS_Store

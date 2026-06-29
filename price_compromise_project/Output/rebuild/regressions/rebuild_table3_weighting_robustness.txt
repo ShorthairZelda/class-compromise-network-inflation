@@ -1,0 +1,55 @@
+Table 3. Weighted and unweighted network tariff exposure estimates
+
+                                                  Output weighted
+Dependent Var.:                         Gross output price growth
+                                                                 
+I-O network tariff exposure, t plus t-1         0.0608** (0.0248)
+Fixed-Effects:                          -------------------------
+industry_fe                                                   Yes
+year                                                          Yes
+_______________________________________ _________________________
+S.E.: Clustered                                   by: industry_fe
+Observations                                                  594
+R2                                                        0.22540
+Within R2                                                 0.00196
+
+                                                Output unweighted
+Dependent Var.:                         Gross output price growth
+                                                                 
+I-O network tariff exposure, t plus t-1         0.0643** (0.0277)
+Fixed-Effects:                          -------------------------
+industry_fe                                                   Yes
+year                                                          Yes
+_______________________________________ _________________________
+S.E.: Clustered                                   by: industry_fe
+Observations                                                  594
+R2                                                        0.25440
+Within R2                                                 0.00138
+
+                                                         Input weighted
+Dependent Var.:                         Intermediate input price growth
+                                                                       
+I-O network tariff exposure, t plus t-1              0.0689*** (0.0210)
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+_______________________________________  ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        594
+R2                                                              0.44405
+Within R2                                                       0.00529
+
+                                                       Input unweighted
+Dependent Var.:                         Intermediate input price growth
+                                                                       
+I-O network tariff exposure, t plus t-1              0.0724*** (0.0245)
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+_______________________________________  ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        594
+R2                                                              0.50864
+Within R2                                                       0.00473
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

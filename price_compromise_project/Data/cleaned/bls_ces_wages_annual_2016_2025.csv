@@ -1,0 +1,381 @@
+series_id,industry_code,industry_name,data_type,data_type_name,year,avg_hourly_earnings,n_months
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2016,25.6525,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2017,26.309166666666666,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2018,27.102500000000003,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2019,27.998333333333335,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2020,29.36,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2021,30.613333333333333,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2022,32.25833333333333,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2023,33.69583333333333,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2024,35.0575,12
+CES0500000003,05000000,Total private,3,avg_hourly_earnings_all_employees,2025,36.4425,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2016,21.53916666666667,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2017,22.043333333333333,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2018,22.700833333333335,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2019,23.50583333333333,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2020,24.68416666666667,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2021,25.91,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2022,27.564999999999998,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2023,28.9175,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2024,30.121666666666666,12
+CES0500000008,05000000,Total private,8,avg_hourly_earnings_prod_nonsupervisory,2025,31.338333333333335,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2016,26.89916666666667,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2017,27.551666666666666,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2018,28.2175,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2019,28.985,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2020,29.98,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2021,30.97083333333333,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2022,32.454166666666666,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2023,34.0875,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2024,35.735,12
+CES0600000003,06000000,Goods-producing,3,avg_hourly_earnings_all_employees,2025,37.205,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2016,22.564999999999998,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2017,23.155833333333334,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2018,23.974166666666665,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2019,24.724166666666665,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2020,25.410833333333333,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2021,26.485833333333332,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2022,27.99416666666667,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2023,29.59583333333333,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2024,31.12,12
+CES0600000008,06000000,Goods-producing,8,avg_hourly_earnings_prod_nonsupervisory,2025,32.49666666666667,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2016,25.3625,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2017,26.02,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2018,26.838333333333335,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2019,27.765,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2020,29.215,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2021,30.53,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2022,32.21583333333333,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2023,33.60583333333333,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2024,34.899166666666666,12
+CES0800000003,08000000,Private service-providing,3,avg_hourly_earnings_all_employees,2025,36.270833333333336,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2016,21.325833333333332,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2017,21.810833333333335,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2018,22.429999999999996,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2019,23.248333333333335,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2020,24.534166666666664,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2021,25.790833333333335,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2022,27.477500000000003,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2023,28.778333333333336,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2024,29.918333333333333,12
+CES0800000008,08000000,Private service-providing,8,avg_hourly_earnings_prod_nonsupervisory,2025,31.1075,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2016,31.9275,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2017,32.035000000000004,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2018,32.5,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2019,33.72416666666667,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2020,34.54416666666667,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2021,34.885,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2022,35.96666666666667,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2023,38.0675,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2024,39.652499999999996,12
+CES1000000003,10000000,Mining and logging,3,avg_hourly_earnings_all_employees,2025,40.314166666666665,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2016,26.977500000000003,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2017,27.4225,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2018,28.272499999999997,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2019,29.9725,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2020,30.37,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2021,31.0425,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2022,32.64833333333333,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2023,34.42416666666667,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2024,36.37416666666667,12
+CES1000000008,10000000,Mining and logging,8,avg_hourly_earnings_prod_nonsupervisory,2025,37.306666666666665,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2016,28.105,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2017,28.88083333333333,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2018,29.8875,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2019,30.756666666666664,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2020,31.647499999999997,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2021,32.87583333333333,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2022,34.7275,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2023,36.51,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2024,38.21083333333333,12
+CES2000000003,20000000,Construction,3,avg_hourly_earnings_all_employees,2025,39.70333333333333,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2016,25.9375,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2017,26.704166666666666,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2018,27.71666666666667,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2019,28.48166666666667,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2020,29.200833333333332,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2021,30.456666666666667,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2022,32.324999999999996,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2023,34.223333333333336,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2024,35.719166666666666,12
+CES2000000008,20000000,Construction,8,avg_hourly_earnings_prod_nonsupervisory,2025,37.285833333333336,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2016,25.978333333333335,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2017,26.564166666666665,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2018,27.0175,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2019,27.675,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2020,28.753333333333334,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2021,29.665000000000003,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2022,30.935833333333335,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2023,32.399166666666666,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2024,33.97833333333333,12
+CES3000000003,30000000,Manufacturing,3,avg_hourly_earnings_all_employees,2025,35.449999999999996,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2016,20.43583333333333,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2017,20.88,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2018,21.5175,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2019,22.127499999999998,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2020,22.794166666666666,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2021,23.799166666666668,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2022,25.051666666666666,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2023,26.35083333333333,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2024,27.784166666666668,12
+CES3000000008,30000000,Manufacturing,8,avg_hourly_earnings_prod_nonsupervisory,2025,29.050833333333333,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2016,27.28833333333333,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2017,27.81833333333333,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2018,28.373333333333335,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2019,29.13,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2020,30.1925,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2021,31.145833333333332,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2022,32.49666666666666,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2023,33.9625,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2024,35.964166666666664,12
+CES3100000003,31000000,Durable goods,3,avg_hourly_earnings_all_employees,2025,37.623333333333335,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2016,21.4825,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2017,21.873333333333335,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2018,22.488333333333333,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2019,23.064166666666665,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2020,23.75,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2021,24.826666666666668,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2022,26.21666666666667,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2023,27.50916666666667,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2024,29.276666666666667,12
+CES3100000008,31000000,Durable goods,8,avg_hourly_earnings_prod_nonsupervisory,2025,30.743333333333336,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2016,23.734166666666667,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2017,24.439166666666665,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2018,24.695000000000004,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2019,25.1725,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2020,26.367500000000003,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2021,27.21666666666667,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2022,28.324166666666667,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2023,29.71666666666667,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2024,30.615,12
+CES3200000003,32000000,Nondurable goods,3,avg_hourly_earnings_all_employees,2025,31.78833333333333,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2016,18.743333333333336,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2017,19.3,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2018,19.945833333333333,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2019,20.594166666666666,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2020,21.2975,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2021,22.1825,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2022,23.174166666666665,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2023,24.47666666666667,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2024,25.453333333333333,12
+CES3200000008,32000000,Nondurable goods,8,avg_hourly_earnings_prod_nonsupervisory,2025,26.445833333333336,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2016,22.265,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2017,22.7075,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2018,23.314999999999998,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2019,24.206666666666667,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2020,25.22583333333333,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2021,26.31,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2022,27.730833333333333,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2023,29.036666666666665,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2024,29.996666666666666,12
+CES4000000003,40000000,"Trade, transportation, and utilities",3,avg_hourly_earnings_all_employees,2025,30.971666666666668,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2016,18.9325,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2017,19.280833333333334,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2018,19.864166666666666,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2019,20.62333333333333,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2020,21.415000000000003,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2021,22.419166666666666,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2022,24.00333333333333,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2023,25.239166666666666,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2024,26.025833333333335,12
+CES4000000008,40000000,"Trade, transportation, and utilities",8,avg_hourly_earnings_prod_nonsupervisory,2025,26.84583333333333,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2016,29.379166666666666,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2017,29.9025,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2018,30.433333333333334,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2019,31.36916666666667,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2020,32.37416666666667,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2021,33.69833333333333,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2022,35.09916666666667,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2023,36.73166666666666,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2024,37.63333333333333,12
+CES4142000003,41420000,Wholesale trade,3,avg_hourly_earnings_all_employees,2025,38.73,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2016,24.083333333333332,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2017,24.569166666666664,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2018,25.1425,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2019,26.055000000000003,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2020,26.795,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2021,27.764166666666668,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2022,29.199166666666667,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2023,30.389166666666668,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2024,31.250833333333333,12
+CES4142000008,41420000,Wholesale trade,8,avg_hourly_earnings_prod_nonsupervisory,2025,32.24,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2016,17.859166666666667,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2017,18.136666666666667,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2018,18.750833333333333,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2019,19.6675,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2020,20.842499999999998,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2021,21.870833333333334,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2022,23.0,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2023,23.898333333333337,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2024,24.513333333333335,12
+CES4200000003,42000000,Retail trade,3,avg_hourly_earnings_all_employees,2025,25.46166666666667,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2016,15.026666666666666,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2017,15.301666666666668,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2018,15.8775,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2019,16.5825,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2020,17.595,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2021,18.532500000000002,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2022,19.6675,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2023,20.508333333333333,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2024,20.933333333333334,12
+CES4200000008,42000000,Retail trade,8,avg_hourly_earnings_prod_nonsupervisory,2025,21.587500000000002,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2016,23.18166666666667,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2017,23.769166666666667,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2018,24.24416666666667,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2019,24.730833333333333,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2020,25.316666666666666,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2021,26.337500000000002,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2022,27.840833333333332,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2023,29.3075,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2024,30.6425,12
+CES4300000003,43000000,Transportation and warehousing,3,avg_hourly_earnings_all_employees,2025,31.548333333333332,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2016,20.849999999999998,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2017,21.201666666666668,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2018,21.738333333333333,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2019,22.372500000000002,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2020,22.72,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2021,23.80333333333333,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2022,25.979166666666668,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2023,27.866666666666664,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2024,29.136666666666667,12
+CES4300000008,43000000,Transportation and warehousing,8,avg_hourly_earnings_prod_nonsupervisory,2025,30.070833333333336,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2016,38.33,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2017,39.225833333333334,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2018,40.61,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2019,41.70666666666667,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2020,43.565,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2021,44.94333333333333,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2022,47.44166666666666,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2023,49.80416666666667,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2024,51.278333333333336,12
+CES4422000003,44220000,Utilities,3,avg_hourly_earnings_all_employees,2025,52.54333333333333,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2016,35.335,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2017,36.21,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2018,36.75083333333333,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2019,36.8975,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2020,38.545833333333334,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2021,40.030833333333334,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2022,42.229166666666664,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2023,44.305,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2024,45.31916666666667,12
+CES4422000008,44220000,Utilities,8,avg_hourly_earnings_prod_nonsupervisory,2025,46.23,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2016,36.718333333333334,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2017,38.285833333333336,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2018,40.03666666666667,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2019,42.19916666666666,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2020,43.794999999999995,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2021,44.445,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2022,46.57750000000001,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2023,48.39333333333334,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2024,50.08166666666667,12
+CES5000000003,50000000,Information,3,avg_hourly_earnings_all_employees,2025,52.59166666666667,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2016,30.050833333333333,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2017,30.738333333333333,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2018,31.94333333333333,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2019,33.87833333333334,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2020,35.751666666666665,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2021,36.9425,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2022,37.973333333333336,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2023,39.737500000000004,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2024,41.028333333333336,12
+CES5000000008,50000000,Information,8,avg_hourly_earnings_prod_nonsupervisory,2025,43.17916666666667,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2016,32.3325,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2017,33.2125,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2018,34.748333333333335,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2019,35.92916666666667,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2020,37.843333333333334,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2021,40.115,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2022,41.53333333333333,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2023,43.449999999999996,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2024,45.60916666666666,12
+CES5500000003,55000000,Financial activities,3,avg_hourly_earnings_all_employees,2025,47.571666666666665,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2016,26.140833333333333,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2017,26.564166666666665,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2018,26.929166666666664,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2019,27.679166666666664,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2020,29.079166666666666,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2021,30.38083333333333,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2022,32.15833333333333,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2023,33.8425,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2024,35.75416666666667,12
+CES5500000008,55000000,Financial activities,8,avg_hourly_earnings_prod_nonsupervisory,2025,37.4,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2016,30.8575,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2017,31.63,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2018,32.56,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2019,33.6875,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2020,35.11333333333334,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2021,36.57666666666667,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2022,38.766666666666666,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2023,40.49666666666666,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2024,42.274166666666666,12
+CES6000000003,60000000,Professional and business services,3,avg_hourly_earnings_all_employees,2025,44.262499999999996,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2016,25.444999999999997,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2017,26.019166666666667,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2018,26.7825,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2019,27.775833333333335,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2020,29.206666666666667,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2021,30.575,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2022,32.559999999999995,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2023,34.16833333333333,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2024,35.6175,12
+CES6000000008,60000000,Professional and business services,8,avg_hourly_earnings_prod_nonsupervisory,2025,37.13916666666666,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2016,25.735,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2017,26.319166666666664,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2018,27.0,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2019,27.625,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2020,28.50583333333333,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2021,30.058333333333334,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2022,31.88,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2023,33.14083333333333,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2024,34.343333333333334,12
+CES6500000003,65000000,Education and health services,3,avg_hourly_earnings_all_employees,2025,35.59166666666667,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2016,22.516666666666666,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2017,23.03,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2018,23.63416666666667,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2019,24.34,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2020,25.3925,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2021,27.11583333333333,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2022,29.01,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2023,30.264166666666668,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2024,31.465833333333336,12
+CES6500000008,65000000,Education and health services,8,avg_hourly_earnings_prod_nonsupervisory,2025,32.759166666666665,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2016,14.88,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2017,15.479999999999999,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2018,15.980833333333335,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2019,16.558333333333334,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2020,17.105833333333333,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2021,18.404999999999998,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2022,20.125,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2023,21.194166666666664,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2024,22.03,12
+CES7000000003,70000000,Leisure and hospitality,3,avg_hourly_earnings_all_employees,2025,22.84,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2016,12.860833333333334,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2017,13.380833333333333,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2018,13.8725,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2019,14.495833333333332,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2020,14.698333333333332,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2021,16.118333333333336,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2022,17.81083333333333,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2023,18.75,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2024,19.5225,12
+CES7000000008,70000000,Leisure and hospitality,8,avg_hourly_earnings_prod_nonsupervisory,2025,20.221666666666668,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2016,23.063333333333333,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2017,23.8475,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2018,24.540000000000003,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2019,25.218333333333334,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2020,26.5925,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2021,27.659166666666668,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2022,28.839166666666667,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2023,30.355,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2024,31.800833333333333,12
+CES8000000003,80000000,Other services,3,avg_hourly_earnings_all_employees,2025,33.071666666666665,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2016,19.366666666666667,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2017,20.096666666666668,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2018,20.7825,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2019,21.405,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2020,22.617500000000003,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2021,23.659166666666664,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2022,24.883333333333336,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2023,26.166666666666668,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2024,27.578333333333333,12
+CES8000000008,80000000,Other services,8,avg_hourly_earnings_prod_nonsupervisory,2025,28.8175,12

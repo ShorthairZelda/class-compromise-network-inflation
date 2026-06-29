@@ -1,0 +1,23 @@
+series_id,category,label,year,months_observed,annual_avg_cpi_index,annual_avg_index_inflation,annual_avg_yoy_inflation
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2015,12,301.1111666666667,2.6094991767577014,2.608452164388636
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2015,12,146.10175,-0.46355540466428424,-0.46348865800621514
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2016,12,310.4463333333333,3.1002392803986423,3.1000596293540275
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2016,12,145.39625,-0.4828826485651305,-0.4828616907483226
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2017,12,318.74125,2.671932561612911,2.6733986045716103
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2017,12,144.33716666666666,-0.7284117254285127,-0.7284326532766006
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2018,12,327.9785,2.898040338362229,2.8977163929118883
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2018,12,144.05291666666668,-0.1969347234426655,-0.1963692219066069
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2019,12,337.3283333333333,2.8507458060004875,2.8500159888088756
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2019,12,144.36891666666668,0.21936383331357945,0.21982720441783102
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2020,12,344.78616666666665,2.210852927661966,2.214731740066206
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2020,12,144.58358333333334,0.1486931339675479,0.1488463297160153
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2021,12,353.82325,2.62106900073813,2.6187830316680833
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2021,12,153.74966666666666,6.339643216755242,6.330450969746139
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2022,12,373.79091666666665,5.643401519449798,5.632553949916136
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2022,12,165.47941666666668,7.629122231159324,7.734231598967411
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2023,12,397.13225,6.244489176324297,6.258189712546875
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2023,12,166.941,0.8832417727683062,0.8866025301415272
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2024,12,416.97341666666665,4.996110657511865,5.000259861631373
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2024,12,165.14925,-1.0732833755638271,-1.0714953825976417
+CUSR0000SASLE,nontradable_proxy_core_services,"CPI-U services less energy services, seasonally adjusted",2025,11,431.48527272727273,3.4802832700020936,3.5986095483635254
+CUSR0000SACL1E,tradable_proxy_core_commodities,"CPI-U commodities less food and energy commodities, seasonally adjusted",2025,11,166.35663636363637,0.7310880089594018,0.707797650228585

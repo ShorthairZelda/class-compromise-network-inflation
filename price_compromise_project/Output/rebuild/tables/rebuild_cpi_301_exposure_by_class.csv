@@ -1,0 +1,14 @@
+category,label,class,class_label,mean_tariff_301_rate_2018_2025,max_tariff_301_rate_2018_2025
+new_vehicles,New vehicles,low_price_global,Low-price tradable/global goods,0.228761895670787,0.25
+used_cars_trucks,Used cars and trucks,low_price_global,Low-price tradable/global goods,0.228761895670787,0.25
+transportation,Transportation,basic_reproduction,Basic reproduction necessities,0.21820687034913927,0.2403275743570463
+energy,Energy,basic_reproduction,Basic reproduction necessities,0.21666666666666667,0.25
+household_furnishings,Household furnishings,low_price_global,Low-price tradable/global goods,0.21075760979755995,0.2397071782821605
+food,Food,basic_reproduction,Basic reproduction necessities,0.1685968466600584,0.1920281204071076
+durables,Durable goods,low_price_global,Low-price tradable/global goods,0.14598037809054074,0.1639449591619403
+recreation,Recreation goods/services,low_price_global,Low-price tradable/global goods,0.10261219768311453,0.1146292192016665
+apparel,Apparel,low_price_global,Low-price tradable/global goods,0.08471429489557053,0.0929462509070717
+education_communication,Education and communication,local_reproduction,Local institutional reproduction costs,0.0,0.0
+medical_care,Medical care,local_reproduction,Local institutional reproduction costs,0.0,0.0
+rent_primary_residence,Rent,local_reproduction,Local institutional reproduction costs,0.0,0.0
+shelter,Shelter,local_reproduction,Local institutional reproduction costs,0.0,0.0

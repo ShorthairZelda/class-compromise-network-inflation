@@ -1,0 +1,21 @@
+{
+  "created_at_utc": "2026-06-28T06:15:20.219565+00:00",
+  "source": {
+    "series": "PCEPI",
+    "name": "Personal Consumption Expenditures: Chain-type Price Index",
+    "provider": "FRED",
+    "underlying_source": "U.S. Bureau of Economic Analysis",
+    "url": "https://fred.stlouisfed.org/series/PCEPI",
+    "units": "Index 2017=100"
+  },
+  "input": "Data/fred/raw/PCEPI.csv",
+  "outputs": [
+    "Data/fred/processed/pce_price_index_annual_2016_2025.csv",
+    "Data/cleaned/pce_price_index_annual_2016_2025.csv"
+  ],
+  "method": "Annual arithmetic average of monthly PCEPI values.",
+  "years": [
+    2016,
+    2025
+  ]
+}

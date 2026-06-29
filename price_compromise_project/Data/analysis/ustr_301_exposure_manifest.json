@@ -1,0 +1,30 @@
+{
+  "created_at_utc": "2026-06-28T05:47:21.311419+00:00",
+  "inputs": {
+    "core_lists": "Data/cleaned/ustr_301_core_hts_lists_from_pdfs.csv",
+    "m_flow": "Data/dataverse_files/rtp/data/analysis/m_flow_hs10_fm_new.dta",
+    "bea_concordance": "Data/cleaned/bea_naics_concordance_clean.csv"
+  },
+  "outputs": [
+    "Data/cleaned/hs8_naics_import_weights_2017_china.csv",
+    "Data/cleaned/ustr_301_hts8_annual_active_rates.csv",
+    "Data/cleaned/ustr_301_naics_exposure_annual.csv",
+    "Data/analysis/bea_summary_tariff_exposure_301_clean.csv"
+  ],
+  "rate_assumptions": {
+    "list1": "25%, annualized as 6/12 of 2018 and full rate from 2019 onward.",
+    "list2": "25%, annualized as 5/12 of 2018 and full rate from 2019 onward.",
+    "list3": "10% from Sep 24 2018; 25% from May 10 2019; annualized by active months.",
+    "list4a": "15% from Sep 1 2019; 7.5% from 2020 onward.",
+    "list4b": "0 active rate because duties were suspended before taking effect."
+  },
+  "rows_scanned": {
+    "m_flow_total_rows": 12071589,
+    "m_flow_china_2017_rows_before_filters": 130671
+  },
+  "caveats": [
+    "Uses 2017 China import values as fixed HS8-to-NAICS weights.",
+    "Uses HTS8-level core lists; product-level exclusions and firm-specific exclusions are not yet incorporated.",
+    "Annual rates are approximated by active months, not exact daily exposure."
+  ]
+}

@@ -1,0 +1,299 @@
+\documentclass[12pt,a4paper,fontset=none]{ctexart}
+\usepackage[left=3.0cm,right=3.0cm,top=2.7cm,bottom=2.7cm]{geometry}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{array}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+
+\setmainfont[
+  Path=/System/Library/Fonts/Supplemental/,
+  UprightFont={Times New Roman.ttf},
+  BoldFont={Times New Roman Bold.ttf},
+  ItalicFont={Times New Roman Italic.ttf},
+  BoldItalicFont={Times New Roman Bold Italic.ttf}
+]{Times New Roman}
+\setCJKmainfont[
+  UprightFont={STSongti-SC-Regular},
+  BoldFont={STSongti-SC-Bold},
+  ItalicFont={STSongti-SC-Regular},
+  BoldItalicFont={STSongti-SC-Bold}
+]{Songti SC}
+\setCJKsansfont[
+  Path=/System/Library/Fonts/,
+  UprightFont={STHeiti Light.ttc},
+  BoldFont={STHeiti Medium.ttc}
+]{STHeiti}
+\setCJKmonofont[
+  Path=/System/Library/Fonts/,
+  UprightFont={STHeiti Light.ttc},
+  BoldFont={STHeiti Medium.ttc}
+]{STHeiti}
+\newCJKfontfamily\songti[
+  UprightFont={STSongti-SC-Regular},
+  BoldFont={STSongti-SC-Bold}
+]{Songti SC}
+\newCJKfontfamily\heiti[
+  Path=/System/Library/Fonts/,
+  UprightFont={STHeiti Medium.ttc},
+  BoldFont={STHeiti Medium.ttc}
+]{STHeiti}
+\ctexset{
+  section={
+    format=\centering\heiti\zihao{3},
+    name={,、},
+    number=\chinese{section},
+    aftername={},
+    beforeskip=1.6em,
+    afterskip=1.0em
+  },
+  subsection={
+    format=\heiti\zihao{4},
+    beforeskip=1.0em,
+    afterskip=0.5em
+  }
+}
+\captionsetup{font={small},labelsep=quad}
+\setstretch{1.45}
+\setlength{\parindent}{2em}
+\zihao{-4}
+
+\newcommand{\figdir}{../figures}
+\newcommand{\oldfigdir}{../../figures}
+\newcommand{\regdir}{../regressions}
+\newcommand{\tabnote}[1]{\caption*{\parbox{0.94\textwidth}{\footnotesize\textit{注：}#1}}}
+\newcommand{\fignote}[1]{\caption*{\parbox{0.90\textwidth}{\footnotesize\textit{注：}#1}}}
+
+\title{\heiti 价格型阶级妥协脆弱性的实证设计与结果}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{实证设计与结果}
+
+本文的实证目标，是检验价格型阶级妥协的部门边界及其在外部冲击下的脆弱性。既有贸易文献已经较为充分地表明，中国进口扩张和全球低成本供给降低了美国部分消费品价格 \citep{jaravel2019trade}；2018 年后的美国贸易战关税则主要由美国进口商、企业和消费者承担，并逐步向零售端传导 \citep{amiti2020tariffs,cavallo2021tariff}。因此，本文不再重复证明“进口降低价格”或“关税提高价格”这两个前提性事实，而是进一步考察：低价供给的价格缓冲是否主要集中于可贸易商品部门；当关税和供应链冲击削弱这一渠道时，价格压力是否会通过产业投入产出网络进入更广泛的生产价格体系。
+
+这一研究策略也吸收了生产网络宏观经济学的启发。\citet{acemoglu2012network} 说明，部门冲击可以通过投入产出联系被放大并形成宏观波动；\citet{luo2023propagation} 进一步使用细分价格数据和投入产出结构识别冲击在行业间的价格传导。疫情后通胀研究同样强调，价格压力不能被简单还原为总量需求，而应从部门供给约束、投入联系和全球供应链压力中理解 \citep{baqaee2022supply,digiovanni2022gscpi,pasten2020monetary}。本文据此把实证设计分为两个层次：第一，使用 CPI 分类价格刻画低价商品渠道与本地化再生产成本之间的长期分化；第二，使用 Section 301 关税暴露和 BEA 投入产出矩阵构造行业网络冲击，检验价格压力是否沿产业网络传导。
+
+\subsection{数据来源、样本与变量构造}
+
+消费价格部分使用 BLS CPI-U 分类价格数据。所有 CPI 子项先年度化，再统一标准化为 1984 年等于 100。本文构造三类非官方研究性指数：低价可贸易商品指数、基本再生产成本指数和本地化再生产成本指数。低价可贸易商品指数包括耐用品、服装、家居用品、新车、二手车和娱乐相关商品等更容易由全球供应链组织生产和流通的类别；基本再生产成本指数包括住房、食品、能源、交通、医疗、教育与通信；本地化再生产成本指数则集中于住房、租金、医疗、教育与通信等更依赖本地制度安排、资产价格结构和本地劳动投入的类别。需要强调的是，后三个指数均为本文根据理论机制构造的分析指标，并不是 BLS 或其他统计机构发布的官方生活成本指数。
+
+给定 CPI 子项 \(k\) 的年度价格指数 \(P_{kt}\)，本文首先构造标准化价格：
+\begin{equation}
+P^{1984=100}_{kt}=\frac{P_{kt}}{P_{k,1984}}\times 100.
+\end{equation}
+对属于同一理论篮子 \(g\) 的 \(N_g\) 个子项，构造等权指数：
+\begin{equation}
+Index_{gt}=\frac{1}{N_g}\sum_{k\in g}P^{1984=100}_{kt}.
+\end{equation}
+等权处理的目的，是突出不同价格形成机制之间的结构性差异，而不是估计某一具体家庭的精确消费支出权重。后续可以使用 CEX 或 PCE 权重构造加权版本作为稳健性检验。
+
+行业价格部分使用既有项目中整理的 BEA 行业年度面板。被解释变量包括行业总产出价格增长率和中间投入价格增长率。关税冲击来自 Section 301 关税暴露数据，并已经映射到 BEA 行业层面。投入产出网络使用 2019 年 BEA 投入系数矩阵构造。最终回归样本覆盖 2017--2025 年、66 个 BEA 行业，共 594 个行业--年份观测。所有回归表均由 R 语言 \texttt{fixest::etable()} 从模型对象直接导出，本文只在 LaTeX 中用 \texttt{\textbackslash input} 调用表格，不对系数、标准误或显著性标记做手工改写。
+
+\subsection{描述性事实：低价商品渠道的部门边界}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{\figdir/rebuild_fig1_index_divergence.png}
+\caption{低价商品与再生产成本的长期价格分化}
+\label{fig:index_divergence}
+\fignote{各指数均标准化为 1984 年等于 100。灰色区域表示 2018--2020 年贸易战窗口，黄色区域表示 2021--2022 年通胀冲击窗口。}
+\end{figure}
+
+图 \ref{fig:index_divergence} 显示，1984--2025 年间，低价可贸易商品指数仅从 100 上升到 146.7，而本地化再生产成本指数上升到 451.7，基本再生产成本指数上升到 362.0，总体 CPI 上升到 309.9。这个差异说明，低价商品供给确实在部分消费领域提供了价格缓冲，但这种缓冲没有覆盖住房、医疗、教育等本地制度嵌入型再生产成本。换言之，价格型阶级妥协不是通过制度性地保障劳动者再生产条件来实现稳定，而是通过压低部分可贸易商品价格，暂时缓和工资增长不足与消费成本上升之间的矛盾。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{\figdir/rebuild_fig1b_reproduction_to_cheap_gap.png}
+\caption{再生产成本相对于低价商品的价格缺口}
+\label{fig:relative_gap}
+\fignote{纵轴为再生产成本指数除以低价商品指数。比值上升表示再生产成本相对于低价商品持续变贵。}
+\end{figure}
+
+图 \ref{fig:relative_gap} 进一步把再生产成本指数除以低价商品指数。到 2025 年，本地化再生产成本与低价商品的相对价格比达到 3.08，基本再生产成本与低价商品的相对价格比达到 2.47。这说明“便宜商品”与“便宜再生产”并不是同一回事：劳动者能够购买相对便宜的服装、耐用品或家居商品，并不意味着住房、医疗、教育和通勤等再生产成本同步下降。本文的理论贡献正是在这里展开：低价商品供给是一种真实存在但范围有限的缓冲机制，而不是完整的再生产保障机制。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{\figdir/rebuild_fig2_2025_category_levels.png}
+\caption{2025 年 CPI 分类价格水平}
+\label{fig:category_2025}
+\fignote{颜色表示本文的理论分类：低价可贸易/全球供应链商品、基本再生产成本、本地制度性再生产成本。}
+\end{figure}
+
+图 \ref{fig:category_2025} 从 CPI 子项层面给出同样的证据。医疗、租金和住房位于价格指数最高组，而耐用品、服装、家居用品和汽车等可贸易或全球供应链商品位于较低价格组。该排序与理论机制一致：能够通过进口竞争、外包生产和全球物流体系压低价格的部门，与高度本地化、制度化和资产化的再生产部门之间，存在系统性的价格形成差异。
+
+\subsection{背景事实：名义工资与不同实际工资口径}
+
+在进入冲击识别之前，还需要说明工资端的背景事实。本文不把“以再生产成本平减的实际工资下降”作为主因果识别，因为这一变量本身由名义工资和再生产成本指数共同构造，若再用再生产成本通胀解释它，容易形成接近定义式的结果。不过，不同平减口径下的工资走势仍然能够作为重要背景，说明为什么低价商品价格和再生产成本价格的分化会影响劳动者生活压力的可见程度。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{\oldfigdir/figure5_real_wage_comparison.png}
+\caption{名义工资与不同价格平减口径下的实际工资}
+\label{fig:real_wage_background}
+\fignote{三条曲线均标准化为 1984 年等于 100。蓝线为名义工资指数；橙线为用 BLS CPI-U All Items 平减的实际工资；绿线为用本文构造的基本再生产成本指数平减的实际工资。}
+\end{figure}
+
+图 \ref{fig:real_wage_background} 中三个工资口径的构造如下。首先，名义工资指数使用 FRED 中生产和非管理工人平均小时工资序列，记为 \(W_t\)，并以 1984 年为基期标准化：
+\begin{equation}
+NominalWageIndex_t=\frac{W_t}{W_{1984}}\times 100.
+\end{equation}
+其次，CPI 平减实际工资使用 BLS CPI-U All Items 指数 \(CPIAllItems_t\) 作为价格平减指数：
+\begin{equation}
+CPIRealWage_t=\frac{NominalWageIndex_t}{CPIAllItems_t}\times 100.
+\end{equation}
+最后，再生产成本平减实际工资使用本文构造的基本再生产成本指数，记为 \(BRCI_t\)，作为平减指数：
+\begin{equation}
+ReproductionRealWage_t=\frac{NominalWageIndex_t}{BRCI_t}\times 100.
+\end{equation}
+其中 \(BRCI_t\) 不是官方统计指标，而是本文将住房、食品、能源、交通、医疗、教育与通信等 CPI 子项先分别标准化为 1984 年等于 100，再做等权平均得到的研究性指数。
+
+\begin{table}[H]
+\centering
+\caption{工资平减口径的定义}
+\label{tab:wage_deflators}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{p{0.24\textwidth}p{0.35\textwidth}p{0.33\textwidth}}
+\toprule
+口径 & 构造方法 & 含义 \\
+\midrule
+名义工资指数 & 生产和非管理工人平均小时工资除以 1984 年工资水平，再乘以 100。 & 反映工资账面水平变化，不扣除价格上涨。 \\
+CPI 平减实际工资 & 名义工资指数除以 BLS CPI-U All Items 指数，再乘以 100。 & 反映按官方总体 CPI 口径衡量的实际购买力。 \\
+再生产成本平减实际工资 & 名义工资指数除以本文构造的基本再生产成本指数，再乘以 100。基本再生产成本指数由住房、食品、能源、交通、医疗、教育与通信等 CPI 子项等权平均得到。 & 反映工资相对于劳动者基础生活与再生产成本的购买力。该口径是本文构造的研究性指标，不是官方实际工资指标。 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\tabnote{所有价格指数和平减后的工资指数均以 1984 年为基期，1984=100。}
+\end{table}
+
+图 \ref{fig:real_wage_background} 显示，1984--2025 年名义工资指数从 100 上升到 369.2，但 CPI 平减后的实际工资指数到 2025 年仅为 119.1，而使用基本再生产成本指数平减后的实际工资指数约为 102.0，几乎回到 1984 年水平。这个图的意义不是证明一个新的因果关系，而是提供本文问题意识的工资背景：如果只看名义工资，美国劳动者似乎获得了持续补偿；但如果用住房、食品、能源、交通、医疗、教育与通信等再生产成本平减，工资增长对生活能力的改善就显著变弱。因此，本文后续把主识别放在价格冲击和产业网络传导上，而把工资图作为解释“为什么价格口径会改变再生产压力判断”的背景证据。
+
+\subsection{关税与供应链冲击：低价缓冲机制的失效}
+
+如果低价商品渠道是价格型阶级妥协的重要基础，那么关税战和供应链瓶颈就不只是普通的相对价格扰动，而是会直接作用于这一妥协的商品基础。2018 年后的 Section 301 关税为本文提供了一个可观察的冲击窗口。根据 \citet{amiti2020tariffs} 和 \citet{cavallo2021tariff} 的证据，美国关税并未主要由外国出口商吸收，而是显著传导到美国进口和消费价格。因此，若关税暴露集中在低价商品部门，就意味着低价商品渠道本身受到破坏。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{\figdir/rebuild_fig4_cpi_301_exposure_by_class.png}
+\caption{CPI 分类的 Section 301 关税暴露}
+\label{fig:cpi_tariff_exposure}
+\fignote{横轴为 2018--2025 年平均 Section 301 关税暴露。数值为 0 的本地化再生产类别并非缺失，而是没有直接商品关税暴露。}
+\end{figure}
+
+图 \ref{fig:cpi_tariff_exposure} 显示，Section 301 关税暴露主要集中在汽车、家居用品、耐用品、娱乐和服装等商品类别；住房、租金、医疗、教育与通信等本地化再生产成本类别的直接关税暴露为 0。这个分布有两层含义。第一，关税战主要冲击的是依赖跨境生产和流通的商品部门，也就是价格型阶级妥协中最可能承担低价缓冲功能的部门。第二，本地化再生产成本本来就不依赖直接进口商品关税来定价，因此即便没有关税暴露，也可能因为资产价格、公共服务供给不足、保险和服务劳动成本等原因持续上涨。两者共同说明，价格型阶级妥协具有双重脆弱性：它无法覆盖本地化再生产成本，同时又容易在贸易和供应链冲击下失去商品价格缓冲。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{\figdir/rebuild_fig3_inflation_shock_window.png}
+\caption{2016--2025 年通胀冲击窗口中的价格指数变化}
+\label{fig:inflation_window}
+\fignote{黄色区域表示 2021--2022 年通胀冲击窗口。}
+\end{figure}
+
+图 \ref{fig:inflation_window} 表明，2016--2020 年低价商品通胀总体较弱，符合其作为价格缓冲渠道的理论预期；但在 2021--2022 年，低价商品通胀分别达到 10.1\% 和 9.6\%，甚至高于总体 CPI。这一事实不应被解释为低价商品渠道不存在，而应解释为低价商品渠道在冲击期失效：当关税、物流瓶颈、全球供应链压力和需求结构转移共同作用时，原本承担缓冲功能的商品部门本身也会转化为价格压力来源。这一点与疫情后通胀文献关于部门供给约束和供应链传导的判断一致 \citep{baqaee2022supply,digiovanni2022gscpi}。
+
+\subsection{计量模型：产业网络中的关税冲击传导}
+
+描述性图形说明了低价商品渠道的边界，但仍不能回答价格压力是否会进入国内生产体系。为此，本文构造行业层面的投入产出网络冲击。设 \(DirectTariff_{it}\) 为行业 \(i\) 在年份 \(t\) 的直接 Section 301 关税暴露，\(W_{ij}\) 为 2019 年 BEA 投入产出矩阵中的投入份额权重。行业 \(i\) 的网络关税暴露定义为：
+\begin{equation}
+NetworkTariff_{it}=\sum_j W_{ij}DirectTariff_{jt}.
+\end{equation}
+该变量度量行业通过其上游投入部门间接承受的关税成本压力。主回归模型为：
+\begin{equation}
+\Delta \log P_{it}=\beta NetworkTariff_{i,t:t-1}+\alpha_i+\delta_t+\varepsilon_{it},
+\label{eq:network_main}
+\end{equation}
+其中 \(\Delta \log P_{it}\) 分别为行业总产出价格增长率和中间投入价格增长率；\(\alpha_i\) 为行业固定效应，吸收行业长期价格增长差异；\(\delta_t\) 为年份固定效应，吸收宏观通胀、货币政策和总量需求变化等共同冲击；标准误按行业聚类。主解释变量使用当期与一期滞后累计暴露，以允许关税成本通过采购、合同和库存调整滞后传导。
+
+\begin{table}[H]
+\centering
+\caption{关税冲击、I-O 网络暴露与行业价格增长}
+\label{tab:main_network}
+\begin{adjustbox}{max width=\textwidth}
+\input{\regdir/rebuild_table1_industry_price_network_main.tex}
+\end{adjustbox}
+\tabnote{表格由 R 语言 \texttt{fixest::etable()} 直接导出。所有模型均包含行业固定效应和年份固定效应，标准误按行业聚类，主规格使用行业产出权重。}
+\end{table}
+
+表 \ref{tab:main_network} 是本文的核心回归结果。第 (1) 和第 (4) 列显示，行业自身的直接关税暴露对总产出价格和中间投入价格均不显著。相反，第 (2) 和第 (5) 列显示，I-O 网络关税暴露显著为正：对总产出价格增长的系数为 0.0608，在 5\% 水平显著；对中间投入价格增长的系数为 0.0689，在 1\% 水平显著。该结果说明，关税冲击并不只是作用于被直接加税的行业，而是通过上游投入关系进入其他行业的成本结构。第 (3) 和第 (6) 列进一步把冲击分解为自身、上游和下游成分，其中中间投入价格对上游冲击的反应为正且在 5\% 水平显著，进一步支持“供应商成本压力传导”的机制解释。
+
+这一发现是本文相对于前人文献的核心增量。\citet{amiti2020tariffs} 和 \citet{cavallo2021tariff} 证明了关税会由美国消费者和企业承担；本文进一步说明，当关税作用于低价商品和中间品部门时，冲击会通过投入产出网络进入国内生产价格体系。由此，价格型阶级妥协的脆弱性不仅表现为终端商品涨价，也表现为低价供给条件改变后，成本压力在国内产业结构中扩散。
+
+\subsection{稳健性检验}
+
+为避免主结果依赖某一种网络定义，本文使用三组替代网络暴露变量。第一，完整投入产出网络暴露；第二，只保留投入份额超过 5\% 的强连接网络暴露；第三，剔除行业自身直接暴露后的网络暴露。如果结果在这三种口径下均成立，则说明估计结果不是由自身行业冲击或某个特殊权重矩阵机械驱动。
+
+\begin{table}[H]
+\centering
+\caption{替代投入产出网络暴露口径}
+\label{tab:network_robustness}
+\begin{adjustbox}{max width=\textwidth}
+\input{\regdir/rebuild_table2_industry_price_network_robustness.tex}
+\end{adjustbox}
+\tabnote{完整网络、5\% 强连接网络和剔除自身行业后的网络暴露均使用当期与一期滞后累计值。所有模型均包含行业固定效应和年份固定效应。}
+\end{table}
+
+表 \ref{tab:network_robustness} 显示，三种网络口径下的估计系数均为正且显著。总产出价格方程中，完整网络、5\% 强连接网络和剔除自身行业后的网络暴露系数分别为 0.0608、0.0600 和 0.0893，均在 5\% 水平显著；中间投入价格方程中，相应系数分别为 0.0689、0.0705 和 0.0951，均在 1\% 水平显著。尤其是剔除自身行业后结果仍然显著，说明本文捕捉的并不只是直接关税暴露，而是具有独立解释力的产业网络传导。
+
+\begin{table}[H]
+\centering
+\caption{加权与非加权估计}
+\label{tab:weighting}
+\begin{adjustbox}{max width=\textwidth}
+\input{\regdir/rebuild_table3_weighting_robustness.tex}
+\end{adjustbox}
+\tabnote{加权模型使用行业产出作为权重；非加权模型对各行业--年份观测赋予相同权重。所有模型均包含行业固定效应和年份固定效应。}
+\end{table}
+
+表 \ref{tab:weighting} 比较了加权和非加权估计。无论是否使用行业产出权重，网络关税暴露对总产出价格和中间投入价格的影响均为正且显著。总产出价格的非加权系数为 0.0643，在 5\% 水平显著；中间投入价格的非加权系数为 0.0724，在 1\% 水平显著。这表明结果并非仅由少数大行业驱动，而是在行业横截面上具有较稳定的方向。
+
+\subsection{事件研究：冲击何时显现}
+
+最后，本文使用事件研究形式考察高关税暴露行业在 2018 年后的相对价格变化。设 \(Exposure_i\) 为行业在样本期内的最大直接关税暴露，估计式为：
+\begin{equation}
+\Delta \log P_{it}=\sum_{s\neq 2017}\beta_s Exposure_i\times \mathbf{1}\{t=s\}+\alpha_i+\delta_t+\varepsilon_{it},
+\label{eq:event}
+\end{equation}
+其中 2017 年为基准年。该模型的目的不是替代网络模型，而是检验价格效应是否集中出现在贸易战和后续供应链冲击之后。
+
+\begin{table}[H]
+\centering
+\caption{按关税暴露划分的事件研究}
+\label{tab:event_study}
+\begin{adjustbox}{max width=\textwidth}
+\input{\regdir/rebuild_table4_event_study.tex}
+\end{adjustbox}
+\tabnote{2017 年为基准年。系数表示高直接关税暴露行业在相应年份的相对价格增长。所有模型均包含行业固定效应和年份固定效应。}
+\end{table}
+
+表 \ref{tab:event_study} 显示，高关税暴露行业在 2021 年和 2022 年出现显著更高的价格增长。总产出价格方程中，2021 年和 2022 年系数分别为 0.3196 和 0.2659，均在 5\% 或 1\% 水平显著；中间投入价格方程中，相应系数为 0.3969 和 0.2214，均在 1\% 水平显著。2018--2020 年系数并不显著，说明关税效应并非简单地在政策宣布当年立刻完全显现，而是在疫情后供应链压力、库存调整和总体通胀环境中更集中地暴露出来。这一结果与图 \ref{fig:inflation_window} 中 2021--2022 年低价商品通胀跳升相互呼应。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{\figdir/rebuild_fig5_industry_direct_vs_network_exposure.png}
+\caption{直接关税暴露与投入产出网络暴露}
+\label{fig:direct_network_scatter}
+\fignote{横轴为行业最大直接 Section 301 暴露，纵轴为最大 I-O 网络暴露，点大小按行业产出缩放。}
+\end{figure}
+
+图 \ref{fig:direct_network_scatter} 显示，一些行业即使自身直接关税暴露较低，也可能因为上游投入部门受冲击而面临较高网络暴露。这解释了为什么普通双向固定效应模型本身不能自动捕捉网络传导：网络传导必须通过投入产出矩阵显式构造出来。本文的主回归正是在行业固定效应和年份固定效应之外，把这种中观结构嵌入经验模型。
+
+\subsection{小结：经验结果对理论命题的支持}
+
+本节结果可以归纳为三点。第一，CPI 分类价格证据显示，低价供给主要集中于可贸易商品和全球供应链商品；住房、医疗、教育等本地化再生产成本长期上涨更快。第二，Section 301 关税暴露主要集中在商品部门，说明贸易战直接冲击的是低价商品缓冲机制，而不是本地化再生产成本本身。第三，行业网络回归显示，关税冲击会通过投入产出网络显著推高总产出价格和中间投入价格，说明低价商品渠道受损后，价格压力可以进入国内生产体系并沿产业关系扩散。
+
+因此，本文的实证结论不是“进口商品可以降低所有生活成本”，也不是“通胀自动导致实际工资下降”这样近乎定义性的判断，而是更具体地表明：价格型阶级妥协是一种局部、阶段性的稳定机制。它能够通过全球低成本生产和流通压低部分商品价格，却难以同样压低住房、医疗、教育和照护等本地制度性再生产成本；当关税战和供应链冲击发生时，其赖以成立的低价商品基础还会被削弱，并通过投入产出网络转化为更广泛的生产价格压力。
+
+\bibliographystyle{plainnat}
+\bibliography{empirical_references}
+
+\end{document}

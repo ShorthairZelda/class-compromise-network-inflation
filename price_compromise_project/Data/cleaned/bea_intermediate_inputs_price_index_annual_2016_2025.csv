@@ -1,0 +1,1000 @@
+line,industry_name,industry_name_clean,year,price_index_2017_100
+1,All industries,all industries,2016,96.73
+1,All industries,all industries,2017,100.0
+1,All industries,all industries,2018,103.804
+1,All industries,all industries,2019,104.657
+1,All industries,all industries,2020,104.347
+1,All industries,all industries,2021,114.194
+1,All industries,all industries,2022,125.32
+1,All industries,all industries,2023,123.634
+1,All industries,all industries,2024,125.764
+1,All industries,all industries,2025,129.637
+2,Private industries,private industries,2016,96.762
+2,Private industries,private industries,2017,100.0
+2,Private industries,private industries,2018,103.748
+2,Private industries,private industries,2019,104.631
+2,Private industries,private industries,2020,104.451
+2,Private industries,private industries,2021,114.258
+2,Private industries,private industries,2022,124.933
+2,Private industries,private industries,2023,123.21
+2,Private industries,private industries,2024,125.462
+2,Private industries,private industries,2025,129.447
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2016,100.968
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2017,100.0
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2018,102.908
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2019,102.84
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2020,100.61
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2021,114.122
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2022,138.684
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2023,137.561
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2024,135.351
+3,"Agriculture, forestry, fishing, and hunting","agriculture, forestry, fishing, and hunting",2025,141.699
+4,Farms,farms,2016,101.19
+4,Farms,farms,2017,100.0
+4,Farms,farms,2018,102.824
+4,Farms,farms,2019,102.787
+4,Farms,farms,2020,100.472
+4,Farms,farms,2021,114.061
+4,Farms,farms,2022,139.375
+4,Farms,farms,2023,138.341
+4,Farms,farms,2024,136.082
+4,Farms,farms,2025,142.621
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2016,97.194
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2017,100.0
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2018,104.473
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2019,103.619
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2020,103.82
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2021,115.661
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2022,127.581
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2023,124.89
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2024,123.64
+5,"Forestry, fishing, and related activities","forestry, fishing, and related activities",2025,126.528
+6,Mining,mining,2016,94.986
+6,Mining,mining,2017,100.0
+6,Mining,mining,2018,104.421
+6,Mining,mining,2019,104.123
+6,Mining,mining,2020,102.976
+6,Mining,mining,2021,120.074
+6,Mining,mining,2022,138.882
+6,Mining,mining,2023,128.181
+6,Mining,mining,2024,129.087
+6,Mining,mining,2025,134.839
+7,Oil and gas extraction,oil and gas extraction,2016,93.717
+7,Oil and gas extraction,oil and gas extraction,2017,100.0
+7,Oil and gas extraction,oil and gas extraction,2018,104.304
+7,Oil and gas extraction,oil and gas extraction,2019,102.605
+7,Oil and gas extraction,oil and gas extraction,2020,99.8
+7,Oil and gas extraction,oil and gas extraction,2021,120.033
+7,Oil and gas extraction,oil and gas extraction,2022,141.163
+7,Oil and gas extraction,oil and gas extraction,2023,126.477
+7,Oil and gas extraction,oil and gas extraction,2024,125.629
+7,Oil and gas extraction,oil and gas extraction,2025,130.054
+8,"Mining, except oil and gas","mining, except oil and gas",2016,95.569
+8,"Mining, except oil and gas","mining, except oil and gas",2017,100.0
+8,"Mining, except oil and gas","mining, except oil and gas",2018,105.232
+8,"Mining, except oil and gas","mining, except oil and gas",2019,106.526
+8,"Mining, except oil and gas","mining, except oil and gas",2020,107.487
+8,"Mining, except oil and gas","mining, except oil and gas",2021,118.719
+8,"Mining, except oil and gas","mining, except oil and gas",2022,132.873
+8,"Mining, except oil and gas","mining, except oil and gas",2023,131.343
+8,"Mining, except oil and gas","mining, except oil and gas",2024,135.676
+8,"Mining, except oil and gas","mining, except oil and gas",2025,145.076
+9,Support activities for mining,support activities for mining,2016,96.664
+9,Support activities for mining,support activities for mining,2017,100.0
+9,Support activities for mining,support activities for mining,2018,103.996
+9,Support activities for mining,support activities for mining,2019,105.721
+9,Support activities for mining,support activities for mining,2020,107.093
+9,Support activities for mining,support activities for mining,2021,117.26
+9,Support activities for mining,support activities for mining,2022,127.091
+9,Support activities for mining,support activities for mining,2023,127.744
+9,Support activities for mining,support activities for mining,2024,132.757
+9,Support activities for mining,support activities for mining,2025,140.943
+10,Utilities,utilities,2016,94.522
+10,Utilities,utilities,2017,100.0
+10,Utilities,utilities,2018,104.298
+10,Utilities,utilities,2019,103.4
+10,Utilities,utilities,2020,99.648
+10,Utilities,utilities,2021,120.769
+10,Utilities,utilities,2022,144.297
+10,Utilities,utilities,2023,120.196
+10,Utilities,utilities,2024,118.347
+10,Utilities,utilities,2025,124.218
+11,Construction,construction,2016,96.86
+11,Construction,construction,2017,100.0
+11,Construction,construction,2018,104.773
+11,Construction,construction,2019,106.5
+11,Construction,construction,2020,108.636
+11,Construction,construction,2021,124.11
+11,Construction,construction,2022,139.883
+11,Construction,construction,2023,137.719
+11,Construction,construction,2024,139.348
+11,Construction,construction,2025,144.571
+12,Manufacturing,manufacturing,2016,94.613
+12,Manufacturing,manufacturing,2017,100.0
+12,Manufacturing,manufacturing,2018,105.791
+12,Manufacturing,manufacturing,2019,104.636
+12,Manufacturing,manufacturing,2020,101.755
+12,Manufacturing,manufacturing,2021,120.936
+12,Manufacturing,manufacturing,2022,138.428
+12,Manufacturing,manufacturing,2023,131.355
+12,Manufacturing,manufacturing,2024,131.421
+12,Manufacturing,manufacturing,2025,135.73
+13,Durable goods,durable goods,2016,96.681
+13,Durable goods,durable goods,2017,100.0
+13,Durable goods,durable goods,2018,104.351
+13,Durable goods,durable goods,2019,105.017
+13,Durable goods,durable goods,2020,105.237
+13,Durable goods,durable goods,2021,120.769
+13,Durable goods,durable goods,2022,131.505
+13,Durable goods,durable goods,2023,128.997
+13,Durable goods,durable goods,2024,129.989
+13,Durable goods,durable goods,2025,137.476
+14,Wood products,wood products,2016,97.365
+14,Wood products,wood products,2017,100.0
+14,Wood products,wood products,2018,104.676
+14,Wood products,wood products,2019,101.887
+14,Wood products,wood products,2020,102.263
+14,Wood products,wood products,2021,121.208
+14,Wood products,wood products,2022,129.999
+14,Wood products,wood products,2023,120.526
+14,Wood products,wood products,2024,120.558
+14,Wood products,wood products,2025,123.137
+15,Nonmetallic mineral products,nonmetallic mineral products,2016,95.975
+15,Nonmetallic mineral products,nonmetallic mineral products,2017,100.0
+15,Nonmetallic mineral products,nonmetallic mineral products,2018,104.615
+15,Nonmetallic mineral products,nonmetallic mineral products,2019,106.669
+15,Nonmetallic mineral products,nonmetallic mineral products,2020,106.728
+15,Nonmetallic mineral products,nonmetallic mineral products,2021,117.398
+15,Nonmetallic mineral products,nonmetallic mineral products,2022,131.858
+15,Nonmetallic mineral products,nonmetallic mineral products,2023,132.368
+15,Nonmetallic mineral products,nonmetallic mineral products,2024,133.968
+15,Nonmetallic mineral products,nonmetallic mineral products,2025,139.016
+16,Primary metals,primary metals,2016,92.198
+16,Primary metals,primary metals,2017,100.0
+16,Primary metals,primary metals,2018,108.487
+16,Primary metals,primary metals,2019,108.049
+16,Primary metals,primary metals,2020,109.42
+16,Primary metals,primary metals,2021,143.201
+16,Primary metals,primary metals,2022,154.715
+16,Primary metals,primary metals,2023,146.334
+16,Primary metals,primary metals,2024,146.19
+16,Primary metals,primary metals,2025,159.223
+17,Fabricated metal products,fabricated metal products,2016,94.762
+17,Fabricated metal products,fabricated metal products,2017,100.0
+17,Fabricated metal products,fabricated metal products,2018,107.152
+17,Fabricated metal products,fabricated metal products,2019,107.087
+17,Fabricated metal products,fabricated metal products,2020,105.042
+17,Fabricated metal products,fabricated metal products,2021,130.038
+17,Fabricated metal products,fabricated metal products,2022,143.73
+17,Fabricated metal products,fabricated metal products,2023,137.175
+17,Fabricated metal products,fabricated metal products,2024,135.413
+17,Fabricated metal products,fabricated metal products,2025,143.58
+18,Machinery,machinery,2016,96.942
+18,Machinery,machinery,2017,100.0
+18,Machinery,machinery,2018,104.116
+18,Machinery,machinery,2019,105.301
+18,Machinery,machinery,2020,105.364
+18,Machinery,machinery,2021,120.014
+18,Machinery,machinery,2022,131.465
+18,Machinery,machinery,2023,130.155
+18,Machinery,machinery,2024,130.777
+18,Machinery,machinery,2025,138.684
+19,Computer and electronic products,computer and electronic products,2016,98.667
+19,Computer and electronic products,computer and electronic products,2017,100.0
+19,Computer and electronic products,computer and electronic products,2018,101.656
+19,Computer and electronic products,computer and electronic products,2019,102.399
+19,Computer and electronic products,computer and electronic products,2020,103.217
+19,Computer and electronic products,computer and electronic products,2021,111.214
+19,Computer and electronic products,computer and electronic products,2022,118.371
+19,Computer and electronic products,computer and electronic products,2023,118.717
+19,Computer and electronic products,computer and electronic products,2024,121.734
+19,Computer and electronic products,computer and electronic products,2025,129.218
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2016,96.114
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2017,100.0
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2018,104.43
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2019,105.316
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2020,106.185
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2021,123.168
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2022,133.167
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2023,131.341
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2024,132.91
+20,"Electrical equipment, appliances, and components","electrical equipment, appliances, and components",2025,143.277
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2016,97.881
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2017,100.0
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2018,103.078
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2019,104.145
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2020,104.5
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2021,114.842
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2022,125.069
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2023,124.623
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2024,126.166
+21,"Motor vehicles, bodies and trailers, and parts","motor vehicles, bodies and trailers, and parts",2025,132.696
+22,Other transportation equipment,other transportation equipment,2016,98.38
+22,Other transportation equipment,other transportation equipment,2017,100.0
+22,Other transportation equipment,other transportation equipment,2018,102.501
+22,Other transportation equipment,other transportation equipment,2019,104.137
+22,Other transportation equipment,other transportation equipment,2020,105.008
+22,Other transportation equipment,other transportation equipment,2021,111.909
+22,Other transportation equipment,other transportation equipment,2022,119.827
+22,Other transportation equipment,other transportation equipment,2023,122.329
+22,Other transportation equipment,other transportation equipment,2024,125.673
+22,Other transportation equipment,other transportation equipment,2025,133.01
+23,Furniture and related products,furniture and related products,2016,96.98
+23,Furniture and related products,furniture and related products,2017,100.0
+23,Furniture and related products,furniture and related products,2018,104.53
+23,Furniture and related products,furniture and related products,2019,104.806
+23,Furniture and related products,furniture and related products,2020,105.089
+23,Furniture and related products,furniture and related products,2021,120.263
+23,Furniture and related products,furniture and related products,2022,132.53
+23,Furniture and related products,furniture and related products,2023,127.376
+23,Furniture and related products,furniture and related products,2024,128.066
+23,Furniture and related products,furniture and related products,2025,133.723
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2016,97.093
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2017,100.0
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2018,103.451
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2019,104.5
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2020,105.575
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2021,117.935
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2022,128.391
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2023,126.205
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2024,127.497
+24,Miscellaneous manufacturing,miscellaneous manufacturing,2025,132.866
+25,Nondurable goods,nondurable goods,2016,92.839
+25,Nondurable goods,nondurable goods,2017,100.0
+25,Nondurable goods,nondurable goods,2018,107.056
+25,Nondurable goods,nondurable goods,2019,104.299
+25,Nondurable goods,nondurable goods,2020,98.779
+25,Nondurable goods,nondurable goods,2021,121.085
+25,Nondurable goods,nondurable goods,2022,144.6
+25,Nondurable goods,nondurable goods,2023,133.332
+25,Nondurable goods,nondurable goods,2024,132.53
+25,Nondurable goods,nondurable goods,2025,133.838
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2016,96.471
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2017,100.0
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2018,101.066
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2019,101.731
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2020,101.496
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2021,115.656
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2022,135.22
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2023,131.433
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2024,133.174
+26,Food and beverage and tobacco products,food and beverage and tobacco products,2025,139.325
+27,Textile mills and textile product mills,textile mills and textile product mills,2016,97.419
+27,Textile mills and textile product mills,textile mills and textile product mills,2017,100.0
+27,Textile mills and textile product mills,textile mills and textile product mills,2018,103.886
+27,Textile mills and textile product mills,textile mills and textile product mills,2019,105.058
+27,Textile mills and textile product mills,textile mills and textile product mills,2020,104.098
+27,Textile mills and textile product mills,textile mills and textile product mills,2021,116.736
+27,Textile mills and textile product mills,textile mills and textile product mills,2022,130.553
+27,Textile mills and textile product mills,textile mills and textile product mills,2023,127.798
+27,Textile mills and textile product mills,textile mills and textile product mills,2024,127.577
+27,Textile mills and textile product mills,textile mills and textile product mills,2025,130.945
+28,Apparel and leather and allied products,apparel and leather and allied products,2016,98.269
+28,Apparel and leather and allied products,apparel and leather and allied products,2017,100.0
+28,Apparel and leather and allied products,apparel and leather and allied products,2018,101.701
+28,Apparel and leather and allied products,apparel and leather and allied products,2019,102.794
+28,Apparel and leather and allied products,apparel and leather and allied products,2020,103.475
+28,Apparel and leather and allied products,apparel and leather and allied products,2021,110.587
+28,Apparel and leather and allied products,apparel and leather and allied products,2022,117.928
+28,Apparel and leather and allied products,apparel and leather and allied products,2023,119.563
+28,Apparel and leather and allied products,apparel and leather and allied products,2024,121.899
+28,Apparel and leather and allied products,apparel and leather and allied products,2025,126.481
+29,Paper products,paper products,2016,95.921
+29,Paper products,paper products,2017,100.0
+29,Paper products,paper products,2018,105.552
+29,Paper products,paper products,2019,105.926
+29,Paper products,paper products,2020,104.318
+29,Paper products,paper products,2021,116.823
+29,Paper products,paper products,2022,131.944
+29,Paper products,paper products,2023,128.228
+29,Paper products,paper products,2024,127.81
+29,Paper products,paper products,2025,132.733
+30,Printing and related support activities,printing and related support activities,2016,97.98
+30,Printing and related support activities,printing and related support activities,2017,100.0
+30,Printing and related support activities,printing and related support activities,2018,103.152
+30,Printing and related support activities,printing and related support activities,2019,105.437
+30,Printing and related support activities,printing and related support activities,2020,105.604
+30,Printing and related support activities,printing and related support activities,2021,114.512
+30,Printing and related support activities,printing and related support activities,2022,126.249
+30,Printing and related support activities,printing and related support activities,2023,125.496
+30,Printing and related support activities,printing and related support activities,2024,124.972
+30,Printing and related support activities,printing and related support activities,2025,129.269
+31,Petroleum and coal products,petroleum and coal products,2016,83.677
+31,Petroleum and coal products,petroleum and coal products,2017,100.0
+31,Petroleum and coal products,petroleum and coal products,2018,118.415
+31,Petroleum and coal products,petroleum and coal products,2019,109.04
+31,Petroleum and coal products,petroleum and coal products,2020,86.238
+31,Petroleum and coal products,petroleum and coal products,2021,133.329
+31,Petroleum and coal products,petroleum and coal products,2022,181.693
+31,Petroleum and coal products,petroleum and coal products,2023,148.789
+31,Petroleum and coal products,petroleum and coal products,2024,145.583
+31,Petroleum and coal products,petroleum and coal products,2025,134.772
+32,Chemical products,chemical products,2016,93.067
+32,Chemical products,chemical products,2017,100.0
+32,Chemical products,chemical products,2018,107.282
+32,Chemical products,chemical products,2019,102.959
+32,Chemical products,chemical products,2020,100.67
+32,Chemical products,chemical products,2021,122.363
+32,Chemical products,chemical products,2022,138.746
+32,Chemical products,chemical products,2023,127.895
+32,Chemical products,chemical products,2024,124.09
+32,Chemical products,chemical products,2025,124.678
+33,Plastics and rubber products,plastics and rubber products,2016,95.861
+33,Plastics and rubber products,plastics and rubber products,2017,100.0
+33,Plastics and rubber products,plastics and rubber products,2018,104.287
+33,Plastics and rubber products,plastics and rubber products,2019,103.899
+33,Plastics and rubber products,plastics and rubber products,2020,103.143
+33,Plastics and rubber products,plastics and rubber products,2021,120.749
+33,Plastics and rubber products,plastics and rubber products,2022,131.977
+33,Plastics and rubber products,plastics and rubber products,2023,126.373
+33,Plastics and rubber products,plastics and rubber products,2024,126.017
+33,Plastics and rubber products,plastics and rubber products,2025,128.778
+34,Wholesale trade,wholesale trade,2016,97.945
+34,Wholesale trade,wholesale trade,2017,100.0
+34,Wholesale trade,wholesale trade,2018,102.507
+34,Wholesale trade,wholesale trade,2019,104.306
+34,Wholesale trade,wholesale trade,2020,105.355
+34,Wholesale trade,wholesale trade,2021,110.667
+34,Wholesale trade,wholesale trade,2022,118.042
+34,Wholesale trade,wholesale trade,2023,119.047
+34,Wholesale trade,wholesale trade,2024,122.691
+34,Wholesale trade,wholesale trade,2025,126.997
+35,Retail trade,retail trade,2016,97.695
+35,Retail trade,retail trade,2017,100.0
+35,Retail trade,retail trade,2018,102.337
+35,Retail trade,retail trade,2019,104.283
+35,Retail trade,retail trade,2020,105.422
+35,Retail trade,retail trade,2021,110.344
+35,Retail trade,retail trade,2022,117.683
+35,Retail trade,retail trade,2023,118.172
+35,Retail trade,retail trade,2024,120.941
+35,Retail trade,retail trade,2025,123.86
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2016,97.814
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2017,100.0
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2018,102.185
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2019,103.896
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2020,104.796
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2021,109.393
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2022,116.714
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2023,117.157
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2024,119.746
+36,Motor vehicle and parts dealers,motor vehicle and parts dealers,2025,122.52
+37,Food and beverage stores,food and beverage stores,2016,97.354
+37,Food and beverage stores,food and beverage stores,2017,100.0
+37,Food and beverage stores,food and beverage stores,2018,102.647
+37,Food and beverage stores,food and beverage stores,2019,104.654
+37,Food and beverage stores,food and beverage stores,2020,105.768
+37,Food and beverage stores,food and beverage stores,2021,111.816
+37,Food and beverage stores,food and beverage stores,2022,120.45
+37,Food and beverage stores,food and beverage stores,2023,120.579
+37,Food and beverage stores,food and beverage stores,2024,122.978
+37,Food and beverage stores,food and beverage stores,2025,126.178
+38,General merchandise stores,general merchandise stores,2016,97.633
+38,General merchandise stores,general merchandise stores,2017,100.0
+38,General merchandise stores,general merchandise stores,2018,102.501
+38,General merchandise stores,general merchandise stores,2019,104.341
+38,General merchandise stores,general merchandise stores,2020,105.379
+38,General merchandise stores,general merchandise stores,2021,110.268
+38,General merchandise stores,general merchandise stores,2022,117.914
+38,General merchandise stores,general merchandise stores,2023,118.593
+38,General merchandise stores,general merchandise stores,2024,121.297
+38,General merchandise stores,general merchandise stores,2025,125.38
+39,Other retail,other retail,2016,97.749
+39,Other retail,other retail,2017,100.0
+39,Other retail,other retail,2018,102.281
+39,Other retail,other retail,2019,104.303
+39,Other retail,other retail,2020,105.528
+39,Other retail,other retail,2021,110.306
+39,Other retail,other retail,2022,117.364
+39,Other retail,other retail,2023,117.905
+39,Other retail,other retail,2024,120.81
+39,Other retail,other retail,2025,123.565
+40,Transportation and warehousing,transportation and warehousing,2016,95.592
+40,Transportation and warehousing,transportation and warehousing,2017,100.0
+40,Transportation and warehousing,transportation and warehousing,2018,105.591
+40,Transportation and warehousing,transportation and warehousing,2019,106.243
+40,Transportation and warehousing,transportation and warehousing,2020,103.812
+40,Transportation and warehousing,transportation and warehousing,2021,118.083
+40,Transportation and warehousing,transportation and warehousing,2022,133.281
+40,Transportation and warehousing,transportation and warehousing,2023,127.261
+40,Transportation and warehousing,transportation and warehousing,2024,130.405
+40,Transportation and warehousing,transportation and warehousing,2025,134.24
+41,Air transportation,air transportation,2016,93.054
+41,Air transportation,air transportation,2017,100.0
+41,Air transportation,air transportation,2018,108.565
+41,Air transportation,air transportation,2019,107.674
+41,Air transportation,air transportation,2020,99.242
+41,Air transportation,air transportation,2021,114.402
+41,Air transportation,air transportation,2022,134.859
+41,Air transportation,air transportation,2023,130.894
+41,Air transportation,air transportation,2024,131.78
+41,Air transportation,air transportation,2025,132.733
+42,Rail transportation,rail transportation,2016,94.824
+42,Rail transportation,rail transportation,2017,100.0
+42,Rail transportation,rail transportation,2018,107.302
+42,Rail transportation,rail transportation,2019,106.677
+42,Rail transportation,rail transportation,2020,105.365
+42,Rail transportation,rail transportation,2021,116.132
+42,Rail transportation,rail transportation,2022,127.818
+42,Rail transportation,rail transportation,2023,124.079
+42,Rail transportation,rail transportation,2024,126.039
+42,Rail transportation,rail transportation,2025,128.098
+43,Water transportation,water transportation,2016,95.453
+43,Water transportation,water transportation,2017,100.0
+43,Water transportation,water transportation,2018,105.446
+43,Water transportation,water transportation,2019,105.724
+43,Water transportation,water transportation,2020,103.89
+43,Water transportation,water transportation,2021,112.717
+43,Water transportation,water transportation,2022,124.479
+43,Water transportation,water transportation,2023,122.668
+43,Water transportation,water transportation,2024,124.652
+43,Water transportation,water transportation,2025,127.56
+44,Truck transportation,truck transportation,2016,96.073
+44,Truck transportation,truck transportation,2017,100.0
+44,Truck transportation,truck transportation,2018,104.817
+44,Truck transportation,truck transportation,2019,106.039
+44,Truck transportation,truck transportation,2020,104.455
+44,Truck transportation,truck transportation,2021,122.06
+44,Truck transportation,truck transportation,2022,138.884
+44,Truck transportation,truck transportation,2023,129.382
+44,Truck transportation,truck transportation,2024,133.558
+44,Truck transportation,truck transportation,2025,138.928
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2016,97.192
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2017,100.0
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2018,104.339
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2019,105.816
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2020,107.077
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2021,111.694
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2022,119.734
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2023,119.706
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2024,122.062
+45,Transit and ground passenger transportation,transit and ground passenger transportation,2025,125.588
+46,Pipeline transportation,pipeline transportation,2016,94.556
+46,Pipeline transportation,pipeline transportation,2017,100.0
+46,Pipeline transportation,pipeline transportation,2018,106.753
+46,Pipeline transportation,pipeline transportation,2019,110.523
+46,Pipeline transportation,pipeline transportation,2020,111.503
+46,Pipeline transportation,pipeline transportation,2021,121.211
+46,Pipeline transportation,pipeline transportation,2022,139.397
+46,Pipeline transportation,pipeline transportation,2023,141.754
+46,Pipeline transportation,pipeline transportation,2024,145.571
+46,Pipeline transportation,pipeline transportation,2025,152.614
+47,Other transportation and support activities,other transportation and support activities,2016,96.77
+47,Other transportation and support activities,other transportation and support activities,2017,100.0
+47,Other transportation and support activities,other transportation and support activities,2018,104.372
+47,Other transportation and support activities,other transportation and support activities,2019,105.615
+47,Other transportation and support activities,other transportation and support activities,2020,103.234
+47,Other transportation and support activities,other transportation and support activities,2021,117.256
+47,Other transportation and support activities,other transportation and support activities,2022,130.658
+47,Other transportation and support activities,other transportation and support activities,2023,122.761
+47,Other transportation and support activities,other transportation and support activities,2024,127.198
+47,Other transportation and support activities,other transportation and support activities,2025,131.641
+48,Warehousing and storage,warehousing and storage,2016,96.153
+48,Warehousing and storage,warehousing and storage,2017,100.0
+48,Warehousing and storage,warehousing and storage,2018,104.756
+48,Warehousing and storage,warehousing and storage,2019,104.958
+48,Warehousing and storage,warehousing and storage,2020,104.382
+48,Warehousing and storage,warehousing and storage,2021,116.758
+48,Warehousing and storage,warehousing and storage,2022,128.621
+48,Warehousing and storage,warehousing and storage,2023,123.65
+48,Warehousing and storage,warehousing and storage,2024,127.13
+48,Warehousing and storage,warehousing and storage,2025,131.187
+49,Information,information,2016,98.775
+49,Information,information,2017,100.0
+49,Information,information,2018,101.91
+49,Information,information,2019,103.103
+49,Information,information,2020,103.908
+49,Information,information,2021,107.652
+49,Information,information,2022,113.271
+49,Information,information,2023,112.577
+49,Information,information,2024,115.268
+49,Information,information,2025,116.574
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2016,98.88
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2017,100.0
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2018,101.125
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2019,102.407
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2020,103.138
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2021,106.449
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2022,110.905
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2023,111.693
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2024,114.556
+50,"Publishing industries, except internet (includes software)","publishing industries, except internet (includes software)",2025,116.432
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2016,98.315
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2017,100.0
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2018,102.518
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2019,103.015
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2020,104.204
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2021,105.956
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2022,110.877
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2023,108.476
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2024,112.032
+51,Motion picture and sound recording industries,motion picture and sound recording industries,2025,111.097
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2016,98.768
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2017,100.0
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2018,102.335
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2019,103.586
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2020,104.474
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2021,108.235
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2022,114.387
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2023,113.281
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2024,116.258
+52,Broadcasting and telecommunications,broadcasting and telecommunications,2025,117.388
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2016,98.863
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2017,100.0
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2018,101.399
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2019,102.666
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2020,103.233
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2021,107.767
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2022,113.413
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2023,112.888
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2024,114.875
+53,"Data processing, internet publishing, and other information services","data processing, internet publishing, and other information services",2025,116.58
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2016,97.09
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2017,100.0
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2018,103.542
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2019,105.537
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2020,106.3
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2021,111.722
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2022,118.205
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2023,119.935
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2024,123.81
+54,"Finance, insurance, real estate, rental, and leasing","finance, insurance, real estate, rental, and leasing",2025,128.331
+55,Finance and insurance,finance and insurance,2016,97.493
+55,Finance and insurance,finance and insurance,2017,100.0
+55,Finance and insurance,finance and insurance,2018,103.367
+55,Finance and insurance,finance and insurance,2019,105.002
+55,Finance and insurance,finance and insurance,2020,105.513
+55,Finance and insurance,finance and insurance,2021,110.539
+55,Finance and insurance,finance and insurance,2022,113.667
+55,Finance and insurance,finance and insurance,2023,114.516
+55,Finance and insurance,finance and insurance,2024,118.102
+55,Finance and insurance,finance and insurance,2025,121.772
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2016,97.427
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2017,100.0
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2018,103.716
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2019,105.383
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2020,106.347
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2021,111.396
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2022,116.941
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2023,117.852
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2024,121.565
+56,"Federal Reserve banks, credit intermediation, and related activities","federal reserve banks, credit intermediation, and related activities",2025,125.516
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2016,97.466
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2017,100.0
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2018,103.819
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2019,105.074
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2020,102.632
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2021,109.434
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2022,114.708
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2023,117.273
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2024,122.511
+57,"Securities, commodity contracts, and investments","securities, commodity contracts, and investments",2025,126.967
+58,Insurance carriers and related activities,insurance carriers and related activities,2016,98.092
+58,Insurance carriers and related activities,insurance carriers and related activities,2017,100.0
+58,Insurance carriers and related activities,insurance carriers and related activities,2018,102.247
+58,Insurance carriers and related activities,insurance carriers and related activities,2019,103.892
+58,Insurance carriers and related activities,insurance carriers and related activities,2020,105.227
+58,Insurance carriers and related activities,insurance carriers and related activities,2021,106.909
+58,Insurance carriers and related activities,insurance carriers and related activities,2022,108.918
+58,Insurance carriers and related activities,insurance carriers and related activities,2023,109.219
+58,Insurance carriers and related activities,insurance carriers and related activities,2024,111.602
+58,Insurance carriers and related activities,insurance carriers and related activities,2025,113.412
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2016,96.001
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2017,100.0
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2018,105.253
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2019,107.594
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2020,110.646
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2021,124.84
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2022,121.812
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2023,120.573
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2024,124.341
+59,"Funds, trusts, and other financial vehicles","funds, trusts, and other financial vehicles",2025,132.186
+60,Real estate and rental and leasing,real estate and rental and leasing,2016,96.647
+60,Real estate and rental and leasing,real estate and rental and leasing,2017,100.0
+60,Real estate and rental and leasing,real estate and rental and leasing,2018,103.747
+60,Real estate and rental and leasing,real estate and rental and leasing,2019,106.152
+60,Real estate and rental and leasing,real estate and rental and leasing,2020,107.202
+60,Real estate and rental and leasing,real estate and rental and leasing,2021,113.048
+60,Real estate and rental and leasing,real estate and rental and leasing,2022,122.831
+60,Real estate and rental and leasing,real estate and rental and leasing,2023,125.47
+60,Real estate and rental and leasing,real estate and rental and leasing,2024,129.654
+60,Real estate and rental and leasing,real estate and rental and leasing,2025,135.134
+61,Real estate,real estate,2016,96.538
+61,Real estate,real estate,2017,100.0
+61,Real estate,real estate,2018,103.813
+61,Real estate,real estate,2019,106.288
+61,Real estate,real estate,2020,107.342
+61,Real estate,real estate,2021,113.221
+61,Real estate,real estate,2022,123.404
+61,Real estate,real estate,2023,126.192
+61,Real estate,real estate,2024,130.451
+61,Real estate,real estate,2025,136.226
+62,Housing,housing,2016,95.456
+62,Housing,housing,2017,100.0
+62,Housing,housing,2018,105.713
+62,Housing,housing,2019,108.462
+62,Housing,housing,2020,109.45
+62,Housing,housing,2021,117.853
+62,Housing,housing,2022,132.268
+62,Housing,housing,2023,135.229
+62,Housing,housing,2024,141.024
+62,Housing,housing,2025,147.764
+63,Other real estate,other real estate,2016,96.879
+63,Other real estate,other real estate,2017,100.0
+63,Other real estate,other real estate,2018,103.22
+63,Other real estate,other real estate,2019,105.613
+63,Other real estate,other real estate,2020,106.689
+63,Other real estate,other real estate,2021,111.784
+63,Other real estate,other real estate,2022,120.825
+63,Other real estate,other real estate,2023,123.56
+63,Other real estate,other real estate,2024,127.444
+63,Other real estate,other real estate,2025,132.968
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2016,97.439
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2017,100.0
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2018,103.292
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2019,105.244
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2020,106.26
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2021,111.933
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2022,119.68
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2023,121.591
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2024,125.396
+64,Rental and leasing services and lessors of intangible assets,rental and leasing services and lessors of intangible assets,2025,129.451
+65,Professional and business services,professional and business services,2016,98.014
+65,Professional and business services,professional and business services,2017,100.0
+65,Professional and business services,professional and business services,2018,102.234
+65,Professional and business services,professional and business services,2019,104.047
+65,Professional and business services,professional and business services,2020,105.106
+65,Professional and business services,professional and business services,2021,109.621
+65,Professional and business services,professional and business services,2022,116.131
+65,Professional and business services,professional and business services,2023,117.343
+65,Professional and business services,professional and business services,2024,119.946
+65,Professional and business services,professional and business services,2025,123.261
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2016,98.063
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2017,100.0
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2018,102.124
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2019,103.976
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2020,104.882
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2021,109.346
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2022,115.332
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2023,116.622
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2024,119.24
+66,"Professional, scientific, and technical services","professional, scientific, and technical services",2025,122.398
+67,Legal services,legal services,2016,98.262
+67,Legal services,legal services,2017,100.0
+67,Legal services,legal services,2018,101.571
+67,Legal services,legal services,2019,103.435
+67,Legal services,legal services,2020,104.616
+67,Legal services,legal services,2021,107.826
+67,Legal services,legal services,2022,112.638
+67,Legal services,legal services,2023,113.908
+67,Legal services,legal services,2024,117.15
+67,Legal services,legal services,2025,119.769
+68,Computer systems design and related services,computer systems design and related services,2016,98.043
+68,Computer systems design and related services,computer systems design and related services,2017,100.0
+68,Computer systems design and related services,computer systems design and related services,2018,102.189
+68,Computer systems design and related services,computer systems design and related services,2019,103.951
+68,Computer systems design and related services,computer systems design and related services,2020,104.531
+68,Computer systems design and related services,computer systems design and related services,2021,109.453
+68,Computer systems design and related services,computer systems design and related services,2022,116.076
+68,Computer systems design and related services,computer systems design and related services,2023,117.224
+68,Computer systems design and related services,computer systems design and related services,2024,119.845
+68,Computer systems design and related services,computer systems design and related services,2025,123.807
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2016,98.035
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2017,100.0
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2018,102.196
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2019,104.071
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2020,105.023
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2021,109.539
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2022,115.502
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2023,116.836
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2024,119.382
+69,"Miscellaneous professional, scientific, and technical services","miscellaneous professional, scientific, and technical services",2025,122.4
+70,Management of companies and enterprises,management of companies and enterprises,2016,97.911
+70,Management of companies and enterprises,management of companies and enterprises,2017,100.0
+70,Management of companies and enterprises,management of companies and enterprises,2018,102.912
+70,Management of companies and enterprises,management of companies and enterprises,2019,104.865
+70,Management of companies and enterprises,management of companies and enterprises,2020,106.9
+70,Management of companies and enterprises,management of companies and enterprises,2021,109.508
+70,Management of companies and enterprises,management of companies and enterprises,2022,115.651
+70,Management of companies and enterprises,management of companies and enterprises,2023,117.427
+70,Management of companies and enterprises,management of companies and enterprises,2024,120.611
+70,Management of companies and enterprises,management of companies and enterprises,2025,123.62
+71,Administrative and waste management services,administrative and waste management services,2016,97.98
+71,Administrative and waste management services,administrative and waste management services,2017,100.0
+71,Administrative and waste management services,administrative and waste management services,2018,102.117
+71,Administrative and waste management services,administrative and waste management services,2019,103.813
+71,Administrative and waste management services,administrative and waste management services,2020,104.691
+71,Administrative and waste management services,administrative and waste management services,2021,110.172
+71,Administrative and waste management services,administrative and waste management services,2022,117.75
+71,Administrative and waste management services,administrative and waste management services,2023,118.567
+71,Administrative and waste management services,administrative and waste management services,2024,120.853
+71,Administrative and waste management services,administrative and waste management services,2025,124.642
+72,Administrative and support services,administrative and support services,2016,98.142
+72,Administrative and support services,administrative and support services,2017,100.0
+72,Administrative and support services,administrative and support services,2018,101.899
+72,Administrative and support services,administrative and support services,2019,103.554
+72,Administrative and support services,administrative and support services,2020,104.384
+72,Administrative and support services,administrative and support services,2021,109.569
+72,Administrative and support services,administrative and support services,2022,116.73
+72,Administrative and support services,administrative and support services,2023,117.279
+72,Administrative and support services,administrative and support services,2024,119.417
+72,Administrative and support services,administrative and support services,2025,122.79
+73,Waste management and remediation services,waste management and remediation services,2016,96.973
+73,Waste management and remediation services,waste management and remediation services,2017,100.0
+73,Waste management and remediation services,waste management and remediation services,2018,103.515
+73,Waste management and remediation services,waste management and remediation services,2019,105.492
+73,Waste management and remediation services,waste management and remediation services,2020,106.696
+73,Waste management and remediation services,waste management and remediation services,2021,114.133
+73,Waste management and remediation services,waste management and remediation services,2022,124.608
+73,Waste management and remediation services,waste management and remediation services,2023,127.318
+73,Waste management and remediation services,waste management and remediation services,2024,130.58
+73,Waste management and remediation services,waste management and remediation services,2025,136.938
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2016,98.061
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2017,100.0
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2018,102.2
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2019,104.037
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2020,105.554
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2021,110.82
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2022,117.414
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2023,118.938
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2024,121.943
+74,"Educational services, health care, and social assistance","educational services, health care, and social assistance",2025,125.595
+75,Educational services,educational services,2016,98.102
+75,Educational services,educational services,2017,100.0
+75,Educational services,educational services,2018,102.078
+75,Educational services,educational services,2019,103.68
+75,Educational services,educational services,2020,104.785
+75,Educational services,educational services,2021,110.261
+75,Educational services,educational services,2022,117.953
+75,Educational services,educational services,2023,118.269
+75,Educational services,educational services,2024,120.448
+75,Educational services,educational services,2025,122.691
+76,Health care and social assistance,health care and social assistance,2016,98.056
+76,Health care and social assistance,health care and social assistance,2017,100.0
+76,Health care and social assistance,health care and social assistance,2018,102.214
+76,Health care and social assistance,health care and social assistance,2019,104.079
+76,Health care and social assistance,health care and social assistance,2020,105.642
+76,Health care and social assistance,health care and social assistance,2021,110.886
+76,Health care and social assistance,health care and social assistance,2022,117.37
+76,Health care and social assistance,health care and social assistance,2023,119.021
+76,Health care and social assistance,health care and social assistance,2024,122.118
+76,Health care and social assistance,health care and social assistance,2025,125.942
+77,Ambulatory health care services,ambulatory health care services,2016,98.225
+77,Ambulatory health care services,ambulatory health care services,2017,100.0
+77,Ambulatory health care services,ambulatory health care services,2018,102.187
+77,Ambulatory health care services,ambulatory health care services,2019,104.016
+77,Ambulatory health care services,ambulatory health care services,2020,105.352
+77,Ambulatory health care services,ambulatory health care services,2021,109.817
+77,Ambulatory health care services,ambulatory health care services,2022,115.526
+77,Ambulatory health care services,ambulatory health care services,2023,117.191
+77,Ambulatory health care services,ambulatory health care services,2024,119.859
+77,Ambulatory health care services,ambulatory health care services,2025,123.138
+78,Hospitals,hospitals,2016,97.956
+78,Hospitals,hospitals,2017,100.0
+78,Hospitals,hospitals,2018,102.331
+78,Hospitals,hospitals,2019,104.19
+78,Hospitals,hospitals,2020,106.062
+78,Hospitals,hospitals,2021,111.402
+78,Hospitals,hospitals,2022,117.782
+78,Hospitals,hospitals,2023,119.577
+78,Hospitals,hospitals,2024,122.83
+78,Hospitals,hospitals,2025,127.069
+79,Nursing and residential care facilities,nursing and residential care facilities,2016,97.963
+79,Nursing and residential care facilities,nursing and residential care facilities,2017,100.0
+79,Nursing and residential care facilities,nursing and residential care facilities,2018,102.212
+79,Nursing and residential care facilities,nursing and residential care facilities,2019,104.011
+79,Nursing and residential care facilities,nursing and residential care facilities,2020,105.404
+79,Nursing and residential care facilities,nursing and residential care facilities,2021,110.506
+79,Nursing and residential care facilities,nursing and residential care facilities,2022,117.339
+79,Nursing and residential care facilities,nursing and residential care facilities,2023,118.933
+79,Nursing and residential care facilities,nursing and residential care facilities,2024,122.066
+79,Nursing and residential care facilities,nursing and residential care facilities,2025,125.578
+80,Social assistance,social assistance,2016,97.9
+80,Social assistance,social assistance,2017,100.0
+80,Social assistance,social assistance,2018,101.883
+80,Social assistance,social assistance,2019,103.959
+80,Social assistance,social assistance,2020,105.303
+80,Social assistance,social assistance,2021,112.923
+80,Social assistance,social assistance,2022,122.246
+80,Social assistance,social assistance,2023,123.305
+80,Social assistance,social assistance,2024,127.452
+80,Social assistance,social assistance,2025,132.165
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2016,97.94
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2017,100.0
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2018,102.158
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2019,103.759
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2020,105.214
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2021,110.32
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2022,118.083
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2023,118.752
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2024,121.78
+81,"Arts, entertainment, recreation, accommodation, and food services","arts, entertainment, recreation, accommodation, and food services",2025,125.782
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2016,97.613
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2017,100.0
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2018,102.215
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2019,104.055
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2020,106.114
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2021,110.22
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2022,116.031
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2023,117.502
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2024,121.547
+82,"Arts, entertainment, and recreation","arts, entertainment, and recreation",2025,125.033
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2016,97.964
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2017,100.0
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2018,102.011
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2019,103.818
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2020,106.63
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2021,108.839
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2022,112.772
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2023,114.675
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2024,119.604
+83,"Performing arts, spectator sports, museums, and related activities","performing arts, spectator sports, museums, and related activities",2025,123.109
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2016,97.242
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2017,100.0
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2018,102.436
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2019,104.312
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2020,105.577
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2021,111.657
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2022,119.644
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2023,120.605
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2024,123.656
+84,"Amusements, gambling, and recreation industries","amusements, gambling, and recreation industries",2025,127.035
+85,Accommodation and food services,accommodation and food services,2016,98.033
+85,Accommodation and food services,accommodation and food services,2017,100.0
+85,Accommodation and food services,accommodation and food services,2018,102.141
+85,Accommodation and food services,accommodation and food services,2019,103.672
+85,Accommodation and food services,accommodation and food services,2020,104.944
+85,Accommodation and food services,accommodation and food services,2021,110.357
+85,Accommodation and food services,accommodation and food services,2022,118.73
+85,Accommodation and food services,accommodation and food services,2023,119.154
+85,Accommodation and food services,accommodation and food services,2024,121.872
+85,Accommodation and food services,accommodation and food services,2025,126.022
+86,Accommodation,accommodation,2016,97.917
+86,Accommodation,accommodation,2017,100.0
+86,Accommodation,accommodation,2018,102.743
+86,Accommodation,accommodation,2019,104.256
+86,Accommodation,accommodation,2020,106.475
+86,Accommodation,accommodation,2021,110.246
+86,Accommodation,accommodation,2022,118.354
+86,Accommodation,accommodation,2023,118.887
+86,Accommodation,accommodation,2024,121.054
+86,Accommodation,accommodation,2025,125.298
+87,Food services and drinking places,food services and drinking places,2016,98.065
+87,Food services and drinking places,food services and drinking places,2017,100.0
+87,Food services and drinking places,food services and drinking places,2018,101.973
+87,Food services and drinking places,food services and drinking places,2019,103.509
+87,Food services and drinking places,food services and drinking places,2020,104.593
+87,Food services and drinking places,food services and drinking places,2021,110.237
+87,Food services and drinking places,food services and drinking places,2022,118.645
+87,Food services and drinking places,food services and drinking places,2023,119.046
+87,Food services and drinking places,food services and drinking places,2024,121.872
+87,Food services and drinking places,food services and drinking places,2025,126.005
+88,"Other services, except government","other services, except government",2016,98.001
+88,"Other services, except government","other services, except government",2017,100.0
+88,"Other services, except government","other services, except government",2018,102.275
+88,"Other services, except government","other services, except government",2019,103.954
+88,"Other services, except government","other services, except government",2020,105.002
+88,"Other services, except government","other services, except government",2021,109.416
+88,"Other services, except government","other services, except government",2022,115.484
+88,"Other services, except government","other services, except government",2023,115.993
+88,"Other services, except government","other services, except government",2024,118.097
+88,"Other services, except government","other services, except government",2025,121.233
+89,Government,government,2016,96.394
+89,Government,government,2017,100.0
+89,Government,government,2018,104.391
+89,Government,government,2019,104.943
+89,Government,government,2020,103.427
+89,Government,government,2021,113.641
+89,Government,government,2022,129.023
+89,Government,government,2023,127.688
+89,Government,government,2024,128.677
+89,Government,government,2025,131.506
+90,Federal,federal,2016,97.661
+90,Federal,federal,2017,100.0
+90,Federal,federal,2018,103.002
+90,Federal,federal,2019,104.686
+90,Federal,federal,2020,104.576
+90,Federal,federal,2021,109.224
+90,Federal,federal,2022,118.502
+90,Federal,federal,2023,121.711
+90,Federal,federal,2024,124.675
+90,Federal,federal,2025,128.406
+91,General government,general government,2016,97.828
+91,General government,general government,2017,100.0
+91,General government,general government,2018,102.895
+91,General government,general government,2019,104.689
+91,General government,general government,2020,104.653
+91,General government,general government,2021,108.945
+91,General government,general government,2022,118.01
+91,General government,general government,2023,121.881
+91,General government,general government,2024,124.974
+91,General government,general government,2025,128.716
+92,National defense,national defense,2016,97.74
+92,National defense,national defense,2017,100.0
+92,National defense,national defense,2018,102.901
+92,National defense,national defense,2019,104.463
+92,National defense,national defense,2020,104.208
+92,National defense,national defense,2021,108.375
+92,National defense,national defense,2022,117.365
+92,National defense,national defense,2023,120.821
+92,National defense,national defense,2024,123.914
+92,National defense,national defense,2025,127.723
+93,Nondefense,nondefense,2016,98.001
+93,Nondefense,nondefense,2017,100.0
+93,Nondefense,nondefense,2018,102.883
+93,Nondefense,nondefense,2019,105.173
+93,Nondefense,nondefense,2020,105.56
+93,Nondefense,nondefense,2021,110.064
+93,Nondefense,nondefense,2022,119.259
+93,Nondefense,nondefense,2023,123.774
+93,Nondefense,nondefense,2024,126.869
+93,Nondefense,nondefense,2025,130.464
+94,Government enterprises,government enterprises,2016,96.039
+94,Government enterprises,government enterprises,2017,100.0
+94,Government enterprises,government enterprises,2018,104.184
+94,Government enterprises,government enterprises,2019,104.593
+94,Government enterprises,government enterprises,2020,103.509
+94,Government enterprises,government enterprises,2021,113.419
+94,Government enterprises,government enterprises,2022,125.595
+94,Government enterprises,government enterprises,2023,120.843
+94,Government enterprises,government enterprises,2024,122.057
+94,Government enterprises,government enterprises,2025,125.706
+95,State and local,state and local,2016,95.901
+95,State and local,state and local,2017,100.0
+95,State and local,state and local,2018,104.934
+95,State and local,state and local,2019,105.036
+95,State and local,state and local,2020,102.948
+95,State and local,state and local,2021,115.509
+95,State and local,state and local,2022,133.388
+95,State and local,state and local,2023,130.311
+95,State and local,state and local,2024,130.553
+95,State and local,state and local,2025,133.054
+96,General government,general government,2016,96.349
+96,General government,general government,2017,100.0
+96,General government,general government,2018,104.882
+96,General government,general government,2019,105.147
+96,General government,general government,2020,103.095
+96,General government,general government,2021,114.457
+96,General government,general government,2022,131.77
+96,General government,general government,2023,130.428
+96,General government,general government,2024,130.812
+96,General government,general government,2025,132.653
+97,Government enterprises,government enterprises,2016,94.353
+97,Government enterprises,government enterprises,2017,100.0
+97,Government enterprises,government enterprises,2018,105.112
+97,Government enterprises,government enterprises,2019,104.633
+97,Government enterprises,government enterprises,2020,102.423
+97,Government enterprises,government enterprises,2021,120.015
+97,Government enterprises,government enterprises,2022,140.258
+97,Government enterprises,government enterprises,2023,130.449
+97,Government enterprises,government enterprises,2024,130.177
+97,Government enterprises,government enterprises,2025,135.078
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2016,95.329
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2017,100.0
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2018,105.409
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2019,104.801
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2020,102.865
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2021,120.952
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2022,138.612
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2023,132.522
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2024,132.789
+98,Private goods-producing industries\1\,private goods-producing industries\1\,2025,137.452
+99,Private services-producing industries\2\,private services-producing industries\2\,2016,97.562
+99,Private services-producing industries\2\,private services-producing industries\2\,2017,100.0
+99,Private services-producing industries\2\,private services-producing industries\2\,2018,102.856
+99,Private services-producing industries\2\,private services-producing industries\2\,2019,104.52
+99,Private services-producing industries\2\,private services-producing industries\2\,2020,105.237
+99,Private services-producing industries\2\,private services-producing industries\2\,2021,111.046
+99,Private services-producing industries\2\,private services-producing industries\2\,2022,118.549
+99,Private services-producing industries\2\,private services-producing industries\2\,2023,118.76
+99,Private services-producing industries\2\,private services-producing industries\2\,2024,121.866
+99,Private services-producing industries\2\,private services-producing industries\2\,2025,125.549
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2016,98.699
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2017,100.0
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2018,101.908
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2019,103.198
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2020,103.931
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2021,108.236
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2022,114.067
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2023,113.79
+100,Information-communications-technology-producing industries\3\,information-communications-technology-producing industries\3\,2024,116.424
