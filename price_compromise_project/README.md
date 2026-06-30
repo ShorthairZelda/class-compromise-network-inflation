@@ -1,55 +1,44 @@
-# Price Compromise Project
+# 价格型阶级妥协实证项目目录
 
-This project studies the fragility of the price-based class compromise in the United States: low-price tradable goods partly buffered labor reproduction, but tariff war, supply-chain disruption, and rising local reproduction costs exposed the limits of this arrangement.
+本目录包含“价格型阶级妥协的脆弱性”项目的核心数据、代码、图表、回归表和 LaTeX 报告。仓库根目录的 `README.md` 提供完整研究概述；本文件说明项目目录内部结构和复现流程。
 
-## Current Research Design
+## 核心产出
 
-The current empirical strategy has two layers.
+- `Output/rebuild/reports/formal_empirical_chapter.pdf`：标准实证报告。
+- `Output/rebuild/reports/empirical_technical_document.pdf`：技术附录。
+- `Output/rebuild/reports/empirical_references.bib`：BibTeX 文献库。
+- `Output/rebuild/regressions/`：由 R `fixest::etable()` 直接导出的标准回归表。
+- `Output/rebuild/figures/`：正式报告使用的图形。
 
-First, the project uses BLS CPI-U category prices to show the boundary of the cheap-goods channel:
+## 数据目录
 
-- `CheapGoodsIndex`: tradable or globally organized consumer goods.
-- `LocalReproductionCostIndex`: locally embedded reproduction costs such as shelter, rent, medical care, and education.
-- `BasicReproductionCostIndex`: everyday reproduction costs such as shelter, food, energy, transportation, medical care, and education.
+- `Data/processed/`：CPI、FRED 和其他价格/工资序列的清洗结果。
+- `Data/rebuild/`：主样本实证面板和重建后的中间数据。
+- `Data/extended/`：2010-2025 年扩展样本稳健性数据。
+- `Data/analysis/`：早期分析面板和辅助数据。
+- `Data/cleaned/`：BEA、BLS、Section 301 等基础清洗数据。
 
-Second, the project uses Section 301 tariff exposure and the BEA 2019 input-output matrix to test whether tariff shocks propagate through industry networks into BEA gross-output and intermediate-input prices.
+## 代码目录
 
-Real-wage figures are retained as background evidence only. The reproduction-cost real wage is defined as nominal wages deflated by the constructed `BasicReproductionCostIndex`; it is not treated as the main causal outcome.
+- `src/10_rebuild_empirical_pipeline.py`：构造主样本数据、贸易品通胀暴露、产业网络暴露和汇总表。
+- `src/11_rebuild_network_regressions.R`：估计主回归、Luo 式上游/下游模型、关税网络模型和价格-工资压力缺口模型。
+- `src/12_rebuild_figures.R`：生成正式报告图形。
+- `src/13_build_extended_sample.py`：构造 2010-2025 年扩展样本。
+- `src/14_extended_sample_regressions.R`：估计扩展样本稳健性回归。
 
-## Main Draft
+## 复现流程
 
-- Formal empirical chapter PDF: `Output/rebuild/reports/formal_empirical_chapter.pdf`
-- Formal empirical chapter LaTeX: `Output/rebuild/reports/formal_empirical_chapter.tex`
-- BibTeX references: `Output/rebuild/reports/empirical_references.bib`
-- Rebuilt empirical report: `Output/rebuild/reports/rebuilt_empirical_report.md`
-
-## Install
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-The scripts also work with an existing Anaconda/Python environment if the packages in `requirements.txt` are available.
-
-On this machine, the tested interpreter was:
+从本目录运行：
 
 ```bash
-/opt/anaconda3/bin/python3
-```
-
-## Rebuild Current Results
-
-From the project root:
-
-```bash
-/Users/linian/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 src/10_rebuild_empirical_pipeline.py
-Rscript src/12_rebuild_figures.R /Users/linian/Documents/论文初稿/price_compromise_project
+python3 src/10_rebuild_empirical_pipeline.py
 Rscript src/11_rebuild_network_regressions.R /Users/linian/Documents/论文初稿/price_compromise_project
+Rscript src/12_rebuild_figures.R /Users/linian/Documents/论文初稿/price_compromise_project
+python3 src/13_build_extended_sample.py
+Rscript src/14_extended_sample_regressions.R /Users/linian/Documents/论文初稿/price_compromise_project
 ```
 
-Compile the formal empirical chapter:
+编译报告：
 
 ```bash
 cd Output/rebuild/reports
@@ -57,36 +46,15 @@ xelatex -interaction=nonstopmode formal_empirical_chapter.tex
 bibtex formal_empirical_chapter
 xelatex -interaction=nonstopmode formal_empirical_chapter.tex
 xelatex -interaction=nonstopmode formal_empirical_chapter.tex
+
+xelatex -interaction=nonstopmode empirical_technical_document.tex
+bibtex empirical_technical_document
+xelatex -interaction=nonstopmode empirical_technical_document.tex
+xelatex -interaction=nonstopmode empirical_technical_document.tex
 ```
 
-## Outputs
+## 主要识别设计
 
-Current rebuilt figures:
+主回归使用 BEA summary 行业年度面板，样本为 2017-2025 年、66 个行业。核心解释变量为 2019 年贸易品投入暴露与年度贸易品通胀率的交互项，并使用当期加一期滞后累计冲击。所有主模型包含行业固定效应和年份固定效应，标准误按行业聚类，基准规格使用行业总产出权重。
 
-- `Output/rebuild/figures/rebuild_fig1_index_divergence.png`
-- `Output/rebuild/figures/rebuild_fig1b_reproduction_to_cheap_gap.png`
-- `Output/rebuild/figures/rebuild_fig2_2025_category_levels.png`
-- `Output/rebuild/figures/rebuild_fig3_inflation_shock_window.png`
-- `Output/rebuild/figures/rebuild_fig4_cpi_301_exposure_by_class.png`
-- `Output/rebuild/figures/rebuild_fig5_industry_direct_vs_network_exposure.png`
-
-Current standard R regression tables:
-
-- `Output/rebuild/regressions/rebuild_table1_industry_price_network_main.tex`
-- `Output/rebuild/regressions/rebuild_table2_industry_price_network_robustness.tex`
-- `Output/rebuild/regressions/rebuild_table3_weighting_robustness.tex`
-- `Output/rebuild/regressions/rebuild_table4_event_study.tex`
-
-## Manual Data
-
-The first download script creates templates in `data/manual/`:
-
-- `tariff_exposure.csv`: baseline category-level tariff exposure. Replace with product-level or import-weighted exposure when available.
-- `cpi_to_bea_tariff_mapping.csv`: transparent mapping from CPI categories to BEA industry codes for importing Section 301 exposure from the old project.
-- `cpi_to_naics_tariff_mapping.csv`: NAICS6 fallback mapping, currently used for apparel/textile categories not covered in the BEA summary exposure file.
-- `import_dependence.csv`: baseline import-dependence or tradable dummy. Replace with category-level import shares if available.
-- `labor_conflict_manual.csv`: optional manual labor-conflict supplement.
-
-## Current Limitations
-
-The CPI category indexes are equal-weighted research indexes rather than official statistical indicators. PCE or CEX weights, childcare/eldercare series, and BLS PPI industry prices should be added in the next empirical iteration. Section 301 exposure is imported from the old HTS8/NAICS/BEA project and mapped to CPI and BEA categories; these mappings should be manually reviewed before being treated as final publication-quality exposure measures.
+扩展样本覆盖 2010-2025 年，用于检验主结果是否依赖短样本窗口。该扩展样本仍使用 2019 年投入产出矩阵，因此定位为稳健性检验，而不是对整个 2010 年代网络结构的完整历史重建。
