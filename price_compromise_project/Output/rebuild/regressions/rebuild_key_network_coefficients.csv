@@ -1,4 +1,32 @@
 "model_set","model","term","estimate","std_error","t_value","p_value","nobs"
+"local_reproduction_network","Input: core local x network","network_tariff_shock_cum01",0.143893755841693,0.0699637441450843,2.05669032725434,0.0437341113888672,594
+"local_reproduction_network","Input: core local x network","network_tariff_shock_cum01:local_reproduction_core",0.161940426116995,0.0611147296846498,2.64977734422787,0.0101025771101843,594
+"local_reproduction_network","Input: core local x network","tariff_direct_cum01_alt",-0.0671884592503349,0.0535901945787467,-1.25374538716419,0.214425161488269,594
+"local_reproduction_network","Input: extended local x network","network_tariff_shock_cum01",0.140301907111951,0.0709177423690283,1.97837526160765,0.0521273888763234,594
+"local_reproduction_network","Input: extended local x network","network_tariff_shock_cum01:local_reproduction_extended",0.0621154634169971,0.0512161533869258,1.21281000835283,0.229591902695564,594
+"local_reproduction_network","Input: extended local x network","tariff_direct_cum01_alt",-0.066626163597093,0.0549475870489365,-1.21254029840756,0.229694358087566,594
+"local_reproduction_network","Output: core local x network","network_tariff_shock_cum01",0.13662108409254,0.0872977562523828,1.56500109461646,0.122438553175669,594
+"local_reproduction_network","Output: core local x network","network_tariff_shock_cum01:local_reproduction_core",0.0249449395495395,0.0839536595768507,0.297127482890785,0.767316666535983,594
+"local_reproduction_network","Output: core local x network","tariff_direct_cum01_alt",-0.0711085032815977,0.0678530974844238,-1.04797726143484,0.298530294469171,594
+"local_reproduction_network","Output: extended local x network","network_tariff_shock_cum01",0.135549014345057,0.0878751577735654,1.5425180196471,0.127802568683779,594
+"local_reproduction_network","Output: extended local x network","network_tariff_shock_cum01:local_reproduction_extended",0.029400251985586,0.0624828691130035,0.470533002132378,0.639549394103052,594
+"local_reproduction_network","Output: extended local x network","tariff_direct_cum01_alt",-0.0702396026764755,0.0691857660088368,-1.01523198669946,0.313759432152526,594
+"luo_upstream_downstream_local","Input: core up/down","downstream_tariff_shock_cum01",0.0162139500657605,0.0429179307580595,0.377789650604618,0.706817736414523,594
+"luo_upstream_downstream_local","Input: core up/down","downstream_tariff_shock_cum01:local_reproduction_core",1.15562545328771,0.408426879717832,2.82945494205985,0.00619537299510104,594
+"luo_upstream_downstream_local","Input: core up/down","upstream_tariff_shock_cum01",0.14486808030473,0.0664435557162091,2.1803179968797,0.0328603443651285,594
+"luo_upstream_downstream_local","Input: core up/down","upstream_tariff_shock_cum01:local_reproduction_core",0.162900013923491,0.0652887159248507,2.49507149307385,0.0151424083276934,594
+"luo_upstream_downstream_local","Input: extended up/down","downstream_tariff_shock_cum01",0.0155534841229269,0.0430327537602923,0.361433623550221,0.718947532996482,594
+"luo_upstream_downstream_local","Input: extended up/down","downstream_tariff_shock_cum01:local_reproduction_extended",0.998961544589272,0.45947357754552,2.17414361436334,0.0333412209995066,594
+"luo_upstream_downstream_local","Input: extended up/down","upstream_tariff_shock_cum01",0.140478906844298,0.0672005663601316,2.09044230507617,0.0404933806023196,594
+"luo_upstream_downstream_local","Input: extended up/down","upstream_tariff_shock_cum01:local_reproduction_extended",0.0567368187444028,0.0536647332721783,1.05724589101456,0.29431288672747,594
+"luo_upstream_downstream_local","Output: core up/down","downstream_tariff_shock_cum01",-0.0970625153416104,0.0840512477382594,-1.15480159966059,0.252399516154743,594
+"luo_upstream_downstream_local","Output: core up/down","downstream_tariff_shock_cum01:local_reproduction_core",-0.54451108433127,0.6269038083086,-0.868571983635532,0.388277042812479,594
+"luo_upstream_downstream_local","Output: core up/down","upstream_tariff_shock_cum01",0.151872676019234,0.0966249507590267,1.57177493831785,0.120858209378971,594
+"luo_upstream_downstream_local","Output: core up/down","upstream_tariff_shock_cum01:local_reproduction_core",-0.0135641082409883,0.0827390711709487,-0.163938367315765,0.87028836277804,594
+"luo_upstream_downstream_local","Output: extended up/down","downstream_tariff_shock_cum01",-0.096959169539406,0.0840158050881079,-1.15405868500248,0.252701743843545,594
+"luo_upstream_downstream_local","Output: extended up/down","downstream_tariff_shock_cum01:local_reproduction_extended",-0.632021353116624,0.600971238825576,-1.05166655620946,0.29684667165587,594
+"luo_upstream_downstream_local","Output: extended up/down","upstream_tariff_shock_cum01",0.152003282576723,0.0973191189332748,1.5619056588556,0.123166200446054,594
+"luo_upstream_downstream_local","Output: extended up/down","upstream_tariff_shock_cum01:local_reproduction_extended",0.00183804262494495,0.0639164809956443,0.0287569433785037,0.977146553143441,594
 "main","Input: IO network","network_tariff_shock_cum01",0.0688989962550572,0.0209553934063838,3.28788846474569,0.00163107976540381,594
 "main","Input: Luo decomposition","downstream_tariff_shock_cum01",0.0126591681120707,0.0428174130448064,0.29565466972102,0.768436261946657,594
 "main","Input: Luo decomposition","upstream_tariff_shock_cum01",0.13963726213611,0.0669347830564916,2.08616889096748,0.0408918325373389,594
@@ -13,6 +41,40 @@
 "network_robustness","Output: 5pct network","network_tariff_shock_5pct_cum01",0.0599957458455307,0.0243709676903075,2.46177117822824,0.0164872585978855,594
 "network_robustness","Output: excl. own","network_tariff_shock_excl_own_cum01",0.0892774267261316,0.0408383659310222,2.18611652770155,0.0324142830864772,594
 "network_robustness","Output: full network","network_tariff_shock_cum01",0.0608344458641501,0.0247724497107023,2.45572991668515,0.0167424366740272,594
+"tradable_inflation_main","Input: core local x tradable input shock","tradable_input_inflation_shock_cum01",0.00541892082196897,0.00138627510003595,3.90897940951868,0.000223734263938642,594
+"tradable_inflation_main","Input: core local x tradable input shock","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00233878574289171,0.00136714068782171,-1.71071328922127,0.0919031659558326,594
+"tradable_inflation_main","Input: tradable input shock","tradable_input_inflation_shock_cum01",0.00547249466500061,0.00139193088050033,3.93158506766767,0.000207408810739407,594
+"tradable_inflation_main","Output: core local x tradable input shock","tradable_input_inflation_shock_cum01",0.00712688445546282,0.00189038096816134,3.7700783998025,0.000354586347367048,594
+"tradable_inflation_main","Output: core local x tradable input shock","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00778868117683754,0.00191328212844954,-4.07084823561763,0.00012941364853425,594
+"tradable_inflation_main","Output: tradable input shock","tradable_input_inflation_shock_cum01",0.0073052973708227,0.00189175821747296,3.86164431762387,0.000262007399447124,594
+"tradable_inflation_robustness","Input: broad supply-chain inputs","goods_supply_chain_inflation_shock_cum01",0.00559187744091516,0.00144598230610638,3.86718248024243,0.000257224447760841,594
+"tradable_inflation_robustness","Input: broad supply-chain inputs","goods_supply_chain_inflation_shock_cum01:local_reproduction_core",-0.00106664447917299,0.00136028838471826,-0.784131138040934,0.435811437533965,594
+"tradable_inflation_robustness","Input: narrow tradable inputs","tradable_input_inflation_shock_cum01",0.00541892082196897,0.00138627510003595,3.90897940951868,0.000223734263938642,594
+"tradable_inflation_robustness","Input: narrow tradable inputs","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00233878574289171,0.00136714068782171,-1.71071328922127,0.0919031659558326,594
+"tradable_inflation_robustness","Output: broad supply-chain inputs","goods_supply_chain_inflation_shock_cum01",0.00779671750117319,0.00182894657447302,4.26295530443238,6.66242247805746e-05,594
+"tradable_inflation_robustness","Output: broad supply-chain inputs","goods_supply_chain_inflation_shock_cum01:local_reproduction_core",-0.00548603035304666,0.0016993388323433,-3.22833224818485,0.00195296423633388,594
+"tradable_inflation_robustness","Output: narrow tradable inputs","tradable_input_inflation_shock_cum01",0.00712688445546282,0.00189038096816134,3.7700783998025,0.000354586347367048,594
+"tradable_inflation_robustness","Output: narrow tradable inputs","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00778868117683754,0.00191328212844954,-4.07084823561763,0.00012941364853425,594
+"tradable_inflation_upstream_downstream","Input: core local up/down","tradable_downstream_inflation_shock_cum01",-0.000980440759185307,0.00223529365775312,-0.438618324614597,0.662392567520579,594
+"tradable_inflation_upstream_downstream","Input: core local up/down","tradable_downstream_inflation_shock_cum01:local_reproduction_core",0.0296299192069834,0.0118343162432996,2.50372886762759,0.014809361341318,594
+"tradable_inflation_upstream_downstream","Input: core local up/down","tradable_input_inflation_shock_cum01",0.00605687973477591,0.00221430837464645,2.73533704886203,0.00802402041132612,594
+"tradable_inflation_upstream_downstream","Input: core local up/down","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00307669144207528,0.00207292065088241,-1.48423020474304,0.142581259499439,594
+"tradable_inflation_upstream_downstream","Input: upstream/downstream","tradable_downstream_inflation_shock_cum01",-0.000637999893552561,0.00205000272461901,-0.311219046633771,0.756630047757303,594
+"tradable_inflation_upstream_downstream","Input: upstream/downstream","tradable_input_inflation_shock_cum01",0.00581607933161532,0.00213016797279476,2.73033836105642,0.00813375977507306,594
+"tradable_inflation_upstream_downstream","Output: core local up/down","tradable_downstream_inflation_shock_cum01",-0.000509716621693163,0.00350330043418125,-0.145496120378351,0.884769429798067,594
+"tradable_inflation_upstream_downstream","Output: core local up/down","tradable_downstream_inflation_shock_cum01:local_reproduction_core",0.0100547931597655,0.0143361602637463,0.701358869793915,0.485582610173802,594
+"tradable_inflation_upstream_downstream","Output: core local up/down","tradable_input_inflation_shock_cum01",0.00743618181231093,0.00308229976097674,2.41254335689742,0.0186722863330492,594
+"tradable_inflation_upstream_downstream","Output: core local up/down","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00814893487799943,0.00292408921567749,-2.78682840260446,0.0069699969547753,594
+"tradable_inflation_upstream_downstream","Output: upstream/downstream","tradable_downstream_inflation_shock_cum01",0.000392324551445903,0.00327900796113502,0.119647331173329,0.905131564732761,594
+"tradable_inflation_upstream_downstream","Output: upstream/downstream","tradable_input_inflation_shock_cum01",0.00709401724119333,0.00301486843258449,2.35301055413287,0.0216585597751115,594
+"tradable_pressure_gap","Input price-wage gap: core local","tradable_input_inflation_shock_cum01",0.00441799863238763,0.00173264004947903,2.54986523814686,0.0132624897242438,559
+"tradable_pressure_gap","Input price-wage gap: core local","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.0068773214388046,0.00266390624757556,-2.58166797163515,0.0122099728790842,559
+"tradable_pressure_gap","Input price-wage gap: up/down","tradable_downstream_inflation_shock_cum01",-0.00181602171574637,0.00297772572262011,-0.609868700112664,0.544177596437051,559
+"tradable_pressure_gap","Input price-wage gap: up/down","tradable_downstream_inflation_shock_cum01:local_reproduction_core",1.71412848986951,0.365973458081271,4.68375083498228,1.58275818074561e-05,559
+"tradable_pressure_gap","Input price-wage gap: up/down","tradable_input_inflation_shock_cum01",0.00562087731486951,0.00278101664289696,2.02115917904551,0.0475863942177572,559
+"tradable_pressure_gap","Input price-wage gap: up/down","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00874464330301499,0.00369652915374818,-2.36563623315351,0.0211403194373527,559
+"tradable_pressure_gap","Output price-wage gap: core local","tradable_input_inflation_shock_cum01",0.00544343722550466,0.00227768794737282,2.38989596085072,0.0199064800395884,559
+"tradable_pressure_gap","Output price-wage gap: core local","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.012271074637217,0.00260677472947436,-4.70737823965764,1.45351756166282e-05,559
 "weighting_robustness","Input unweighted","network_tariff_shock_cum01",0.0723857454580584,0.0245130399090666,2.95294854194258,0.00437669159614208,594
 "weighting_robustness","Input weighted","network_tariff_shock_cum01",0.0688989962550572,0.0209553934063838,3.28788846474569,0.00163107976540381,594
 "weighting_robustness","Output unweighted","network_tariff_shock_cum01",0.0642476252991783,0.0277383284613656,2.31620392658712,0.0237110540415985,594

@@ -1,0 +1,67 @@
+Table 5. Network tariff exposure and local reproduction-sector heterogeneity
+
+                                                   Output: core local x ne..
+Dependent Var.:                                    Gross output price growth
+                                                                            
+Direct Section 301 exposure, t plus t-1                     -0.0711 (0.0678)
+I-O network tariff exposure, t plus t-1                      0.1366 (0.0873)
+I-O network exposure x core local reproduction               0.0249 (0.0839)
+I-O network exposure x extended local reproduction                          
+Fixed-Effects:                                     -------------------------
+industry_fe                                                              Yes
+year                                                                     Yes
+________________________________________           _________________________
+S.E.: Clustered                                              by: industry_fe
+Observations                                                             594
+R2                                                                   0.22815
+Within R2                                                            0.00550
+
+                                                   Output: extended local ..
+Dependent Var.:                                    Gross output price growth
+                                                                            
+Direct Section 301 exposure, t plus t-1                     -0.0702 (0.0692)
+I-O network tariff exposure, t plus t-1                      0.1355 (0.0879)
+I-O network exposure x core local reproduction                              
+I-O network exposure x extended local reproduction           0.0294 (0.0625)
+Fixed-Effects:                                     -------------------------
+industry_fe                                                              Yes
+year                                                                     Yes
+________________________________________           _________________________
+S.E.: Clustered                                              by: industry_fe
+Observations                                                             594
+R2                                                                   0.22817
+Within R2                                                            0.00552
+
+                                                       Input: core local x network
+Dependent Var.:                                    Intermediate input price growth
+                                                                                  
+Direct Section 301 exposure, t plus t-1                           -0.0672 (0.0536)
+I-O network tariff exposure, t plus t-1                          0.1439** (0.0700)
+I-O network exposure x core local reproduction                   0.1619** (0.0611)
+I-O network exposure x extended local reproduction                                
+Fixed-Effects:                                      ------------------------------
+industry_fe                                                                    Yes
+year                                                                           Yes
+________________________________________            ______________________________
+S.E.: Clustered                                                    by: industry_fe
+Observations                                                                   594
+R2                                                                         0.44837
+Within R2                                                                  0.01301
+
+                                                   Input: extended local x network
+Dependent Var.:                                    Intermediate input price growth
+                                                                                  
+Direct Section 301 exposure, t plus t-1                           -0.0666 (0.0549)
+I-O network tariff exposure, t plus t-1                           0.1403* (0.0709)
+I-O network exposure x core local reproduction                                    
+I-O network exposure x extended local reproduction                 0.0621 (0.0512)
+Fixed-Effects:                                      ------------------------------
+industry_fe                                                                    Yes
+year                                                                           Yes
+________________________________________            ______________________________
+S.E.: Clustered                                                    by: industry_fe
+Observations                                                                   594
+R2                                                                         0.44809
+Within R2                                                                  0.01252
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

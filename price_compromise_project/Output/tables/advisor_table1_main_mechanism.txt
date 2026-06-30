@@ -1,0 +1,43 @@
+Table 1. Main mechanism: network tariff shocks, prices, and wages 
+All models include industry/NAICS fixed effects and year fixed effects. Standard errors are clustered by industry/NAICS.
+
+                                        Output price        Input price
+Dependent Var.:                  Output price growth Input price growth
+                                                                       
+Network tariff shock, t plus t-1   0.0643** (0.0277) 0.0724*** (0.0245)
+Fixed-Effects:                   ------------------- ------------------
+industry_fe                                      Yes                Yes
+year                                             Yes                Yes
+________________________________ ___________________ __________________
+S.E.: Clustered                      by: industry_fe    by: industry_fe
+Observations                                     594                594
+R2                                           0.25440            0.50864
+Within R2                                    0.00138            0.00473
+
+                                        Nominal wage
+Dependent Var.:                  Nominal wage growth
+                                                    
+Network tariff shock, t plus t-1     0.0166 (0.0208)
+Fixed-Effects:                   -------------------
+industry_fe                                      Yes
+year                                             Yes
+________________________________ ___________________
+S.E.: Clustered                      by: industry_fe
+Observations                                     559
+R2                                           0.13789
+Within R2                                    0.00028
+
+                                                       Real wage
+Dependent Var.:                  Industry-price real wage growth
+                                                                
+Network tariff shock, t plus t-1                -0.0575 (0.0346)
+Fixed-Effects:                    ------------------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________  ______________________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 559
+R2                                                       0.26106
+Within R2                                                0.00087
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

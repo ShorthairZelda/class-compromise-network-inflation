@@ -1,0 +1,177 @@
+\documentclass[11pt]{ctexart}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\setstretch{1.16}
+
+\title{价格型阶级妥协的实证报告}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{一、核心命题}
+
+本文试图说明：低价供给主要集中在可贸易消费品和可由全球供应链组织生产的商品上。对于住房、医疗、教育、养老和育儿等高度依赖本地制度安排、公共服务体系、资产价格结构和本地劳动投入的劳动力再生产成本，全球低成本生产和流通体系的缓冲能力较为有限。
+
+因此，价格型阶级妥协能够通过全球低成本生产和流通压低部分商品价格，却难以同样压低那些无法外包、无法进口或高度依赖本地制度供给的再生产成本。它不是一种完整的再生产保障机制，而是一种局部的、阶段性的稳定机制。
+
+\section*{二、经验策略与数据}
+
+本文使用 2016--2025 年美国行业面板数据，以 2019 年 BEA 投入产出表构造固定产业网络，并将 Section 301 关税作为外生冲击。核心解释变量为上游行业关税暴露的投入份额加权和：
+\[
+NetworkShock_{it}=\sum_j s_{ij,2019}TariffShock_{jt}.
+\]
+
+主模型为行业和年份双向固定效应：
+\[
+Y_{it}=\beta NetworkShock_{it}+\alpha_i+\lambda_t+\varepsilon_{it}.
+\]
+其中 \(Y_{it}\) 包括总产出价格增长、中间品投入价格增长、名义工资增长、行业价格实际工资增长和价格-工资缺口。标准误按行业聚类。季度扩展使用行业固定效应和年-季度固定效应。
+
+数据包括 BEA 2019 投入产出表、BEA 行业价格数据、BLS QCEW 工资数据、USTR Section 301 关税清单、FRED/BLS PCE 与 CPI 数据。关税冲击从 HTS8 产品清单出发，结合 2017 年中国进口权重映射到 NAICS 和 BEA 行业。
+
+\section*{三、宏观事实：低价贸易品缓冲与后疫情反转}
+
+使用 BLS CPI-U 数据，贸易品代理为核心商品，非贸易品代理为核心服务。2015--2020 年贸易品通胀长期低于非贸易品通胀，说明贸易品价格确实在低通胀时期提供了低价缓冲。2021--2022 年贸易品通胀快速上升并超过服务通胀，表明供应链和商品价格冲击集中释放。2023 年以后，贸易品通胀回落，而服务通胀更持久，说明住房、医疗、教育、养老、育儿等本地服务型再生产成本并不能被全球低价商品机制充分压低。
+
+\begin{center}
+\includegraphics[width=0.88\textwidth]{../figures/tradable_nontradable_inflation_2015_2025.png}
+\end{center}
+
+\begin{table}[htbp]
+\centering
+\caption{贸易品与非贸易品通胀事实}
+\begin{tabular}{rrrr}
+\toprule
+年份 & 贸易品通胀 & 非贸易品通胀 & 贸易品-非贸易品 \\
+\midrule
+2015 & -0.464 & 2.609 & -3.073 \\
+2016 & -0.483 & 3.100 & -3.583 \\
+2017 & -0.728 & 2.672 & -3.400 \\
+2018 & -0.197 & 2.898 & -3.095 \\
+2019 & 0.219 & 2.851 & -2.631 \\
+2020 & 0.149 & 2.211 & -2.062 \\
+2021 & 6.340 & 2.621 & 3.719 \\
+2022 & 7.629 & 5.643 & 1.986 \\
+2023 & 0.883 & 6.244 & -5.361 \\
+2024 & -1.073 & 4.996 & -6.069 \\
+2025 & 0.731 & 3.480 & -2.749 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section*{四、主回归结果}
+
+主回归显示，产业网络关税冲击显著推高价格，尤其显著推高中间品投入价格。完整 IO 网络冲击对总产出价格的影响为 0.0643，在 5\% 水平显著；对中间品投入价格的影响为 0.0724，在 1\% 水平显著。名义工资没有同步显著上升，行业价格实际工资为负但在年度样本中只提供方向性证据。
+
+\subsection*{表 1：主机制结果}
+\begin{adjustbox}{max width=\textwidth}
+\input{../tables/advisor_table1_main_mechanism.tex}
+\end{adjustbox}
+
+强连接网络结果进一步支持该机制。按照投入份额超过 5\% 的关键供应链连接构造网络冲击后，总产出价格和中间品投入价格仍显著为正，价格-工资缺口扩大和实际工资下降在 10\% 水平边际显著。
+
+\subsection*{表 2：强连接网络与价格-工资缺口}
+\begin{adjustbox}{max width=\textwidth}
+\input{../tables/advisor_table2_strong_links_gap.tex}
+\end{adjustbox}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{../figures/industry_network_5pct_strong_links.png}
+\caption{2019 年 BEA 投入产出表构造的 5\% 强连接产业网络。橙色节点为贸易品/全球供应链部门，蓝色节点为非贸易品或本地服务部门。}
+\end{figure}
+
+\section*{五、空间计量式产业 W 矩阵检验}
+
+为进一步检验产业邻接网络中的冲击扩散，本文借鉴空间计量经济学构造产业 \(W\) 矩阵，包括投入份额矩阵、5\% 强连接邻接矩阵、对称化产业邻接矩阵和基于最短路径距离的产业网络矩阵。模型形式为：
+\[
+Y_{it}=\beta DirectShock_{it}+\theta WShock_{it}+\alpha_i+\lambda_t+\varepsilon_{it}.
+\]
+
+结果显示，基于 5\% 强连接邻接矩阵的 \(WShock\) 显著推高中间品投入价格，系数为 0.0624，p 值为 0.0280。这说明价格压力并非仅停留在直接受关税影响的行业，而是沿产业邻接关系扩散。不过，空间 \(W\) 模型没有显著改善实际工资结果，因此更适合作为价格传导机制的稳健性检验。
+
+为增强 \(W\) 矩阵构造的可读性，下面将四种空间权重矩阵分别展示。每张热力图中，横轴表示相邻或供给产业，纵轴表示受影响或使用产业，颜色越深表示行标准化后的权重越大。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{../figures/spatial_w_input_share_heatmap.png}
+\caption{投入份额 \(W\) 矩阵热力图}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{../figures/spatial_w_binary_5pct_heatmap_large.png}
+\caption{5\% 强连接 \(W\) 矩阵热力图}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{../figures/spatial_w_symmetric_io_heatmap.png}
+\caption{对称化投入产出 \(W\) 矩阵热力图}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.86\textwidth]{../figures/spatial_w_inverse_distance_heatmap.png}
+\caption{产业网络反距离 \(W\) 矩阵热力图}
+\end{figure}
+
+\subsection*{表 3：空间 W 模型的中间品投入价格结果}
+\begin{adjustbox}{max width=\textwidth}
+\input{../tables/spatial_w_input_price_etable.tex}
+\end{adjustbox}
+
+\section*{六、劳动密集型行业异质性}
+
+季度数据提供了更有力的工资端异质性证据。以 2019 年劳动份额中位数划分劳动密集型和资本密集型行业后，交互项模型显示：资本密集型行业的实际工资效应约为 -0.052，未显著；劳动密集型行业的总效应约为 -0.153，p 值为 0.0288，在 5\% 水平显著。劳动密集型相对资本密集型的差异约为 -0.101，在 10\% 水平边际显著。
+
+替代口径中，使用雇员报酬占增加值的劳动份额定义，劳动密集型行业的实际工资下降仍然显著。该结果说明，网络价格冲击对劳动密集型行业的实际工资压缩更强，支持“工资补偿不足导致再生产压力上升”的机制。
+
+\subsection*{表 4：季度劳动份额异质性标准回归表}
+\begin{adjustbox}{max width=\textwidth}
+\input{../tables/quarterly_labor_share_heterogeneity_etable.tex}
+\end{adjustbox}
+
+上表为 R 中 \texttt{fixest::etable} 直接导出的标准回归表。第 (4) 列显示，在共同年-季度固定效应下，网络冲击与高劳动份额行业的交互项为 -0.1013，并在 10\% 水平显著；第 (6) 列使用增加值劳动份额替代口径时，交互项为 -0.0928，同样在 10\% 水平显著。由于交互模型中的基准项对应资本密集型行业，下表进一步报告线性组合后的资本密集型总效应、劳动密集型总效应和二者差异。
+
+\begin{table}[H]
+\centering
+\caption{劳动/资本密集型行业实际工资效应：线性组合结果}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llrrr}
+\toprule
+设定 & 组别 & 估计值 & 标准误 & p值 \\
+\midrule
+总产出劳动份额 + 共同时间 FE & 资本密集型 & -0.052 & 0.038 & 0.174 \\
+总产出劳动份额 + 共同时间 FE & 劳动密集型 & -0.153 & 0.069 & 0.029 \\
+总产出劳动份额 + 共同时间 FE & 劳动-资本差异 & -0.101 & 0.058 & 0.083 \\
+增加值劳动份额 + 共同时间 FE & 资本密集型 & -0.038 & 0.041 & 0.354 \\
+增加值劳动份额 + 共同时间 FE & 劳动密集型 & -0.131 & 0.053 & 0.016 \\
+增加值劳动份额 + 分组时间 FE & 劳动密集型 & -0.111 & 0.032 & 0.001 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\section*{七、综合解释}
+
+这些结果共同支持一个较为清晰的经验叙事。第一，低价贸易品在 2015--2020 年确实构成了低通胀环境的重要组成部分。第二，当 Section 301 关税和供应链冲击发生后，价格压力通过产业投入产出网络传导，尤其体现在中间品投入价格上。第三，名义工资没有同步补偿价格冲击，年度实际工资结果方向为负但显著性较弱。第四，季度异质性结果显示，劳动密集型行业实际工资压缩更明显，说明工资补偿不足并非完全不存在，而是在更容易受劳动成本和本地再生产压力影响的行业中更突出。
+
+因此，本文不主张价格型阶级妥协能够完整保障劳动力再生产。相反，它说明全球低成本生产和流通只能压低可贸易商品和部分供应链商品价格，却难以压低住房、医疗、教育、养老和育儿等本地制度嵌入型再生产成本。当可贸易商品的低价缓冲被关税和供应链冲击削弱时，价格型阶级妥协的局限性就会暴露。
+
+\section*{八、可写入论文的结论}
+
+本文的实证结果表明，Section 301 关税冲击通过产业投入产出网络显著推高行业价格，尤其显著推高中间品投入价格；这种传导在关键供应链连接和空间计量式产业邻接矩阵下仍然成立。与此同时，工资端没有出现同步补偿，实际工资压缩在年度样本中表现为方向性证据，在季度劳动密集型行业中表现为显著结果。由此可见，价格型阶级妥协不是一种完整的再生产保障机制，而是一种依赖低价贸易品和全球供应链条件的局部、阶段性稳定机制。
+
+\end{document}

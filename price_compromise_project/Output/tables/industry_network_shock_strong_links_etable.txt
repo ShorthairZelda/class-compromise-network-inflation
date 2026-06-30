@@ -1,0 +1,64 @@
+Table. Industry network shock model: strong IO links 
+Industry network shock model. All models include BEA summary industry fixed effects and year fixed effects. Standard errors are clustered by industry.
+
+                                                Output price        Input price
+Dependent Var.:                          Output price growth Input price growth
+                                                                               
+Own tariff shock, t plus t-1                -0.0254 (0.0684)   -0.0478 (0.0469)
+Strong-link upstream shock, t plus t-1       0.1576 (0.1047)   0.1386* (0.0748)
+Strong-link downstream shock, t plus t-1   -0.1083* (0.0621)    0.0108 (0.0250)
+Fixed-Effects:                           ------------------- ------------------
+industry_fe                                              Yes                Yes
+year                                                     Yes                Yes
+________________________________________ ___________________ __________________
+S.E.: Clustered                              by: industry_fe    by: industry_fe
+Observations                                             594                594
+R2                                                   0.25858            0.51014
+Within R2                                            0.00697            0.00777
+
+                                                               Real wage
+Dependent Var.:                          Industry-price real wage growth
+                                                                        
+Own tariff shock, t plus t-1                             0.0389 (0.0687)
+Strong-link upstream shock, t plus t-1                  -0.1851 (0.1204)
+Strong-link downstream shock, t plus t-1                0.1032* (0.0595)
+Fixed-Effects:                            ------------------------------
+industry_fe                                                          Yes
+year                                                                 Yes
+________________________________________  ______________________________
+S.E.: Clustered                                          by: industry_fe
+Observations                                                         559
+R2                                                               0.26461
+Within R2                                                        0.00568
+
+                                                         Price-wage gap
+Dependent Var.:                          Output price minus wage growth
+                                                                       
+Own tariff shock, t plus t-1                           -0.0389 (0.0687)
+Strong-link upstream shock, t plus t-1                  0.1851 (0.1204)
+Strong-link downstream shock, t plus t-1              -0.1032* (0.0595)
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+________________________________________ ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        559
+R2                                                              0.26461
+Within R2                                                       0.00568
+
+                                                  Input price-wage gap
+Dependent Var.:                          Input price minus wage growth
+                                                                      
+Own tariff shock, t plus t-1                          -0.0556 (0.0486)
+Strong-link upstream shock, t plus t-1                 0.1497 (0.0935)
+Strong-link downstream shock, t plus t-1               0.0180 (0.0244)
+Fixed-Effects:                           -----------------------------
+industry_fe                                                        Yes
+year                                                               Yes
+________________________________________ _____________________________
+S.E.: Clustered                                        by: industry_fe
+Observations                                                       559
+R2                                                             0.39652
+Within R2                                                      0.00459
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

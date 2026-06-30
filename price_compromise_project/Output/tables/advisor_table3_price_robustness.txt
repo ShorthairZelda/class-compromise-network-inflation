@@ -1,0 +1,68 @@
+Table 3. Price robustness across tariff exposure measures 
+All models include industry/NAICS fixed effects and year fixed effects. Standard errors are clustered by industry/NAICS.
+
+                                                    Direct shock
+Dependent Var.:                              Output price growth
+                                                                
+Direct tariff shock, t plus t-1                  0.0060 (0.0331)
+Network tariff shock, t plus t-1                                
+Network tariff shock excluding own industry                     
+Strong-link network tariff shock, t plus t-1                    
+Fixed-Effects:                               -------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________________     ___________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 594
+R2                                                       0.25341
+Within R2                                                4.72e-5
+
+                                                 Full IO network
+Dependent Var.:                              Output price growth
+                                                                
+Direct tariff shock, t plus t-1                                 
+Network tariff shock, t plus t-1               0.0643** (0.0277)
+Network tariff shock excluding own industry                     
+Strong-link network tariff shock, t plus t-1                    
+Fixed-Effects:                               -------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________________     ___________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 594
+R2                                                       0.25440
+Within R2                                                0.00138
+
+                                              Excl. own industry
+Dependent Var.:                              Output price growth
+                                                                
+Direct tariff shock, t plus t-1                                 
+Network tariff shock, t plus t-1                                
+Network tariff shock excluding own industry      0.0895 (0.0553)
+Strong-link network tariff shock, t plus t-1                    
+Fixed-Effects:                               -------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________________     ___________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 594
+R2                                                       0.25418
+Within R2                                                0.00108
+
+                                                 Strong IO links
+Dependent Var.:                              Output price growth
+                                                                
+Direct tariff shock, t plus t-1                                 
+Network tariff shock, t plus t-1                                
+Network tariff shock excluding own industry                     
+Strong-link network tariff shock, t plus t-1   0.0637** (0.0269)
+Fixed-Effects:                               -------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________________     ___________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 594
+R2                                                       0.25429
+Within R2                                                0.00123
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

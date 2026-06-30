@@ -1,0 +1,59 @@
+Table 1. Tradable-goods inflation exposure and industry price growth
+
+                                                         Output: tradable input ..
+Dependent Var.:                                          Gross output price growth
+                                                                                  
+Tradable-goods input inflation shock, t plus t-1                0.0073*** (0.0019)
+Tradable input inflation shock x core local reproduction                          
+Fixed-Effects:                                           -------------------------
+industry_fe                                                                    Yes
+year                                                                           Yes
+________________________________________                 _________________________
+S.E.: Clustered                                                    by: industry_fe
+Observations                                                                   594
+R2                                                                         0.26028
+Within R2                                                                  0.04691
+
+                                                             Input: tradable input shock
+Dependent Var.:                                          Intermediate input price growth
+                                                                                        
+Tradable-goods input inflation shock, t plus t-1                      0.0055*** (0.0014)
+Tradable input inflation shock x core local reproduction                                
+Fixed-Effects:                                            ------------------------------
+industry_fe                                                                          Yes
+year                                                                                 Yes
+________________________________________                  ______________________________
+S.E.: Clustered                                                          by: industry_fe
+Observations                                                                         594
+R2                                                                               0.47203
+Within R2                                                                        0.05534
+
+                                                         Output: core local x tr..
+Dependent Var.:                                          Gross output price growth
+                                                                                  
+Tradable-goods input inflation shock, t plus t-1                0.0071*** (0.0019)
+Tradable input inflation shock x core local reproduction       -0.0078*** (0.0019)
+Fixed-Effects:                                           -------------------------
+industry_fe                                                                    Yes
+year                                                                           Yes
+________________________________________                 _________________________
+S.E.: Clustered                                                    by: industry_fe
+Observations                                                                   594
+R2                                                                         0.26291
+Within R2                                                                  0.05029
+
+                                                         Input: core local x tradable ..
+Dependent Var.:                                          Intermediate input price growth
+                                                                                        
+Tradable-goods input inflation shock, t plus t-1                      0.0054*** (0.0014)
+Tradable input inflation shock x core local reproduction               -0.0023* (0.0014)
+Fixed-Effects:                                            ------------------------------
+industry_fe                                                                          Yes
+year                                                                                 Yes
+________________________________________                  ______________________________
+S.E.: Clustered                                                          by: industry_fe
+Observations                                                                         594
+R2                                                                               0.47239
+Within R2                                                                        0.05598
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

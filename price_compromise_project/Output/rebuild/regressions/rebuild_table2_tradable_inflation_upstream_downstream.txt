@@ -1,0 +1,67 @@
+Table 2. Luo-style upstream/downstream tradable-inflation propagation
+
+                                                              Output: upstream/downst..
+Dependent Var.:                                               Gross output price growth
+                                                                                       
+Tradable-goods input inflation shock, t plus t-1                      0.0071** (0.0030)
+Tradable-goods downstream inflation shock, t plus t-1                   0.0004 (0.0033)
+Tradable input inflation shock x core local reproduction                               
+Tradable downstream inflation shock x core local reproduction                          
+Fixed-Effects:                                                -------------------------
+industry_fe                                                                         Yes
+year                                                                                Yes
+________________________________________                      _________________________
+S.E.: Clustered                                                         by: industry_fe
+Observations                                                                        594
+R2                                                                              0.26032
+Within R2                                                                       0.04695
+
+                                                                   Input: upstream/downstream
+Dependent Var.:                                               Intermediate input price growth
+                                                                                             
+Tradable-goods input inflation shock, t plus t-1                           0.0058*** (0.0021)
+Tradable-goods downstream inflation shock, t plus t-1                        -0.0006 (0.0021)
+Tradable input inflation shock x core local reproduction                                     
+Tradable downstream inflation shock x core local reproduction                                
+Fixed-Effects:                                                 ------------------------------
+industry_fe                                                                               Yes
+year                                                                                      Yes
+________________________________________                       ______________________________
+S.E.: Clustered                                                               by: industry_fe
+Observations                                                                              594
+R2                                                                                    0.47218
+Within R2                                                                             0.05561
+
+                                                              Output: core local up/d..
+Dependent Var.:                                               Gross output price growth
+                                                                                       
+Tradable-goods input inflation shock, t plus t-1                      0.0074** (0.0031)
+Tradable-goods downstream inflation shock, t plus t-1                  -0.0005 (0.0035)
+Tradable input inflation shock x core local reproduction            -0.0081*** (0.0029)
+Tradable downstream inflation shock x core local reproduction           0.0100 (0.0143)
+Fixed-Effects:                                                -------------------------
+industry_fe                                                                         Yes
+year                                                                                Yes
+________________________________________                      _________________________
+S.E.: Clustered                                                         by: industry_fe
+Observations                                                                        594
+R2                                                                              0.26300
+Within R2                                                                       0.05041
+
+                                                                    Input: core local up/down
+Dependent Var.:                                               Intermediate input price growth
+                                                                                             
+Tradable-goods input inflation shock, t plus t-1                           0.0061*** (0.0022)
+Tradable-goods downstream inflation shock, t plus t-1                        -0.0010 (0.0022)
+Tradable input inflation shock x core local reproduction                     -0.0031 (0.0021)
+Tradable downstream inflation shock x core local reproduction               0.0296** (0.0118)
+Fixed-Effects:                                                 ------------------------------
+industry_fe                                                                               Yes
+year                                                                                      Yes
+________________________________________                       ______________________________
+S.E.: Clustered                                                               by: industry_fe
+Observations                                                                              594
+R2                                                                                    0.47315
+Within R2                                                                             0.05735
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

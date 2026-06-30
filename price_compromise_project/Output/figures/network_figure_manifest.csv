@@ -1,0 +1,8 @@
+figure,source,note
+industry_network_5pct_strong_links.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/cleaned/bea_input_coefficients_2019.csv,5% strong directed input-output links from BEA 2019 coefficients. Nodes are colored by heuristic tradable/nontradable classification.
+spatial_w_matrices_heatmap.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/analysis/spatial_industry_w_matrices_long.csv,Four row-normalized spatial industry W matrices used in spatial/network regressions.
+spatial_w_binary_5pct_heatmap.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/analysis/spatial_industry_w_matrices_long.csv,The 5% strong-link W matrix used for the strongest input-price spatial result.
+spatial_w_input_share_heatmap.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/analysis/spatial_industry_w_matrices_long.csv,Input-share W matrix shown as a standalone large heatmap.
+spatial_w_binary_5pct_heatmap_large.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/analysis/spatial_industry_w_matrices_long.csv,5% strong-link W matrix shown as a standalone large heatmap.
+spatial_w_symmetric_io_heatmap.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/analysis/spatial_industry_w_matrices_long.csv,Symmetric IO W matrix shown as a standalone large heatmap.
+spatial_w_inverse_distance_heatmap.png,/Users/linian/Desktop/PROJ_completed/proj_class_compromise/Data/analysis/spatial_industry_w_matrices_long.csv,Inverse-distance W matrix shown as a standalone large heatmap.

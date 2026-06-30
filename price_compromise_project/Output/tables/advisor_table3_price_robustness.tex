@@ -1,0 +1,30 @@
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{Output price growth}\\
+   Model:                                       & (1)                   & (2)           & (3)      & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   Direct tariff shock, t plus t-1              & 0.0060                &               &          &   \\   
+                                                & (0.0331)              &               &          &   \\   
+   Network tariff shock, t plus t-1             &                       & 0.0643$^{**}$ &          &   \\   
+                                                &                       & (0.0277)      &          &   \\   
+   Network tariff shock excluding own industry  &                       &               & 0.0895   &   \\   
+                                                &                       &               & (0.0553) &   \\   
+   Strong-link network tariff shock, t plus t-1 &                       &               &          & 0.0637$^{**}$\\   
+                                                &                       &               &          & (0.0269)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   industry\_fe                                 & Yes                   & Yes           & Yes      & Yes\\  
+   year                                         & Yes                   & Yes           & Yes      & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                                 & 594                   & 594           & 594      & 594\\  
+   R$^2$                                        & 0.25341               & 0.25440       & 0.25418  & 0.25429\\  
+   Within R$^2$                                 & $4.72\times 10^{-5}$  & 0.00138       & 0.00108  & 0.00123\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Clustered (industry\_fe) standard-errors in parentheses}}\\
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup

@@ -1,0 +1,32 @@
+\begingroup
+\centering
+\begin{tabular}{lcccc}
+   \tabularnewline \midrule \midrule
+   Dependent Variable: & \multicolumn{4}{c}{Industry-price real wage growth}\\
+   Model:                                   & (1)      & (2)      & (3)      & (4)\\  
+   \midrule
+   \emph{Variables}\\
+   Direct tariff shock, t plus t-1          & 0.0026   & 0.0045   & -0.0164  & -0.0185\\   
+                                            & (0.0445) & (0.0413) & (0.0464) & (0.0432)\\   
+   W shock: input-share matrix              & -0.0401  &          &          &   \\   
+                                            & (0.0923) &          &          &   \\   
+   W shock: binary 5pct matrix              &          & -0.0310  &          &   \\   
+                                            &          & (0.0474) &          &   \\   
+   W shock: symmetric matrix                &          &          & 0.0750   &   \\   
+                                            &          &          & (0.1178) &   \\   
+   W shock: inverse network-distance matrix &          &          &          & 0.3541\\   
+                                            &          &          &          & (0.3657)\\   
+   \midrule
+   \emph{Fixed-effects}\\
+   industry\_fe                             & Yes      & Yes      & Yes      & Yes\\  
+   year                                     & Yes      & Yes      & Yes      & Yes\\  
+   \midrule
+   \emph{Fit statistics}\\
+   Observations                             & 559      & 559      & 559      & 559\\  
+   R$^2$                                    & 0.26059  & 0.26065  & 0.26103  & 0.26122\\  
+   Within R$^2$                             & 0.00024  & 0.00032  & 0.00083  & 0.00109\\  
+   \midrule \midrule
+   \multicolumn{5}{l}{\emph{Clustered (industry\_fe) standard-errors in parentheses}}\\
+   \multicolumn{5}{l}{\emph{Signif. Codes: ***: 0.01, **: 0.05, *: 0.1}}\\
+\end{tabular}
+\par\endgroup

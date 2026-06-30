@@ -1,0 +1,30 @@
+Appendix Table. NAICS six-digit wage checks 
+All models include industry/NAICS fixed effects and year fixed effects. Standard errors are clustered by industry/NAICS.
+
+                                                 All NAICS6      Matched NAICS6
+Dependent Var.:                         Nominal wage growth Nominal wage growth
+                                                                               
+Direct Section 301 exposure, t plus t-1    -0.0018 (0.0044)    -0.0081 (0.0097)
+Fixed-Effects:                          ------------------- -------------------
+naics_fe                                                Yes                 Yes
+year                                                    Yes                 Yes
+_______________________________________ ___________________ ___________________
+S.E.: Clustered                                by: naics_fe        by: naics_fe
+Observations                                          9,115               3,127
+R2                                                  0.11060             0.13854
+Within R2                                           8.58e-6             0.00020
+
+                                        All NAICS6 weighted Matched NAICS6 we..
+Dependent Var.:                         Nominal wage growth Nominal wage growth
+                                                                               
+Direct Section 301 exposure, t plus t-1    -0.0036 (0.0036)     0.0008 (0.0135)
+Fixed-Effects:                          ------------------- -------------------
+naics_fe                                                Yes                 Yes
+year                                                    Yes                 Yes
+_______________________________________ ___________________ ___________________
+S.E.: Clustered                                by: naics_fe        by: naics_fe
+Observations                                          9,115               3,127
+R2                                                  0.21646             0.16501
+Within R2                                            3.2e-5             2.74e-6
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

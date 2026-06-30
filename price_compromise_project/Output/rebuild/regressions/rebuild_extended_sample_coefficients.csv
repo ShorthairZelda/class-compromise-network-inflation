@@ -1,0 +1,27 @@
+"model_set","model","term","estimate","std_error","t_value","p_value","nobs"
+"extended_sample_robustness","Output: 2017-2025","tradable_input_inflation_shock_cum01",0.0073052973708227,0.00189175821747296,3.86164431762387,0.000262007399447125,594
+"extended_sample_robustness","Output: 2010-2025","tradable_input_inflation_shock_cum01",0.0086930597818909,0.00250794676700288,3.46620586061304,0.000940486276559143,1056
+"extended_sample_robustness","Output: 2010-2019","tradable_input_inflation_shock_cum01",0.0179674367943723,0.00730662431447856,2.459061260173,0.0166012879728451,660
+"extended_sample_robustness","Input: 2017-2025","tradable_input_inflation_shock_cum01",0.0054724946650006,0.00139193088050033,3.93158506766767,0.000207408810739409,594
+"extended_sample_robustness","Input: 2010-2025","tradable_input_inflation_shock_cum01",0.0074077219956269,0.00197317291376094,3.75421836776966,0.000373518313565178,1056
+"extended_sample_robustness","Input: 2010-2019","tradable_input_inflation_shock_cum01",0.0195114073472064,0.00597021929699552,3.26812238823881,0.00173192207740272,660
+"extended_local_reproduction","Output: local, 2017-2025","tradable_input_inflation_shock_cum01",0.00712688445546281,0.00189038096816134,3.7700783998025,0.000354586347367048,594
+"extended_local_reproduction","Output: local, 2017-2025","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00778868117683754,0.00191328212844954,-4.07084823561763,0.00012941364853425,594
+"extended_local_reproduction","Output: local, 2010-2025","tradable_input_inflation_shock_cum01",0.00850144504694586,0.00249882018126439,3.40218360276095,0.00114826443459576,1056
+"extended_local_reproduction","Output: local, 2010-2025","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00836501144696119,0.00208241586694627,-4.0169745053028,0.000155472825793465,1056
+"extended_local_reproduction","Input: local, 2017-2025","tradable_input_inflation_shock_cum01",0.00541892082196896,0.00138627510003595,3.90897940951868,0.000223734263938645,594
+"extended_local_reproduction","Input: local, 2017-2025","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.0023387857428917,0.0013671406878217,-1.71071328922128,0.0919031659558321,594
+"extended_local_reproduction","Input: local, 2010-2025","tradable_input_inflation_shock_cum01",0.0073323967565523,0.0019611977536793,3.73873401741174,0.000392931865871292,1056
+"extended_local_reproduction","Input: local, 2010-2025","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00328835090519,0.00160417225314271,-2.04987394511271,0.0444151304678613,1056
+"extended_post2021_amplification","Output: post-2021 amplification","tradable_input_inflation_shock_cum01",0.0182584532393622,0.00722217228064527,2.52811100730636,0.0139065883181343,1056
+"extended_post2021_amplification","Output: post-2021 amplification","tradable_input_inflation_shock_cum01:post2021",-0.0100305659341076,0.00567819933568984,-1.7665047211466,0.0820062926573242,1056
+"extended_post2021_amplification","Input: post-2021 amplification","tradable_input_inflation_shock_cum01",0.0191113478689667,0.00591097283502236,3.23319839261187,0.00192457506371176,1056
+"extended_post2021_amplification","Input: post-2021 amplification","tradable_input_inflation_shock_cum01:post2021",-0.0122727822449341,0.00439242105724411,-2.79408146099597,0.00683220235288417,1056
+"extended_post2021_amplification","Output: local post-2021 amplification","tradable_input_inflation_shock_cum01",0.0180739784217138,0.00717374917198128,2.51946060399015,0.0142210275264679,1056
+"extended_post2021_amplification","Output: local post-2021 amplification","tradable_input_inflation_shock_cum01:post2021",-0.0100380530711006,0.00564493521513859,-1.77824061544241,0.080041181314247,1056
+"extended_post2021_amplification","Output: local post-2021 amplification","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00805331574185911,0.00484160388731416,-1.66335700509498,0.101055725959017,1056
+"extended_post2021_amplification","Output: local post-2021 amplification","tradable_input_inflation_shock_cum01:post2021:local_reproduction_core",-0.000326853708141242,0.00540150499203608,-0.0605115997528746,0.951933848283988,1056
+"extended_post2021_amplification","Input: local post-2021 amplification","tradable_input_inflation_shock_cum01",0.0189093206057508,0.00586240166624421,3.22552456864751,0.00196952274451071,1056
+"extended_post2021_amplification","Input: local post-2021 amplification","tradable_input_inflation_shock_cum01:post2021",-0.0121399186034347,0.00435609332979749,-2.78688211760583,0.00696896715019506,1056
+"extended_post2021_amplification","Input: local post-2021 amplification","tradable_input_inflation_shock_cum01:local_reproduction_core",-0.00881957418297813,0.00308606717086352,-2.85786850858152,0.00572394739621917,1056
+"extended_post2021_amplification","Input: local post-2021 amplification","tradable_input_inflation_shock_cum01:post2021:local_reproduction_core",0.00580021094069992,0.00241292229557371,2.40381173954084,0.0190858586241093,1056

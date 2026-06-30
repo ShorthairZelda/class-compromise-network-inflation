@@ -5,10 +5,10 @@ household_furnishings,Household furnishings,low_price_global,Low-price tradable/
 used_cars_trucks,Used cars and trucks,low_price_global,Low-price tradable/global goods,164.35876166493853,1.3981534531981248,26.63066873524762,12.747109338638584,47.326577058677266
 new_vehicles,New vehicles,low_price_global,Low-price tradable/global goods,173.88348489769405,1.383071636864944,5.853761539473479,10.39407750342023,17.46609550013396
 transportation,Transportation,basic_reproduction,Basic reproduction necessities,262.3610068221992,2.482882013197055,14.564213490749855,15.465749287181119,26.78252583783287
-energy,Energy,basic_reproduction,Basic reproduction necessities,276.7931182020852,2.937564604950284,21.008195001083173,25.15089699003252,38.538719712455325
-food,Food,basic_reproduction,Basic reproduction necessities,328.87870960166737,2.960321110250882,3.942922044063657,9.948344872755355,18.22243671676249
+energy,Energy,basic_reproduction,Basic reproduction necessities,276.7931182020852,2.937564604950284,21.008195001083173,25.15089699003252,38.53871971245535
+food,Food,basic_reproduction,Basic reproduction necessities,328.87870960166737,2.9603211102508813,3.942922044063657,9.948344872755355,18.22243671676249
 shelter,Shelter,local_reproduction,Local institutional reproduction costs,399.2285803786726,3.443295405729427,2.666299462029853,5.87634296787336,11.37605030182296
-rent_primary_residence,Rent,local_reproduction,Local institutional reproduction costs,413.0326869806093,3.528104958486852,2.2452828024510874,6.033297562354156,11.80079955001716
-medical_care,Medical care,local_reproduction,Local institutional reproduction costs,542.869985041084,4.229769167553548,1.2336132013684775,4.0506450809946415,9.658683555817094
+rent_primary_residence,Rent,local_reproduction,Local institutional reproduction costs,413.0326869806093,3.528104958486853,2.2452828024510874,6.033297562354156,11.80079955001716
+medical_care,Medical care,local_reproduction,Local institutional reproduction costs,542.869985041084,4.229769167553549,1.2336132013684553,4.0506450809946415,9.658683555817094
 education_communication,Education and communication,local_reproduction,Local institutional reproduction costs,,,,,
 recreation,Recreation goods/services,low_price_global,Low-price tradable/global goods,,,,,

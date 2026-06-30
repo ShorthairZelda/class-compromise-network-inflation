@@ -70,6 +70,14 @@ category_summary <- read.csv(file.path(table_dir, "rebuild_cpi_category_summary.
 gap <- read.csv(file.path(table_dir, "rebuild_reproduction_to_cheap_goods_gap.csv"), stringsAsFactors = FALSE)
 tariff_category <- read.csv(file.path(table_dir, "rebuild_cpi_301_exposure_by_class.csv"), stringsAsFactors = FALSE)
 industry_summary <- read.csv(file.path(table_dir, "rebuild_industry_tariff_network_summary.csv"), stringsAsFactors = FALSE)
+tradable_inflation <- read.csv(
+  file.path(data_dir, "rebuild_tradable_nontradable_inflation_panel.csv"),
+  stringsAsFactors = FALSE
+)
+local_exposure <- read.csv(
+  file.path(table_dir, "rebuild_local_reproduction_exposure_summary.csv"),
+  stringsAsFactors = FALSE
+)
 
 indices_main <- indices |>
   filter(index_name %in% names(index_labels)) |>
@@ -145,6 +153,76 @@ fig3 <- ggplot(inflation_window, aes(x = year, y = inflation, color = index_name
   ) +
   theme_rebuild()
 save_plot(fig3, "rebuild_fig3_inflation_shock_window.png", width = 8.5, height = 5.3)
+
+tradable_inflation_long <- bind_rows(
+  data.frame(
+    year = tradable_inflation$year,
+    inflation = tradable_inflation$tradable_goods_inflation,
+    series = "Tradable goods proxy: core commodities"
+  ),
+  data.frame(
+    year = tradable_inflation$year,
+    inflation = tradable_inflation$nontradable_services_inflation,
+    series = "Nontradable proxy: core services"
+  )
+)
+
+fig3b <- ggplot(tradable_inflation_long, aes(x = year, y = inflation, color = series)) +
+  geom_hline(yintercept = 0, color = "grey45", linewidth = 0.35) +
+  annotate("rect", xmin = 2021, xmax = 2022, ymin = -Inf, ymax = Inf, fill = "#d8b365", alpha = 0.15) +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 1.8) +
+  scale_x_continuous(breaks = 2015:2025) +
+  scale_color_manual(values = c("#2f6f8f", "#9a3d2f"), name = NULL) +
+  labs(
+    title = "Tradable goods inflation breaks the pre-2020 low-price pattern",
+    subtitle = "Core commodities inflation turns sharply positive in 2021-2022, motivating the exposure-share shock design.",
+    x = NULL,
+    y = "Annual CPI inflation, percent"
+  ) +
+  theme_rebuild()
+save_plot(fig3b, "rebuild_fig3b_tradable_nontradable_inflation.png", width = 8.5, height = 5.3)
+
+exposure_long <- bind_rows(
+  data.frame(
+    local_reproduction_group = local_exposure$local_reproduction_group,
+    exposure = local_exposure$mean_tradable_input_exposure * 100,
+    series = "Tradable input exposure"
+  ),
+  data.frame(
+    local_reproduction_group = local_exposure$local_reproduction_group,
+    exposure = local_exposure$mean_goods_supply_chain_exposure * 100,
+    series = "Broad goods supply-chain exposure"
+  ),
+  data.frame(
+    local_reproduction_group = local_exposure$local_reproduction_group,
+    exposure = local_exposure$mean_tradable_downstream_exposure * 100,
+    series = "Tradable downstream exposure"
+  )
+) |>
+  mutate(
+    local_reproduction_group = factor(
+      local_reproduction_group,
+      levels = c("Core local reproduction", "Extended local services", "Other industries")
+    ),
+    series = factor(
+      series,
+      levels = c("Tradable input exposure", "Broad goods supply-chain exposure", "Tradable downstream exposure")
+    )
+  )
+
+fig3c <- ggplot(exposure_long, aes(x = local_reproduction_group, y = exposure, fill = series)) +
+  geom_col(position = position_dodge(width = 0.72), width = 0.62) +
+  scale_fill_manual(values = c("#2f6f8f", "#7a6a38", "#9a3d2f"), name = NULL) +
+  labs(
+    title = "Local reproduction sectors are not highly exposed through ordinary tradable inputs",
+    subtitle = "This motivates separating upstream input exposure from downstream network exposure.",
+    x = NULL,
+    y = "Mean exposure, percent"
+  ) +
+  theme_rebuild() +
+  theme(axis.text.x = element_text(angle = 12, hjust = 1))
+save_plot(fig3c, "rebuild_fig3c_local_reproduction_exposure.png", width = 8.5, height = 5.3)
 
 tariff_plot <- tariff_category |>
   filter(!is.na(mean_tariff_301_rate_2018_2025)) |>

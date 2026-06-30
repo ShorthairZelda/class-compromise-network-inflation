@@ -1,0 +1,28 @@
+{
+  "created_at_utc": "2026-06-30T08:57:20.696203+00:00",
+  "sample_years": [
+    2010,
+    2025
+  ],
+  "lag_year_included_for_growth_rates": 2009,
+  "rows": 1056,
+  "industries": 66,
+  "bea_gross_price_years": [
+    2009,
+    2025
+  ],
+  "bea_intermediate_price_years": [
+    2009,
+    2025
+  ],
+  "qcew_years": [
+    2014,
+    2025
+  ],
+  "tradable_inflation_years": [
+    2010,
+    2025
+  ],
+  "missing_tradable_inflation_rows": 0,
+  "output_panel": "/Users/linian/Documents/论文初稿/price_compromise_project/Data/extended/extended_industry_network_panel_2010_2025.csv"
+}

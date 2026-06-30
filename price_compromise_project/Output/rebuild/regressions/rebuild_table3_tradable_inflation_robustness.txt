@@ -1,0 +1,67 @@
+Table 3. Alternative tradable-goods input exposure measures
+
+                                                             Output: narrow tradable..
+Dependent Var.:                                              Gross output price growth
+                                                                                      
+Tradable-goods input inflation shock, t plus t-1                    0.0071*** (0.0019)
+Tradable input inflation shock x core local reproduction           -0.0078*** (0.0019)
+Broad goods supply-chain inflation shock, t plus t-1                                  
+Broad supply-chain inflation shock x core local reproduction                          
+Fixed-Effects:                                               -------------------------
+industry_fe                                                                        Yes
+year                                                                               Yes
+________________________________________                     _________________________
+S.E.: Clustered                                                        by: industry_fe
+Observations                                                                       594
+R2                                                                             0.26291
+Within R2                                                                      0.05029
+
+                                                             Output: broad supply-ch..
+Dependent Var.:                                              Gross output price growth
+                                                                                      
+Tradable-goods input inflation shock, t plus t-1                                      
+Tradable input inflation shock x core local reproduction                              
+Broad goods supply-chain inflation shock, t plus t-1                0.0078*** (0.0018)
+Broad supply-chain inflation shock x core local reproduction       -0.0055*** (0.0017)
+Fixed-Effects:                                               -------------------------
+industry_fe                                                                        Yes
+year                                                                               Yes
+________________________________________                     _________________________
+S.E.: Clustered                                                        by: industry_fe
+Observations                                                                       594
+R2                                                                             0.26852
+Within R2                                                                      0.05752
+
+                                                               Input: narrow tradable inputs
+Dependent Var.:                                              Intermediate input price growth
+                                                                                            
+Tradable-goods input inflation shock, t plus t-1                          0.0054*** (0.0014)
+Tradable input inflation shock x core local reproduction                   -0.0023* (0.0014)
+Broad goods supply-chain inflation shock, t plus t-1                                        
+Broad supply-chain inflation shock x core local reproduction                                
+Fixed-Effects:                                                ------------------------------
+industry_fe                                                                              Yes
+year                                                                                     Yes
+________________________________________                      ______________________________
+S.E.: Clustered                                                              by: industry_fe
+Observations                                                                             594
+R2                                                                                   0.47239
+Within R2                                                                            0.05598
+
+                                                             Input: broad supply-chain inp..
+Dependent Var.:                                              Intermediate input price growth
+                                                                                            
+Tradable-goods input inflation shock, t plus t-1                                            
+Tradable input inflation shock x core local reproduction                                    
+Broad goods supply-chain inflation shock, t plus t-1                      0.0056*** (0.0014)
+Broad supply-chain inflation shock x core local reproduction                -0.0011 (0.0014)
+Fixed-Effects:                                                ------------------------------
+industry_fe                                                                              Yes
+year                                                                                     Yes
+________________________________________                      ______________________________
+S.E.: Clustered                                                              by: industry_fe
+Observations                                                                             594
+R2                                                                                   0.47316
+Within R2                                                                            0.05737
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

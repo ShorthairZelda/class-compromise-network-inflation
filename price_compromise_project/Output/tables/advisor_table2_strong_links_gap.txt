@@ -1,0 +1,79 @@
+Table 2. Strong IO links and price-wage gap 
+All models include industry/NAICS fixed effects and year fixed effects. Standard errors are clustered by industry/NAICS.
+
+                                                    Output price
+Dependent Var.:                              Output price growth
+                                                                
+Strong-link network tariff shock, t plus t-1   0.0637** (0.0269)
+Network tariff shock, t plus t-1                                
+Network shock x 2021-2022                                       
+Fixed-Effects:                               -------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________________     ___________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 594
+R2                                                       0.25429
+Within R2                                                0.00123
+
+                                                    Input price
+Dependent Var.:                              Input price growth
+                                                               
+Strong-link network tariff shock, t plus t-1 0.0714*** (0.0252)
+Network tariff shock, t plus t-1                               
+Network shock x 2021-2022                                      
+Fixed-Effects:                               ------------------
+industry_fe                                                 Yes
+year                                                        Yes
+________________________________________     __________________
+S.E.: Clustered                                 by: industry_fe
+Observations                                                594
+R2                                                      0.50836
+Within R2                                               0.00417
+
+                                                             Price-wage gap
+Dependent Var.:                              Output price minus wage growth
+                                                                           
+Strong-link network tariff shock, t plus t-1               0.0626* (0.0338)
+Network tariff shock, t plus t-1                                           
+Network shock x 2021-2022                                                  
+Fixed-Effects:                               ------------------------------
+industry_fe                                                             Yes
+year                                                                    Yes
+________________________________________     ______________________________
+S.E.: Clustered                                             by: industry_fe
+Observations                                                            559
+R2                                                                  0.26111
+Within R2                                                           0.00095
+
+                                                                   Real wage
+Dependent Var.:                              Industry-price real wage growth
+                                                                            
+Strong-link network tariff shock, t plus t-1               -0.0626* (0.0338)
+Network tariff shock, t plus t-1                                            
+Network shock x 2021-2022                                                   
+Fixed-Effects:                                ------------------------------
+industry_fe                                                              Yes
+year                                                                     Yes
+________________________________________      ______________________________
+S.E.: Clustered                                              by: industry_fe
+Observations                                                             559
+R2                                                                   0.26111
+Within R2                                                            0.00095
+
+                                             Output price, 2..22
+Dependent Var.:                              Output price growth
+                                                                
+Strong-link network tariff shock, t plus t-1                    
+Network tariff shock, t plus t-1                -0.0201 (0.0547)
+Network shock x 2021-2022                       0.2102* (0.1214)
+Fixed-Effects:                               -------------------
+industry_fe                                                  Yes
+year                                                         Yes
+________________________________________     ___________________
+S.E.: Clustered                                  by: industry_fe
+Observations                                                 594
+R2                                                       0.26564
+Within R2                                                0.01643
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

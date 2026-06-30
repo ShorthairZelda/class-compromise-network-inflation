@@ -1,0 +1,79 @@
+Table 6. Luo-style upstream/downstream propagation into local reproduction sectors
+
+                                                  Output: core up/down
+Dependent Var.:                              Gross output price growth
+                                                                      
+Own tariff shock, t plus t-1                          -0.0471 (0.0856)
+Supplier/upstream shock, t plus t-1                    0.1519 (0.0966)
+Buyer/downstream shock, t plus t-1                    -0.0971 (0.0840)
+Supplier shock x core local reproduction              -0.0136 (0.0827)
+Buyer shock x core local reproduction                 -0.5445 (0.6269)
+Supplier shock x extended local reproduction                          
+Buyer shock x extended local reproduction                             
+Fixed-Effects:                               -------------------------
+industry_fe                                                        Yes
+year                                                               Yes
+________________________________________     _________________________
+S.E.: Clustered                                        by: industry_fe
+Observations                                                       594
+R2                                                             0.23031
+Within R2                                                      0.00828
+
+                                              Output: extended up/down
+Dependent Var.:                              Gross output price growth
+                                                                      
+Own tariff shock, t plus t-1                          -0.0472 (0.0863)
+Supplier/upstream shock, t plus t-1                    0.1520 (0.0973)
+Buyer/downstream shock, t plus t-1                    -0.0970 (0.0840)
+Supplier shock x core local reproduction                              
+Buyer shock x core local reproduction                                 
+Supplier shock x extended local reproduction           0.0018 (0.0639)
+Buyer shock x extended local reproduction             -0.6320 (0.6010)
+Fixed-Effects:                               -------------------------
+industry_fe                                                        Yes
+year                                                               Yes
+________________________________________     _________________________
+S.E.: Clustered                                        by: industry_fe
+Observations                                                       594
+R2                                                             0.23032
+Within R2                                                      0.00830
+
+                                                         Input: core up/down
+Dependent Var.:                              Intermediate input price growth
+                                                                            
+Own tariff shock, t plus t-1                                -0.0717 (0.0564)
+Supplier/upstream shock, t plus t-1                        0.1449** (0.0664)
+Buyer/downstream shock, t plus t-1                           0.0162 (0.0429)
+Supplier shock x core local reproduction                   0.1629** (0.0653)
+Buyer shock x core local reproduction                      1.156*** (0.4084)
+Supplier shock x extended local reproduction                                
+Buyer shock x extended local reproduction                                   
+Fixed-Effects:                                ------------------------------
+industry_fe                                                              Yes
+year                                                                     Yes
+________________________________________      ______________________________
+S.E.: Clustered                                              by: industry_fe
+Observations                                                             594
+R2                                                                   0.44870
+Within R2                                                            0.01359
+
+                                                     Input: extended up/down
+Dependent Var.:                              Intermediate input price growth
+                                                                            
+Own tariff shock, t plus t-1                                -0.0707 (0.0575)
+Supplier/upstream shock, t plus t-1                        0.1405** (0.0672)
+Buyer/downstream shock, t plus t-1                           0.0155 (0.0430)
+Supplier shock x core local reproduction                                    
+Buyer shock x core local reproduction                                       
+Supplier shock x extended local reproduction                 0.0567 (0.0537)
+Buyer shock x extended local reproduction                  0.9990** (0.4595)
+Fixed-Effects:                                ------------------------------
+industry_fe                                                              Yes
+year                                                                     Yes
+________________________________________      ______________________________
+S.E.: Clustered                                              by: industry_fe
+Observations                                                             594
+R2                                                                   0.44836
+Within R2                                                            0.01299
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

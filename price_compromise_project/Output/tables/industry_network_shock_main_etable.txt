@@ -1,0 +1,64 @@
+Table. Industry network shock model: own, upstream, and downstream shocks 
+Industry network shock model. All models include BEA summary industry fixed effects and year fixed effects. Standard errors are clustered by industry.
+
+                                            Output price        Input price
+Dependent Var.:                      Output price growth Input price growth
+                                                                           
+Own tariff shock, t plus t-1            -0.0206 (0.0670)   -0.0464 (0.0458)
+Upstream network shock, t plus t-1       0.1571 (0.1008)   0.1381* (0.0718)
+Downstream network shock, t plus t-1   -0.1102* (0.0570)   -0.0002 (0.0206)
+Fixed-Effects:                       ------------------- ------------------
+industry_fe                                          Yes                Yes
+year                                                 Yes                Yes
+____________________________________ ___________________ __________________
+S.E.: Clustered                          by: industry_fe    by: industry_fe
+Observations                                         594                594
+R2                                               0.25902            0.51042
+Within R2                                        0.00756            0.00834
+
+                                            Nominal wage
+Dependent Var.:                      Nominal wage growth
+                                                        
+Own tariff shock, t plus t-1            -0.0055 (0.0121)
+Upstream network shock, t plus t-1       0.0309 (0.0317)
+Downstream network shock, t plus t-1    -0.0092 (0.0092)
+Fixed-Effects:                       -------------------
+industry_fe                                          Yes
+year                                                 Yes
+____________________________________ ___________________
+S.E.: Clustered                          by: industry_fe
+Observations                                         559
+R2                                               0.13806
+Within R2                                        0.00048
+
+                                                           Real wage
+Dependent Var.:                      Industry-price real wage growth
+                                                                    
+Own tariff shock, t plus t-1                         0.0278 (0.0676)
+Upstream network shock, t plus t-1                  -0.1665 (0.1151)
+Downstream network shock, t plus t-1                0.1046* (0.0545)
+Fixed-Effects:                        ------------------------------
+industry_fe                                                      Yes
+year                                                             Yes
+____________________________________  ______________________________
+S.E.: Clustered                                      by: industry_fe
+Observations                                                     559
+R2                                                           0.26462
+Within R2                                                    0.00569
+
+                                                     Price-wage gap
+Dependent Var.:                      Output price minus wage growth
+                                                                   
+Own tariff shock, t plus t-1                       -0.0278 (0.0676)
+Upstream network shock, t plus t-1                  0.1665 (0.1151)
+Downstream network shock, t plus t-1              -0.1046* (0.0545)
+Fixed-Effects:                       ------------------------------
+industry_fe                                                     Yes
+year                                                            Yes
+____________________________________ ______________________________
+S.E.: Clustered                                     by: industry_fe
+Observations                                                    559
+R2                                                          0.26462
+Within R2                                                   0.00569
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

@@ -57,6 +57,45 @@ CLASS_COLORS = {
     "official_cpi": "#595959",
 }
 
+TRADABLE_GOODS_COMMODITY_CODES = {
+    "111CA",
+    "113FF",
+    "211",
+    "212",
+    "213",
+    "311FT",
+    "313TT",
+    "315AL",
+    "321",
+    "322",
+    "323",
+    "324",
+    "325",
+    "326",
+    "327",
+    "331",
+    "332",
+    "333",
+    "334",
+    "335",
+    "3361MV",
+    "3364OT",
+    "337",
+    "339",
+}
+
+GOODS_SUPPLY_CHAIN_COMMODITY_CODES = TRADABLE_GOODS_COMMODITY_CODES | {
+    "22",
+    "42",
+    "481",
+    "482",
+    "483",
+    "484",
+    "486",
+    "487OS",
+    "493",
+}
+
 
 def ensure_dirs() -> None:
     for path in [DATA_REBUILD, FIG_DIR, TABLE_DIR]:
@@ -167,13 +206,131 @@ def build_industry_outputs() -> None:
     shock_path = OLD_PROJECT / "Data" / "analysis" / "luo_style_own_up_down_tariff_shocks_2016_2025.csv"
     io_path = OLD_PROJECT / "Data" / "cleaned" / "bea_input_coefficients_2019.csv"
     exposure_path = OLD_PROJECT / "Data" / "analysis" / "bea_summary_tariff_exposure_301_clean.csv"
+    tradable_inflation_path = (
+        PROJECT_ROOT / "Data" / "analysis" / "us_tradable_nontradable_inflation_annual_2015_2025.csv"
+    )
 
     panel = pd.read_csv(panel_path)
     shocks = pd.read_csv(shock_path)
     io = pd.read_csv(io_path)
     exposure = pd.read_csv(exposure_path)
+    tradable_inflation = pd.read_csv(tradable_inflation_path)
+
+    tradable_goods_inflation = (
+        tradable_inflation[tradable_inflation["category"].eq("tradable_proxy_core_commodities")]
+        [["year", "annual_avg_yoy_inflation"]]
+        .rename(columns={"annual_avg_yoy_inflation": "tradable_goods_inflation"})
+    )
+
+    nontradable_services_inflation = (
+        tradable_inflation[tradable_inflation["category"].eq("nontradable_proxy_core_services")]
+        [["year", "annual_avg_yoy_inflation"]]
+        .rename(columns={"annual_avg_yoy_inflation": "nontradable_services_inflation"})
+    )
+
+    inflation_panel = tradable_goods_inflation.merge(
+        nontradable_services_inflation,
+        on="year",
+        how="outer",
+    )
+    inflation_panel["tradable_minus_nontradable_inflation"] = (
+        inflation_panel["tradable_goods_inflation"] - inflation_panel["nontradable_services_inflation"]
+    )
+
+    io = io.copy()
+    io["tradable_goods_supplier"] = io["commodity_code"].isin(TRADABLE_GOODS_COMMODITY_CODES).astype(int)
+    io["goods_supply_chain_supplier"] = io["commodity_code"].isin(GOODS_SUPPLY_CHAIN_COMMODITY_CODES).astype(int)
+    io["tradable_goods_buyer"] = io["industry_code"].isin(TRADABLE_GOODS_COMMODITY_CODES).astype(int)
+    io["goods_supply_chain_buyer"] = io["industry_code"].isin(GOODS_SUPPLY_CHAIN_COMMODITY_CODES).astype(int)
+
+    upstream_exposure = (
+        io.groupby(["industry_code", "industry_name"], as_index=False)
+        .agg(
+            tradable_goods_input_exposure=(
+                "input_share",
+                lambda s: s[io.loc[s.index, "tradable_goods_supplier"].eq(1)].sum(),
+            ),
+            goods_supply_chain_input_exposure=(
+                "input_share",
+                lambda s: s[io.loc[s.index, "goods_supply_chain_supplier"].eq(1)].sum(),
+            ),
+        )
+    )
+
+    sales = (
+        io.groupby("commodity_code", as_index=False)
+        .agg(total_intermediate_sales_musd=("value_musd", "sum"))
+        .rename(columns={"commodity_code": "industry_code"})
+    )
+    downstream_exposure = (
+        io.groupby("commodity_code", as_index=False)
+        .agg(
+            tradable_goods_downstream_exposure=(
+                "value_musd",
+                lambda s: s[io.loc[s.index, "tradable_goods_buyer"].eq(1)].sum(),
+            ),
+            goods_supply_chain_downstream_exposure=(
+                "value_musd",
+                lambda s: s[io.loc[s.index, "goods_supply_chain_buyer"].eq(1)].sum(),
+            ),
+        )
+        .rename(columns={"commodity_code": "industry_code"})
+        .merge(sales, on="industry_code", how="left")
+    )
+    for col in ["tradable_goods_downstream_exposure", "goods_supply_chain_downstream_exposure"]:
+        downstream_exposure[col] = downstream_exposure[col] / downstream_exposure["total_intermediate_sales_musd"]
+        downstream_exposure[col] = downstream_exposure[col].fillna(0)
 
     merged = panel.merge(shocks, on=["industry_code", "year"], how="left")
+    merged = merged.merge(
+        upstream_exposure.drop(columns=["industry_name"]),
+        on="industry_code",
+        how="left",
+    )
+    merged = merged.merge(
+        downstream_exposure[
+            [
+                "industry_code",
+                "tradable_goods_downstream_exposure",
+                "goods_supply_chain_downstream_exposure",
+            ]
+        ],
+        on="industry_code",
+        how="left",
+    )
+    merged = merged.merge(inflation_panel, on="year", how="left")
+    for col in [
+        "tradable_goods_input_exposure",
+        "goods_supply_chain_input_exposure",
+        "tradable_goods_downstream_exposure",
+        "goods_supply_chain_downstream_exposure",
+    ]:
+        merged[col] = merged[col].fillna(0)
+
+    merged["tradable_input_inflation_shock"] = (
+        merged["tradable_goods_input_exposure"] * merged["tradable_goods_inflation"]
+    )
+    merged["goods_supply_chain_inflation_shock"] = (
+        merged["goods_supply_chain_input_exposure"] * merged["tradable_goods_inflation"]
+    )
+    merged["tradable_downstream_inflation_shock"] = (
+        merged["tradable_goods_downstream_exposure"] * merged["tradable_goods_inflation"]
+    )
+    merged["goods_supply_chain_downstream_inflation_shock"] = (
+        merged["goods_supply_chain_downstream_exposure"] * merged["tradable_goods_inflation"]
+    )
+    merged = merged.sort_values(["industry_code", "year"]).copy()
+    for col in [
+        "tradable_input_inflation_shock",
+        "goods_supply_chain_inflation_shock",
+        "tradable_downstream_inflation_shock",
+        "goods_supply_chain_downstream_inflation_shock",
+    ]:
+        lag_col = f"lag1_{col}"
+        cum_col = f"{col}_cum01"
+        merged[lag_col] = merged.groupby("industry_code")[col].shift(1)
+        merged[cum_col] = merged[col].fillna(0) + merged[lag_col].fillna(0)
+
     merged["industry_fe"] = merged["industry_code"]
     merged["price_pressure_gap"] = merged["dln_gross_output_price"] - merged["dln_avg_annual_pay"]
     merged["input_price_pressure_gap"] = merged["dln_intermediate_inputs_price"] - merged["dln_avg_annual_pay"]
@@ -181,6 +338,26 @@ def build_industry_outputs() -> None:
 
     exposure.to_csv(DATA_REBUILD / "rebuild_bea_summary_tariff_exposure_301.csv", index=False)
     io.to_csv(DATA_REBUILD / "rebuild_bea_input_coefficients_2019.csv", index=False)
+    inflation_panel.to_csv(DATA_REBUILD / "rebuild_tradable_nontradable_inflation_panel.csv", index=False)
+
+    input_exposure_summary = (
+        merged.groupby(["industry_code", "industry_name"], as_index=False)
+        .agg(
+            tradable_goods_input_exposure=("tradable_goods_input_exposure", "first"),
+            goods_supply_chain_input_exposure=("goods_supply_chain_input_exposure", "first"),
+            tradable_goods_downstream_exposure=("tradable_goods_downstream_exposure", "first"),
+            goods_supply_chain_downstream_exposure=("goods_supply_chain_downstream_exposure", "first"),
+            direct_tariff_max=("tariff_301_direct", "max"),
+            output_2025=(
+                "total_industry_output_basic_musd",
+                lambda x: x[merged.loc[x.index, "year"].eq(2025)].iloc[0]
+                if (merged.loc[x.index, "year"] == 2025).any()
+                else x.iloc[-1],
+            ),
+        )
+        .sort_values("tradable_goods_input_exposure", ascending=False)
+    )
+    input_exposure_summary.to_csv(TABLE_DIR / "rebuild_tradable_input_exposure_summary.csv", index=False)
 
     industry_summary = (
         merged.groupby(["industry_code", "industry_name"], as_index=False)
@@ -220,11 +397,14 @@ def build_industry_outputs() -> None:
         f"- BEA annual industry panel: `{panel_path}`",
         f"- Luo-style own/upstream/downstream shocks: `{shock_path}`",
         f"- BEA 2019 input coefficients: `{io_path}`",
+        f"- Tradable/nontradable CPI inflation proxy: `{tradable_inflation_path}`",
         "",
         "## Methodological choices",
         "",
         "- CPI indexes are used as descriptive boundary evidence, not as the main causal design.",
         "- Industry price regressions use BEA gross-output and intermediate-input price indexes as PPI-like industry price outcomes.",
+        "- The preferred shock is an exposure-share design: 2019 tradable-goods input exposure interacted with annual tradable-goods inflation.",
+        "- Section 301 tariff exposure is retained as a policy-shock robustness design rather than the only explanation for the 2021-2022 inflation surge.",
         "- Reproduction-cost real wage regressions are deliberately excluded from the rebuilt main empirical design.",
     ]
     (OUTPUT_REBUILD / "rebuild_data_manifest.md").write_text("\n".join(manifest), encoding="utf-8")

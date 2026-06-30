@@ -1,0 +1,394 @@
+\documentclass[12pt,a4paper,fontset=none]{ctexart}
+\usepackage[left=3.0cm,right=3.0cm,top=2.7cm,bottom=2.7cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[round,authoryear]{natbib}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+
+\setmainfont[
+  Path=/System/Library/Fonts/Supplemental/,
+  UprightFont={Times New Roman.ttf},
+  BoldFont={Times New Roman Bold.ttf},
+  ItalicFont={Times New Roman Italic.ttf},
+  BoldItalicFont={Times New Roman Bold Italic.ttf}
+]{Times New Roman}
+\setCJKmainfont[
+  UprightFont={STSongti-SC-Regular},
+  BoldFont={STSongti-SC-Bold},
+  ItalicFont={STSongti-SC-Regular},
+  BoldItalicFont={STSongti-SC-Bold}
+]{Songti SC}
+\setCJKsansfont[
+  Path=/System/Library/Fonts/,
+  UprightFont={STHeiti Light.ttc},
+  BoldFont={STHeiti Medium.ttc}
+]{STHeiti}
+\setmonofont[
+  Path=/System/Library/Fonts/Supplemental/,
+  UprightFont={Courier New.ttf},
+  BoldFont={Courier New Bold.ttf},
+  ItalicFont={Courier New Italic.ttf},
+  BoldItalicFont={Courier New Bold Italic.ttf}
+]{Courier New}
+\setCJKmonofont[
+  Path=/System/Library/Fonts/,
+  UprightFont={STHeiti Light.ttc},
+  BoldFont={STHeiti Medium.ttc}
+]{STHeiti}
+\newCJKfontfamily\heiti[
+  Path=/System/Library/Fonts/,
+  UprightFont={STHeiti Medium.ttc},
+  BoldFont={STHeiti Medium.ttc}
+]{STHeiti}
+\ctexset{
+  section={
+    format=\centering\heiti\zihao{3},
+    name={,、},
+    number=\chinese{section},
+    aftername={},
+    beforeskip=1.6em,
+    afterskip=1.0em
+  },
+  subsection={
+    format=\heiti\zihao{4},
+    beforeskip=1.0em,
+    afterskip=0.5em
+  },
+  subsubsection={
+    format=\heiti\zihao{-4},
+    beforeskip=0.8em,
+    afterskip=0.4em
+  }
+}
+\setstretch{1.45}
+\setlength{\parindent}{2em}
+\zihao{-4}
+
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\tabnote}[1]{\par\noindent{\footnotesize\textit{注：}#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\title{\heiti 价格型阶级妥协实证项目技术文档\\
+\large 数据清洗、变量构造、模型选择与文献依据}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{文档目的与实证定位}
+
+本文档用于说明“价格型阶级妥协的脆弱性”实证部分的技术路线。它不是正式论文正文，而是面向共同作者、导师和后续复现者的技术说明，重点回答四个问题：第一，项目使用哪些数据；第二，数据如何清洗、合并和构造变量；第三，为什么选择当前计量模型；第四，实证设计与既有文献之间是什么关系。
+
+本文的理论命题是：低价供给主要集中在可贸易消费品和可由全球供应链组织生产的商品上；对于住房、医疗、教育、护理、养老和育儿等高度依赖本地制度安排、公共服务体系、资产价格结构和本地劳动投入的再生产成本，低价商品渠道的缓冲能力有限。因此，价格型阶级妥协不是完整的再生产保障机制，而是一种局部、阶段性的稳定机制。当贸易品价格和供应链成本在疫情后快速上升时，这一稳定机制会暴露出脆弱性。
+
+实证策略不再重复证明“进口扩张降低美国消费者价格”或“301 关税由美国消费者和企业承担”这两个前提性事实。前者已经由 \citet{jaravel2019trade} 提供了系统证据；后者由 \citet{amiti2020tariffs} 和 \citet{cavallo2021tariff} 提供了边境到零售端传导的证据。本文从这些既有发现出发，进一步考察价格压力是否通过投入产出网络进入美国生产价格体系，以及本地再生产部门是否在没有直接商品关税暴露的情况下受到网络化成本压力。
+
+方法上，本文吸收三类文献。第一，生产网络文献强调部门冲击可以经投入产出联系被放大并形成总量波动 \citep{acemoglu2012network}。第二，价格传导文献，尤其是 \citet{luo2023propagation}，启发本文区分上游供应商冲击和下游购买方冲击。第三，疫情后通胀文献强调供应链压力、部门供给约束和投入联系是理解 2021--2022 年通胀的重要渠道 \citep{baqaee2022supply,digiovanni2022gscpi,pasten2020monetary}。
+
+\section{项目文件与复现顺序}
+
+当前项目根目录为 \path{price_compromise_project}。核心脚本和输出如下：
+
+\begin{longtable}{L{0.28\textwidth}L{0.62\textwidth}}
+\toprule
+文件 & 功能 \\
+\midrule
+\path{src/10_rebuild_empirical_pipeline.py} & 重新整理 CPI 描述性数据、BEA 行业面板、2019 年投入产出暴露、贸易品通胀暴露和 301 关税网络暴露，生成回归用行业--年份面板。 \\
+\path{src/11_rebuild_network_regressions.R} & 使用 \code{fixest::feols()} 估计双向固定效应、贸易品通胀暴露模型、Luo 式上游/下游网络模型、301 关税补充模型和事件研究，并用 \code{fixest::etable()} 直接导出标准回归表。 \\
+\path{src/12_rebuild_figures.R} & 生成描述性图、贸易品/非贸易品通胀图、本地再生产部门暴露图和关税网络图。 \\
+\path{src/13_build_extended_sample.py} & 构造 2010--2025 年扩展样本。该脚本从 BEA 年度价格原始表提取 2009--2025 年价格指数，用 BLS CPI 代理扩展贸易品/非贸易品通胀，并生成单独的扩展行业面板。 \\
+\path{src/14_extended_sample_regressions.R} & 使用扩展样本估计稳健性回归，并导出标准 R 表格。扩展结果不覆盖主回归表。 \\
+\path{Output/rebuild/reports/formal_empirical_chapter.tex} & 正式实证章节。 \\
+\path{Output/rebuild/reports/empirical_technical_document.tex} & 本技术文档。 \\
+\bottomrule
+\end{longtable}
+
+建议复现顺序为：
+\begin{enumerate}
+\item 运行 \path{src/10_rebuild_empirical_pipeline.py}，生成清洗数据和中间表。
+\item 运行 \path{src/11_rebuild_network_regressions.R}，生成标准 R 回归表。
+\item 运行 \path{src/12_rebuild_figures.R}，生成图形。
+\item 若需要扩展样本稳健性，运行 \path{src/13_build_extended_sample.py} 和 \path{src/14_extended_sample_regressions.R}。
+\item 使用 XeLaTeX 编译正式实证章节和本技术文档。
+\end{enumerate}
+
+当前主要回归样本为 2017--2025 年、66 个 BEA 行业，共 594 个行业--年份观测。价格--工资压力缺口模型因工资数据缺失略少，样本为 559 个行业--年份观测。扩展样本覆盖 2010--2025 年、66 个 BEA 行业，共 1056 个行业--年份观测，用于稳健性检验而非替代主样本。
+
+\section{数据来源}
+
+\subsection{消费价格数据}
+
+消费价格部分使用 BLS CPI-U 分类价格数据。清洗后的年度分类价格数据位于 \path{data/processed/cpi_annual_normalized.csv}。该文件已经将 CPI 子项转换为年度频率，并统一标准化为 1984 年等于 100。项目还使用 \path{data/processed/constructed_price_indices.csv} 中的研究性指数，包括低价可贸易商品指数、再生产成本平减指数、本地化再生产成本指数和 CPI All Items 基准。
+
+这些 CPI 指数只用于描述性边界证据：它们说明低价商品价格和本地化再生产成本长期分化，但不作为主因果回归的被解释变量。这样处理是为了避免“用价格指数构造实际工资，再用价格指数解释实际工资”的近似定义式问题。
+
+\subsection{贸易品与非贸易品通胀代理}
+
+贸易品通胀代理来自 BLS CPI-U 中 ``commodities less food and energy commodities'' 的年度同比通胀率；非贸易品通胀代理来自 ``services less energy services''。主样本处理后的年度文件位于项目 \path{Data/analysis} 目录，重建后输出到 \path{Data/rebuild} 目录。扩展样本重新通过 BLS API 分段拉取 2009--2025 年 CPI 月度序列，并在 \path{Data/extended} 中输出 2010--2025 年年度通胀文件。
+
+使用贸易品通胀而不是仅使用 301 关税，是因为 2018 年 301 关税实施后并没有立刻出现全面通胀，而美国价格水平的急剧上升主要发生在 2021--2022 年。301 关税能够作为低价商品供给机制受损的政策冲击，但疫情后贸易品通胀更直接对应本文关心的商品价格缓冲机制失效。
+
+\subsection{行业价格、工资与产出数据}
+
+行业面板来自既有项目中整理的 BEA 行业年度数据，脚本当前读取旧项目归档目录下的 BEA summary 行业面板文件。该面板包括 BEA summary 行业代码、行业名称、总产出价格指数、中间投入价格指数、PCE 价格指数、行业产出、QCEW 就业和工资变量。
+
+本文的主被解释变量为：
+\begin{equation}
+\Delta \log P^{GO}_{it}
+=\log P^{GO}_{it}-\log P^{GO}_{i,t-1},
+\end{equation}
+\begin{equation}
+\Delta \log P^{II}_{it}
+=\log P^{II}_{it}-\log P^{II}_{i,t-1},
+\end{equation}
+其中 \(P^{GO}_{it}\) 是行业总产出价格指数，\(P^{II}_{it}\) 是行业中间投入价格指数。两者都是 BEA 行业价格口径，功能上类似行业层面的生产价格结果。
+
+\subsection{2019 年 BEA 投入产出矩阵}
+
+投入产出网络来自 2019 年 BEA 投入系数矩阵，当前脚本读取旧项目归档目录下的 \path{bea_input_coefficients_2019.csv}。选择 2019 年矩阵有两个原因。第一，它位于 2021--2022 年通胀爆发之前，可以被视为相对预定的行业网络结构。第二，2019 年比 2020 年更少受到疫情停摆和临时性供需扰动影响。
+
+矩阵中的核心字段包括购买行业 \(i\)、供给商品/行业 \(j\)、投入金额 \(\text{value}_{ij}\) 和投入份额 \(W_{ij}\)。本文将 \(W_{ij}\) 理解为行业 \(i\) 从商品部门 \(j\) 购买中间投入的份额。
+
+\subsection{Section 301 关税暴露}
+
+Section 301 关税暴露来自既有项目已经清洗并映射到 CPI 类别和 BEA 行业的文件。CPI 类别层面的暴露用于说明关税冲击集中在商品部门；BEA 行业层面的直接暴露和网络暴露用于补充政策冲击回归。本文不把 301 关税解释为 2021--2022 年通胀爆发的唯一原因，而把它作为低价商品供给机制受到政策扰动的补充证据。
+
+\section{CPI 数据清洗与研究性指数构造}
+
+\subsection{年度化与标准化}
+
+给定 CPI 子项 \(k\) 的年度价格指数 \(P_{kt}\)，统一标准化为：
+\begin{equation}
+P^{1984=100}_{kt}=\frac{P_{kt}}{P_{k,1984}}\times 100.
+\end{equation}
+年度通胀率按同一 CPI 子项内部的同比变化计算：
+\begin{equation}
+\pi_{kt}
+=\left(\frac{P^{1984=100}_{kt}}{P^{1984=100}_{k,t-1}}-1\right)\times 100.
+\end{equation}
+
+\subsection{理论分类}
+
+CPI 子项被分为三组。第一组是低价可贸易或全球供应链商品，包括耐用品、服装、家居用品、新车、二手车和娱乐相关商品等。第二组是再生产成本平减篮子，包括住房、食品、能源、交通、医疗、教育与通信。第三组是本地化再生产成本，包括住房、租金、医疗、教育与通信等更依赖本地制度、资产价格结构和本地劳动投入的类别。
+
+这些分类服务于理论机制，而不是官方统计分类。它们用于回答：低价供给是否主要集中在可贸易商品；本地化再生产成本是否长期脱离低价商品价格缓冲。
+
+\subsection{权重设定与当前处理}
+
+指数构造的一般形式为：
+\begin{equation}
+Index_{gt}=\sum_{k\in g}\omega_{kg}P^{1984=100}_{kt},
+\quad
+\sum_{k\in g}\omega_{kg}=1.
+\end{equation}
+当前图表使用 \(\omega_{kg}=1/N_g\) 的基准未加权口径。这样处理的目的，是先展示不同价格形成机制之间的结构性差异，而不是估计某个具体家庭的真实预算成本。这个设定有清楚限制：它没有使用收入组、家庭结构或地区差异的消费权重，因此不能被解释为官方生活成本指数。
+
+更理想的下一步，是使用 CEX 或 PCE 支出权重构造加权版本：
+\begin{equation}
+Index^{W}_{gt}=\sum_{k\in g}s_{kg}P^{1984=100}_{kt},
+\end{equation}
+其中 \(s_{kg}\) 是消费支出权重。后续论文版本应把加权指数作为稳健性检验，比较未加权口径和支出权重口径是否支持相同的部门边界结论。
+
+\subsection{再生产成本平减指数}
+
+再生产成本平减指数记为 \(RCD_t\)。令 \(\mathcal R\) 表示住房、食品、能源、交通、医疗、教育与通信构成的再生产成本篮子，则：
+\begin{equation}
+RCD_t=\sum_{k\in \mathcal R}\omega^R_k P^{1984=100}_{kt},
+\quad
+\sum_{k\in \mathcal R}\omega^R_k=1.
+\end{equation}
+当前图表使用 \(\omega^R_k=1/|\mathcal R|\) 的基准未加权设定。该指数只作为工资购买力背景平减口径，不作为主回归结果变量。
+
+\section{行业网络变量构造}
+
+\subsection{贸易品投入暴露}
+
+令 \(G\) 表示农业、采矿和制造业等可贸易商品部门集合。行业 \(i\) 的贸易品投入暴露定义为：
+\begin{equation}
+TradableInputExposure_i=\sum_{j\in G}W_{ij}.
+\end{equation}
+其中 \(W_{ij}\) 是 2019 年 BEA 投入产出矩阵中行业 \(i\) 从部门 \(j\) 采购中间投入的份额。该变量衡量行业生产过程对可贸易商品投入的依赖程度。
+
+脚本还构造一个更宽的商品供应链暴露，集合 \(G^{B}\) 在农业、采矿和制造业之外加入批发、运输、仓储等商品流通部门：
+\begin{equation}
+BroadInputExposure_i=\sum_{j\in G^{B}}W_{ij}.
+\end{equation}
+
+\subsection{下游贸易品网络暴露}
+
+为借鉴 \citet{luo2023propagation} 对上游和下游冲击的区分，本文还构造下游贸易品网络暴露。设 \(V_{ij}\) 为部门 \(i\) 向购买方 \(j\) 销售中间品的金额，\(S_i=\sum_j V_{ij}\) 为部门 \(i\) 的中间品总销售，则：
+\begin{equation}
+TradableDownstreamExposure_i
+=\frac{\sum_{j\in G}V_{ij}}{S_i}.
+\end{equation}
+该变量衡量行业 \(i\) 的销售对象中有多大比例连接到贸易品部门。与上游投入暴露不同，下游暴露更接近需求联系、销售网络和行业位置。
+
+\subsection{贸易品通胀冲击}
+
+令 \(TradInfl_t\) 为年份 \(t\) 的贸易品通胀率。主冲击变量定义为：
+\begin{equation}
+TradableInputShock_{it}
+=TradableInputExposure_i\times TradInfl_t.
+\end{equation}
+脚本进一步构造当期与一期滞后累计冲击：
+\begin{equation}
+TradableInputShock_{i,t:t-1}
+=TradableInputShock_{it}+TradableInputShock_{i,t-1}.
+\end{equation}
+这样做是因为产业价格调整可能存在滞后，尤其是年度行业价格数据中，当期冲击可能在下一年继续体现。
+
+同理，脚本构造宽口径商品供应链冲击、贸易品下游冲击和宽口径下游冲击，并分别生成 \(\text{cum01}\) 版本。
+
+\subsection{本地再生产部门标记}
+
+本地再生产核心部门包括住房、其他房地产、教育、门诊医疗、医院、护理与居住照护、社会援助。扩展本地服务部门进一步包括公共交通、住宿和餐饮服务。核心标记用于检验住房、教育、医疗、护理等部门是否在网络冲击下表现出不同价格反应。
+
+\section{回归样本与清洗规则}
+
+行业回归面板的清洗规则如下：
+\begin{enumerate}
+\item 以 BEA summary industry code 和年份为键，合并 BEA 行业面板、301 关税冲击、2019 年投入产出暴露和年度贸易品通胀。
+\item 对投入产出暴露变量，如果行业没有匹配到某类供给或销售联系，则将该类暴露填为 0；不对价格增长和工资增长结果变量做类似填补。
+\item 构造行业固定效应 \(\alpha_i\) 和年份固定效应 \(\delta_t\)。
+\item 保留 2017 年及以后、总产出价格增长和中间投入价格增长非缺失的行业--年份观测。
+\item 主规格使用行业总产出作为权重；若产出缺失，则权重设为 1。稳健性检验报告非加权结果。
+\item 标准误按行业聚类，允许同一行业内误差项跨年份相关。
+\end{enumerate}
+
+扩展样本的清洗规则与主样本保持一致，但有三点单独说明。第一，为计算 2010 年价格增长率，扩展脚本从 BEA 原始价格表中额外读取 2009 年价格指数作为滞后项，最终回归面板仍从 2010 年开始。第二，BLS QCEW 年度 area API 对 2009--2013 年返回 404；考虑到扩展检验的核心结果变量是 BEA 价格增长率，当前版本不下载每年约 130MB 的历史压缩包，只保留 2014--2025 年可由 API 直接取得的 QCEW 工资数据。因此扩展样本的价格方程完整覆盖 2010--2025 年，工资缺口变量不作为扩展样本主结果。第三，扩展样本仍使用 2019 年投入产出矩阵构造暴露，因此它应被解释为稳健性检验，而不是替代主样本的历史网络设计。
+
+价格--工资压力缺口定义为：
+\begin{equation}
+Gap^{GO}_{it}
+=\Delta\log P^{GO}_{it}-\Delta\log W_{it},
+\end{equation}
+\begin{equation}
+Gap^{II}_{it}
+=\Delta\log P^{II}_{it}-\Delta\log W_{it},
+\end{equation}
+其中 \(W_{it}\) 为行业平均年工资。该变量只作为补充机制检验，不替代主价格方程。
+
+\section{计量模型选择}
+
+\subsection{主模型：贸易品通胀暴露模型}
+
+主回归为：
+\begin{equation}
+\Delta \log P_{it}
+=\beta TradableInputShock_{i,t:t-1}
++\alpha_i+\delta_t+\varepsilon_{it}.
+\end{equation}
+由于 \(TradInfl_t\) 是全国年度变量，年份固定效应会吸收全国共同通胀冲击。识别来自各行业 2019 年贸易品投入暴露的横截面差异：在同一年度，贸易品投入暴露越高的行业，是否出现更高的价格增长。
+
+该模型比直接把全国贸易品通胀率放入双向固定效应模型更合适，因为它将共同冲击转化为行业异质性暴露。换言之，模型估计的是“共同贸易品价格冲击给定时，不同行业因预定投入结构不同而出现的差异化价格反应”。
+
+\subsection{本地再生产部门异质性}
+
+为检验本地再生产部门是否通过普通上游商品投入渠道表现出更强反应，估计：
+\begin{equation}
+\begin{aligned}
+\Delta \log P_{it}={}&
+\beta TradableInputShock_{i,t:t-1}
++\theta Local_i\times TradableInputShock_{i,t:t-1}\\
+&+\alpha_i+\delta_t+\varepsilon_{it}.
+\end{aligned}
+\end{equation}
+其中 \(Local_i\) 为核心本地再生产部门标记。若 \(\theta>0\)，说明本地再生产部门对贸易品投入冲击更敏感；若 \(\theta\leq 0\)，则说明这些部门并不主要通过普通商品投入渠道承受更强冲击。
+
+\subsection{Luo 式上游/下游分解}
+
+借鉴 \citet{luo2023propagation}，本文区分上游投入冲击和下游网络冲击：
+\begin{equation}
+\begin{aligned}
+\Delta \log P_{it}={}&
+\gamma_U TIShock_{i,t:t-1}
++\gamma_D TDShock_{i,t:t-1}\\
+&+\theta_U Local_i\times TIShock_{i,t:t-1}
++\theta_D Local_i\times TDShock_{i,t:t-1}\\
+&+\alpha_i+\delta_t+\varepsilon_{it}.
+\end{aligned}
+\end{equation}
+其中 \(TIShock\) 为贸易品投入冲击，\(TDShock\) 为贸易品下游暴露冲击。这个模型的目的不是照搬 Luo and Villar 的研究问题，而是借用其上游/下游分解思想，避免把“产业网络冲击”处理成单一黑箱。
+
+\subsection{301 关税补充模型}
+
+301 关税模型用于政策性补充检验。主补充回归为：
+\begin{equation}
+\Delta \log P_{it}
+=\beta_1 DirectTariff_{i,t:t-1}
++\beta_2 NetworkTariff_{i,t:t-1}
++\alpha_i+\delta_t+\varepsilon_{it}.
+\end{equation}
+其中直接关税暴露衡量行业自身商品受到 301 关税影响的程度，网络关税暴露衡量上游投入部门受到关税冲击后对行业 \(i\) 的间接影响。稳健性检验包括完整网络暴露、5\% 强连接网络暴露、剔除自身行业后的网络暴露，以及加权和非加权估计。
+
+\subsection{事件研究}
+
+事件研究用于检验高关税暴露行业的相对价格效应是否集中在 2018 年以后，尤其是否在 2021--2022 年供应链压力和通胀窗口中显现：
+\begin{equation}
+\Delta \log P_{it}
+=\sum_{s\neq 2017}\beta_s Exposure_i\times \mathbf{1}\{t=s\}
++\alpha_i+\delta_t+\varepsilon_{it}.
+\end{equation}
+2017 年为基准年。该模型不作为主因果识别，而用于描述冲击何时显现。
+
+\subsection{扩展样本稳健性}
+
+扩展样本回归沿用主模型：
+\begin{equation}
+\Delta \log P_{it}
+=\beta TradableInputShock_{i,t:t-1}
++\alpha_i+\delta_t+\varepsilon_{it},
+\quad t=2010,\ldots,2025.
+\end{equation}
+输出表同时报告 2017--2025 年主窗口、2010--2025 年扩展窗口和 2010--2019 年疫情前窗口。该设计用于回答主结果是否完全依赖短样本或疫情后年份。如果扩展窗口和疫情前窗口中系数方向一致且显著，说明贸易品投入暴露与行业价格增长之间存在更一般的生产网络价格传导关系；如果 2021--2022 年结果更突出，则应解释为冲击规模放大，而不是机制本身只在疫情后才存在。
+
+\section{识别假设与解释边界}
+
+当前模型的核心识别假设是：2019 年投入产出暴露可以被视为 2021--2022 年价格冲击之前的预定行业结构。行业固定效应控制长期不变的行业特征，年份固定效应控制共同宏观通胀、货币政策、总需求变化和疫情期间的全国性冲击。因此，估计系数主要来自同一年度内不同行业因预定网络暴露不同而出现的价格增长差异。
+
+这一设计有三点边界。第一，它识别的是产业网络价格传导，而不是家庭福利损失或生活成本危机的完整微观机制。第二，CPI 指数和 \(RCD_t\) 只是描述性和背景性指标，不构成主因果回归。第三，本地再生产部门价格上涨不能被简单归因于进口商品投入涨价；如果显著性出现在下游暴露或价格--工资压力缺口中，应解释为网络位置、制度性价格形成和工资调整错配共同作用的证据。
+
+\section{主要结果与解释方式}
+
+主回归显示，贸易品投入通胀冲击对行业总产出价格和中间投入价格均显著为正。总产出价格方程中，贸易品投入通胀冲击系数约为 0.0073；中间投入价格方程中，系数约为 0.0055，均在 1\% 水平显著。由于冲击变量是“贸易品投入暴露份额乘以年度贸易品通胀率”，单个系数不应被直接理解为 1 个百分点全国通胀的影响。在 2021--2022 年冲击窗口中，贸易品投入冲击处于第 75 分位的行业相对于第 25 分位行业，预测总产出价格增长约高出 3.1 个百分点；第 90 分位相对于第 10 分位约高出 7.7 个百分点。
+
+本地再生产部门交互项在普通上游投入模型中为负或较弱，说明住房、教育、医疗和照护等部门并不是通过普通上游商品投入渠道表现出更强反应。Luo 式上游/下游模型进一步显示，本地再生产部门更值得关注的是下游网络暴露和价格--工资压力缺口。这一结果支持一个更细致的理论解释：低价商品缓冲机制失效后，商品价格冲击会进入生产网络，但本地再生产部门的压力并不等同于“进口投入变贵”，而更多体现为本地制度成本、网络位置和工资调整之间的错配。
+
+301 关税补充模型显示，直接关税暴露并不总是稳定显著，而投入产出网络关税暴露更稳定为正。这说明关税冲击本身可能通过生产网络传导，但它不应被解释为 2021--2022 年通胀爆发的唯一来源。
+
+扩展样本稳健性进一步显示，主系数并不依赖 2017--2025 年短窗口。2010--2025 年扩展样本中，贸易品投入通胀冲击对总产出价格增长的系数约为 0.0087，对中间投入价格增长的系数约为 0.0074，均在 1\% 水平显著。2010--2019 年疫情前窗口的系数同样为正且显著，说明贸易品投入暴露与价格传导并非纯粹由疫情年份机械驱动。论文正文应据此强调：2021--2022 年的特殊性主要在于贸易品通胀冲击规模显著上升，而不是投入产出价格传导机制突然出现。
+
+\section{输出文件}
+
+\begin{longtable}{L{0.35\textwidth}L{0.55\textwidth}}
+\toprule
+输出文件 & 内容 \\
+\midrule
+\path{Data/rebuild/rebuild_cpi_category_panel.csv} & CPI 分类价格、通胀率、理论分类和 2019 年后累计变化。 \\
+\path{Data/rebuild/rebuild_industry_network_panel.csv} & 主回归行业--年份面板，包含 BEA 价格、工资、301 关税暴露、投入产出暴露、贸易品通胀冲击和价格--工资缺口。 \\
+\path{Data/rebuild/rebuild_tradable_nontradable_inflation_panel.csv} & 贸易品/非贸易品通胀代理。 \\
+\path{Output/rebuild/regressions/rebuild_table1_tradable_inflation_main.tex} & 贸易品投入通胀暴露主回归表。 \\
+\path{Output/rebuild/regressions/rebuild_table2_tradable_inflation_upstream_downstream.tex} & Luo 式上游/下游贸易品通胀传导表。 \\
+\path{Output/rebuild/regressions/rebuild_table3_tradable_inflation_robustness.tex} & 窄口径/宽口径贸易品暴露稳健性表。 \\
+\path{Output/rebuild/regressions/rebuild_table4_tradable_pressure_gap.tex} & 价格--工资压力缺口表。 \\
+\path{Data/extended/extended_industry_network_panel_2010_2025.csv} & 2010--2025 年扩展样本行业--年份面板。 \\
+\path{Output/rebuild/regressions/rebuild_table7_extended_sample_robustness.tex} & 扩展样本稳健性回归表。 \\
+\path{Output/rebuild/reports/formal_empirical_chapter.pdf} & 正式实证章节 PDF。 \\
+\bottomrule
+\end{longtable}
+
+\section{后续技术改进}
+
+当前版本已经形成可解释、可复现的主实证结构，但仍有几项后续改进值得推进。
+
+第一，使用 CEX 或 PCE 权重重新构造再生产成本平减指数，并将未加权版本作为基准、加权版本作为稳健性检验。第二，将当前脚本中读取旧项目的绝对路径改为项目内相对路径或配置文件，以便导师在其他电脑上复现。第三，进一步引入地区住房价格、医疗保险成本、公共教育支出或照护服务价格，将行业网络价格压力与家庭层面的生活成本危机连接起来。第四，在贸易品通胀主冲击之外，可以加入全球供应链压力指数作为宏观冲击，并继续使用 2019 年投入产出暴露构造行业异质性响应。
+
+\bibliographystyle{plainnat}
+\bibliography{empirical_references}
+
+\end{document}

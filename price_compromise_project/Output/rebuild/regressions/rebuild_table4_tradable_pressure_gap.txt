@@ -1,0 +1,51 @@
+Table 4. Tradable inflation exposure and industry price-wage pressure gaps
+
+                                                              Output price-wage gap: core ..
+Dependent Var.:                                               Output price-wage pressure gap
+                                                                                            
+Tradable-goods input inflation shock, t plus t-1                           0.0054** (0.0023)
+Tradable input inflation shock x core local reproduction                 -0.0123*** (0.0026)
+Tradable-goods downstream inflation shock, t plus t-1                                       
+Tradable downstream inflation shock x core local reproduction                               
+Fixed-Effects:                                                ------------------------------
+industry_fe                                                                              Yes
+year                                                                                     Yes
+________________________________________                      ______________________________
+S.E.: Clustered                                                              by: industry_fe
+Observations                                                                             559
+R2                                                                                   0.25829
+Within R2                                                                            0.02685
+
+                                                              Input price-wage gap: core ..
+Dependent Var.:                                               Input price-wage pressure gap
+                                                                                           
+Tradable-goods input inflation shock, t plus t-1                          0.0044** (0.0017)
+Tradable input inflation shock x core local reproduction                 -0.0069** (0.0027)
+Tradable-goods downstream inflation shock, t plus t-1                                      
+Tradable downstream inflation shock x core local reproduction                              
+Fixed-Effects:                                                -----------------------------
+industry_fe                                                                             Yes
+year                                                                                    Yes
+________________________________________                      _____________________________
+S.E.: Clustered                                                             by: industry_fe
+Observations                                                                            559
+R2                                                                                  0.35857
+Within R2                                                                           0.02389
+
+                                                              Input price-wage gap: up/down
+Dependent Var.:                                               Input price-wage pressure gap
+                                                                                           
+Tradable-goods input inflation shock, t plus t-1                          0.0056** (0.0028)
+Tradable input inflation shock x core local reproduction                 -0.0087** (0.0037)
+Tradable-goods downstream inflation shock, t plus t-1                      -0.0018 (0.0030)
+Tradable downstream inflation shock x core local reproduction             1.714*** (0.3660)
+Fixed-Effects:                                                -----------------------------
+industry_fe                                                                             Yes
+year                                                                                    Yes
+________________________________________                      _____________________________
+S.E.: Clustered                                                             by: industry_fe
+Observations                                                                            559
+R2                                                                                  0.35975
+Within R2                                                                           0.02567
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

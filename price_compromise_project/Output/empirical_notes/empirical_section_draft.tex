@@ -1,0 +1,311 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+\documentclass[
+]{ctexart}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\newenvironment{Shaded}{}{}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.50,0.00}{\textbf{#1}}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\section{实证部分初稿：301
+关税冲击、产业网络与价格型阶级妥协}\label{ux5b9eux8bc1ux90e8ux5206ux521dux7a3f301-ux5173ux7a0eux51b2ux51fbux4ea7ux4e1aux7f51ux7edcux4e0eux4ef7ux683cux578bux9636ux7ea7ux59a5ux534f}
+
+\subsection{一、实证目标}\label{ux4e00ux5b9eux8bc1ux76eeux6807}
+
+本文的理论部分指出，价格型阶级妥协并不主要依赖工资和福利的持续扩张，而是依赖低价商品、全球供应链和流通体系对生活成本的压低。当外部价格冲击破坏这一低价体系时，即使名义工资没有立即下降，劳动者的实际生活条件也可能因价格上涨而受到挤压。因此，实证部分的核心任务不是单纯检验进口冲击是否影响国内价格，而是考察外部贸易冲击如何通过产业网络传导，并进一步观察工资是否能够对这种价格压力作出补偿。
+
+为此，本文以美国对华 301 关税为外生价格冲击，结合 2019 年 BEA
+投入产出表构造产业网络，检验关税冲击是否通过投入产出联系传导到不同行业的价格和工资结果。与只关注直接受关税影响行业的设计不同，本文强调网络传导：一个行业即使本身并未直接面对较高关税，也可能因为其上游投入品受到关税冲击而承受成本压力。
+
+\subsection{二、数据与变量}\label{ux4e8cux6570ux636eux4e0eux53d8ux91cf}
+
+本文使用 2016-2025 年行业年度面板。产业层级为 BEA summary
+industry。投入产出网络来自 BEA 2019
+年投入产出表，并在整个样本期内固定。这样处理的目的，是避免使用冲击之后的投入结构引入内生调整，同时将产业间投入份额解释为冲击发生前后相对稳定的生产联系。
+
+关税冲击来自 USTR 公布的 301 关税清单。本文将 List 1、List 2、List 3 和
+List 4A 的 HTS8 产品代码整理为年度关税暴露变量，并将 List 4B
+视为未实际生效的清单，不纳入 active tariff shock。HTS8
+产品层面的关税暴露通过 2017 年中国进口额加权映射到 NAICS
+行业，再进一步根据 BEA NAICS concordance 汇总到 BEA summary
+industry。由此得到行业年度直接关税暴露 \texttt{tariff\_direct\_prelim}。
+
+本文的核心解释变量是产业网络关税冲击：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{NetworkTariffShock\_it = sum\_j input\_share\_ij,2019 * TariffShock\_jt}
+\end{Highlighting}
+\end{Shaded}
+
+其中 \texttt{input\_share\_ij,2019} 表示 2019 年行业 i 从行业 j
+购买中间投入的份额，\texttt{TariffShock\_jt} 表示行业 j 在年份 t 面临的
+301 关税暴露。主回归使用当前年与滞后一年的累计网络冲击
+\texttt{network\_tariff\_shock\_cum01}，以允许关税冲击通过投入价格和生产合同逐步传导。
+
+被解释变量包括五组。第一，BEA gross output price index
+的对数变化，用于衡量行业产出价格。第二，BEA intermediate input price
+index 的对数变化，用于衡量中间投入成本。第三，QCEW
+行业平均年工资的对数变化，用于衡量名义工资。第四，使用 BEA
+行业总产出价格指数平减后的实际工资变化，即
+\texttt{dln\_real\_annual\_pay\_go\_price}。第五，使用 PCEPI
+平减后的实际工资变化，即
+\texttt{dln\_real\_annual\_pay\_pce}。需要说明的是，PCEPI
+是全国年度价格指数，在包含年份固定效应的模型中，其共同年度变化会被年份固定效应吸收，因此
+PCE 实际工资的系数在样本一致时近似等同于名义工资的跨行业变化。
+
+\subsection{三、计量模型}\label{ux4e09ux8ba1ux91cfux6a21ux578b}
+
+本文基准模型为双向固定效应模型：
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Delta Y\_it = beta NetworkTariffShock\_it + alpha\_i + gamma\_t + epsilon\_it}
+\end{Highlighting}
+\end{Shaded}
+
+其中 \texttt{alpha\_i}
+为行业固定效应，控制不随时间变化的行业特征；\texttt{gamma\_t}
+为年份固定效应，控制宏观年度冲击，如总体通胀、商业周期和共同政策变化。标准误聚类到行业层面。核心系数
+\texttt{beta}
+衡量在控制行业固定差异和年度共同冲击后，产业网络关税暴露较高的行业是否出现更强的价格或工资变化。
+
+除基准网络冲击外，本文还进行三类稳健性检验。第一，使用直接关税暴露
+\texttt{tariff\_direct\_prelim\_cum01}，检验结果是否只是直接受关税影响行业的反应。第二，使用排除本行业自身投入的网络冲击
+\texttt{network\_tariff\_shock\_excl\_own\_cum01}，检验跨行业传导。第三，只保留投入份额超过
+5\% 的强连接，构造
+\texttt{network\_tariff\_shock\_5pct\_cum01}，检验结果是否由较强的投入产出联系驱动。
+
+\subsection{四、主结果：价格传导与工资不补偿}\label{ux56dbux4e3bux7ed3ux679cux4ef7ux683cux4f20ux5bfcux4e0eux5de5ux8d44ux4e0dux8865ux507f}
+
+机制表显示，301
+关税网络冲击显著推高行业价格。以当前年与滞后一年的累计网络冲击为解释变量时，gross
+output price 的系数约为 0.064，p 值约为
+0.024。这说明，网络暴露更高的行业在关税冲击后经历了更高的产出价格增长。
+
+中间投入价格的结果更强。\texttt{network\_tariff\_shock\_cum01} 对
+intermediate input price 的系数约为 0.072，p 值约为
+0.004。这个结果与本文的理论机制高度一致：301
+关税首先表现为投入成本冲击，并通过产业间中间品交易扩散到下游行业。换言之，价格压力并不是停留在直接被加税的产品或行业，而是沿着投入产出网络进入更广泛的生产体系。
+
+相比之下，名义工资没有显著上升。\texttt{network\_tariff\_shock\_cum01}
+对名义平均年工资增长的系数约为 0.017，p 值约为
+0.428。这表明，面对由产业网络传导而来的价格压力，工资并没有同步作出补偿性调整。这个结果对本文理论尤其重要，因为价格型阶级妥协的关键并不是劳动者收入持续增长，而是低价体系使得工资停滞的社会后果被暂时缓冲。当价格体系受到冲击而工资没有相应补偿时，这一缓冲机制便开始失效。
+
+实际工资结果方向上支持这一判断，但统计显著性较弱。使用行业总产出价格指数平减后的实际工资作为因变量时，\texttt{network\_tariff\_shock\_cum01}
+的系数约为 -0.057，p 值约为
+0.101。这说明网络关税冲击较高的行业实际工资增长更低，但该结果尚未达到传统
+5\%
+显著性水平。因此，本文不将其解释为强因果证据，而将其作为与理论方向一致的
+suggestive evidence。
+
+PCE 平减后的实际工资没有显示更强的负向效应。其系数约为 0.017，p 值约为
+0.428，与名义工资结果几乎一致。这并不意味着消费价格不重要，而是因为
+PCEPI
+是全国年度价格指数，在包含年份固定效应的模型中，全国共同通胀已被吸收。换言之，PCE
+实际工资在当前设定下不能有效识别行业间价格冲击差异。
+
+表 1
+汇总了机制检验的核心结果。所有模型均包含行业固定效应和年份固定效应，标准误聚类到行业层面。解释变量均为当前年与滞后一年的累计网络关税冲击
+\texttt{network\_tariff\_shock\_cum01}。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrr@{}}
+\toprule\noalign{}
+因变量 & 系数 & 标准误 & p 值 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+总产出价格增长 & 0.064 & 0.028 & 0.024 \\
+中间投入价格增长 & 0.072 & 0.025 & 0.004 \\
+名义工资增长 & 0.017 & 0.021 & 0.428 \\
+行业价格平减实际工资增长 & -0.057 & 0.035 & 0.101 \\
+PCE 平减实际工资增长 & 0.017 & 0.021 & 0.428 \\
+\end{longtable}
+}
+
+注：总产出价格和中间投入价格来自 BEA 行业价格指数；工资来自 QCEW
+行业平均年工资。PCE 平减实际工资使用全国年度
+PCEPI，因此在包含年份固定效应时，其系数与名义工资结果近似一致。
+
+\subsection{五、稳健性：网络效应而非直接关税效应}\label{ux4e94ux7a33ux5065ux6027ux7f51ux7edcux6548ux5e94ux800cux975eux76f4ux63a5ux5173ux7a0eux6548ux5e94}
+
+稳健性结果进一步支持产业网络传导机制。直接关税暴露对 gross output price
+的系数很小且不显著，约为 0.006，p 值约为
+0.855。这说明，价格结果并不是简单来自直接被加税行业本身。
+
+相比之下，完整投入产出网络冲击显著为正，系数约为 0.064，p 值约为
+0.024。只保留投入份额超过 5\% 的强连接后，结果仍然显著，系数约为
+0.064，p 值约为
+0.021。这表明，价格传导主要通过有实质投入联系的行业网络发生，而不是由任意弱联系或模型构造机械地产生。
+
+排除本行业自身联系后，价格系数仍为正，约为 0.089，但显著性下降，p 值约为
+0.110。这个结果说明跨行业上游传导可能存在，但在当前 BEA summary industry
+层级和样本规模下统计功效有限。
+
+实际工资的稳健性结果仍然偏弱，但方向大体一致。直接关税暴露对实际工资不显著；完整网络冲击为负，p
+值约为 0.101；5\% 强连接网络冲击为负且边际显著，系数约为 -0.063，p
+值约为
+0.069。这一结果提示，当产业联系足够强时，网络价格冲击更可能转化为实际工资压力。
+
+表 2 报告价格结果的稳健性检验。被解释变量均为 BEA gross output price
+index
+的对数变化。四列分别使用直接关税暴露、完整投入产出网络冲击、排除本行业自身联系的网络冲击，以及仅保留投入份额超过
+5\% 的强连接网络冲击。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrr@{}}
+\toprule\noalign{}
+冲击定义 & 系数 & 标准误 & p 值 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+直接关税暴露 & 0.006 & 0.033 & 0.855 \\
+完整投入产出网络 & 0.064 & 0.028 & 0.024 \\
+排除本行业自身联系 & 0.089 & 0.055 & 0.110 \\
+仅保留 5\% 以上强连接 & 0.064 & 0.027 & 0.021 \\
+\end{longtable}
+}
+
+表 3 报告实际工资结果的稳健性检验。被解释变量为使用 BEA
+行业总产出价格指数平减后的实际工资增长。
+
+{\def\LTcaptype{none} % do not increment counter
+\begin{longtable}[]{@{}lrrr@{}}
+\toprule\noalign{}
+冲击定义 & 系数 & 标准误 & p 值 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+直接关税暴露 & -0.005 & 0.032 & 0.879 \\
+完整投入产出网络 & -0.057 & 0.035 & 0.101 \\
+排除本行业自身联系 & -0.072 & 0.073 & 0.331 \\
+仅保留 5\% 以上强连接 & -0.063 & 0.034 & 0.069 \\
+\end{longtable}
+}
+
+这两张稳健性表共同说明，价格结果并非由直接关税暴露驱动，而更依赖投入产出网络定义；实际工资结果虽然整体偏弱，但在强连接网络设定下更接近传统显著性水平。
+
+\subsection{六、理论含义}\label{ux516dux7406ux8bbaux542bux4e49}
+
+这些结果共同支持本文关于价格型阶级妥协的核心机制，但支持方式不是简单的``关税导致实际工资显著下降''。更准确地说，实证结果显示：第一，外部关税冲击能够通过投入产出网络显著推高行业价格；第二，中间投入价格的反应尤其强，说明价格压力首先体现为生产成本冲击；第三，名义工资没有同步补偿；第四，实际工资结果方向为负，在强网络连接设定下具有边际显著性。
+
+因此，本文的经验发现更适合被理解为对``低价缓冲机制失效''的支持。价格型阶级妥协依赖低成本进口、全球供应链和流通体系将工资停滞的社会后果压低在可承受范围内。301
+关税冲击并非仅仅改变某些进口商品的价格，而是通过产业网络改变更广泛的成本结构。当价格压力扩散而工资不补偿时，原本依赖低价体系维持的阶级妥协基础便受到侵蚀。
+
+\subsection{七、局限与后续工作}\label{ux4e03ux5c40ux9650ux4e0eux540eux7eedux5de5ux4f5c}
+
+本文目前的实证结果仍有几个局限。第一，关税变量尚未完全纳入产品排除和企业特定排除，年度税率也采用按月份近似的方式构造。第二，BEA
+summary industry 面板规模较小，只有 66 个行业和 10
+年观测，限制了统计功效。第三，QCEW 工资从 NAICS 映射到 BEA summary
+industry 时存在部分行业匹配缺失，尤其是模糊 NAICS
+代码需要剔除。第四，PCE
+实际工资虽然更接近消费购买力，但在包含年份固定效应的行业面板中无法提供额外的跨行业识别。
+
+后续可以从三个方向增强实证部分。第一，继续处理 301
+关税排除数据，构造更精确的产品年度税率。第二，尝试使用更细的 NAICS
+行业工资面板，提高行业间变异和统计功效。第三，围绕低价消费品、零售和生活成本相关行业做异质性分析，使经验结果更直接对应``社会再生产成本''的理论命题。
+
+\end{document}

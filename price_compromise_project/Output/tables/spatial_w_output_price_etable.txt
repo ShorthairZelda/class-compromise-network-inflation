@@ -1,0 +1,72 @@
+Table. Spatial W model: output price 
+Spatial-econometric style industry W model. All models include BEA summary industry fixed effects and year fixed effects. Standard errors are clustered by industry.
+
+                                               Input-share W
+Dependent Var.:                          Output price growth
+                                                            
+Direct tariff shock, t plus t-1             -0.0053 (0.0434)
+W shock: input-share matrix                  0.0613 (0.0784)
+W shock: binary 5pct matrix                                 
+W shock: symmetric matrix                                   
+W shock: inverse network-distance matrix                    
+Fixed-Effects:                           -------------------
+industry_fe                                              Yes
+year                                                     Yes
+________________________________________ ___________________
+S.E.: Clustered                              by: industry_fe
+Observations                                             594
+R2                                                   0.25392
+Within R2                                            0.00073
+
+                                               Binary 5pct W
+Dependent Var.:                          Output price growth
+                                                            
+Direct tariff shock, t plus t-1             -0.0072 (0.0418)
+W shock: input-share matrix                                 
+W shock: binary 5pct matrix                  0.0436 (0.0431)
+W shock: symmetric matrix                                   
+W shock: inverse network-distance matrix                    
+Fixed-Effects:                           -------------------
+industry_fe                                              Yes
+year                                                     Yes
+________________________________________ ___________________
+S.E.: Clustered                              by: industry_fe
+Observations                                             594
+R2                                                   0.25395
+Within R2                                            0.00078
+
+                                                 Symmetric W
+Dependent Var.:                          Output price growth
+                                                            
+Direct tariff shock, t plus t-1              0.0170 (0.0482)
+W shock: input-share matrix                                 
+W shock: binary 5pct matrix                                 
+W shock: symmetric matrix                   -0.0694 (0.1191)
+W shock: inverse network-distance matrix                    
+Fixed-Effects:                           -------------------
+industry_fe                                              Yes
+year                                                     Yes
+________________________________________ ___________________
+S.E.: Clustered                              by: industry_fe
+Observations                                             594
+R2                                                   0.25404
+Within R2                                            0.00089
+
+                                          Network-distance W
+Dependent Var.:                          Output price growth
+                                                            
+Direct tariff shock, t plus t-1              0.0151 (0.0437)
+W shock: input-share matrix                                 
+W shock: binary 5pct matrix                                 
+W shock: symmetric matrix                                   
+W shock: inverse network-distance matrix    -0.2347 (0.3607)
+Fixed-Effects:                           -------------------
+industry_fe                                              Yes
+year                                                     Yes
+________________________________________ ___________________
+S.E.: Clustered                              by: industry_fe
+Observations                                             594
+R2                                                   0.25384
+Within R2                                            0.00063
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

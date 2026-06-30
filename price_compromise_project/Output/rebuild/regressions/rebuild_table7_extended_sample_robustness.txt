@@ -1,0 +1,81 @@
+Table 7. Extended-sample robustness: tradable-goods inflation exposure
+
+                                                         Output: 2017-2025
+Dependent Var.:                                  Gross output price growth
+                                                                          
+Tradable-goods input inflation shock, t plus t-1        0.0073*** (0.0019)
+Fixed-Effects:                                   -------------------------
+industry_fe                                                            Yes
+year                                                                   Yes
+________________________________________         _________________________
+S.E.: Clustered                                            by: industry_fe
+Observations                                                           594
+R2                                                                 0.26028
+Within R2                                                          0.04691
+
+                                                         Output: 2010-2025
+Dependent Var.:                                  Gross output price growth
+                                                                          
+Tradable-goods input inflation shock, t plus t-1        0.0087*** (0.0025)
+Fixed-Effects:                                   -------------------------
+industry_fe                                                            Yes
+year                                                                   Yes
+________________________________________         _________________________
+S.E.: Clustered                                            by: industry_fe
+Observations                                                         1,056
+R2                                                                 0.24361
+Within R2                                                          0.04874
+
+                                                         Output: 2010-2019
+Dependent Var.:                                  Gross output price growth
+                                                                          
+Tradable-goods input inflation shock, t plus t-1         0.0180** (0.0073)
+Fixed-Effects:                                   -------------------------
+industry_fe                                                            Yes
+year                                                                   Yes
+________________________________________         _________________________
+S.E.: Clustered                                            by: industry_fe
+Observations                                                           660
+R2                                                                 0.18355
+Within R2                                                          0.03437
+
+                                                                Input: 2017-2025
+Dependent Var.:                                  Intermediate input price growth
+                                                                                
+Tradable-goods input inflation shock, t plus t-1              0.0055*** (0.0014)
+Fixed-Effects:                                    ------------------------------
+industry_fe                                                                  Yes
+year                                                                         Yes
+________________________________________          ______________________________
+S.E.: Clustered                                                  by: industry_fe
+Observations                                                                 594
+R2                                                                       0.47203
+Within R2                                                                0.05534
+
+                                                                Input: 2010-2025
+Dependent Var.:                                  Intermediate input price growth
+                                                                                
+Tradable-goods input inflation shock, t plus t-1              0.0074*** (0.0020)
+Fixed-Effects:                                    ------------------------------
+industry_fe                                                                  Yes
+year                                                                         Yes
+________________________________________          ______________________________
+S.E.: Clustered                                                  by: industry_fe
+Observations                                                               1,056
+R2                                                                       0.40342
+Within R2                                                                0.06085
+
+                                                                Input: 2010-2019
+Dependent Var.:                                  Intermediate input price growth
+                                                                                
+Tradable-goods input inflation shock, t plus t-1              0.0195*** (0.0060)
+Fixed-Effects:                                    ------------------------------
+industry_fe                                                                  Yes
+year                                                                         Yes
+________________________________________          ______________________________
+S.E.: Clustered                                                  by: industry_fe
+Observations                                                                 660
+R2                                                                       0.27429
+Within R2                                                                0.05531
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1

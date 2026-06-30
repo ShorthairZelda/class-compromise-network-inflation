@@ -1,0 +1,72 @@
+Table. Spatial W model: price-wage gap 
+Spatial-econometric style industry W model. All models include BEA summary industry fixed effects and year fixed effects. Standard errors are clustered by industry.
+
+                                                          Input-share W
+Dependent Var.:                          Output price minus wage growth
+                                                                       
+Direct tariff shock, t plus t-1                        -0.0026 (0.0445)
+W shock: input-share matrix                             0.0401 (0.0923)
+W shock: binary 5pct matrix                                            
+W shock: symmetric matrix                                              
+W shock: inverse network-distance matrix                               
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+________________________________________ ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        559
+R2                                                              0.26059
+Within R2                                                       0.00024
+
+                                                          Binary 5pct W
+Dependent Var.:                          Output price minus wage growth
+                                                                       
+Direct tariff shock, t plus t-1                        -0.0045 (0.0413)
+W shock: input-share matrix                                            
+W shock: binary 5pct matrix                             0.0310 (0.0474)
+W shock: symmetric matrix                                              
+W shock: inverse network-distance matrix                               
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+________________________________________ ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        559
+R2                                                              0.26065
+Within R2                                                       0.00032
+
+                                                            Symmetric W
+Dependent Var.:                          Output price minus wage growth
+                                                                       
+Direct tariff shock, t plus t-1                         0.0164 (0.0464)
+W shock: input-share matrix                                            
+W shock: binary 5pct matrix                                            
+W shock: symmetric matrix                              -0.0750 (0.1178)
+W shock: inverse network-distance matrix                               
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+________________________________________ ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        559
+R2                                                              0.26103
+Within R2                                                       0.00083
+
+                                                     Network-distance W
+Dependent Var.:                          Output price minus wage growth
+                                                                       
+Direct tariff shock, t plus t-1                         0.0185 (0.0432)
+W shock: input-share matrix                                            
+W shock: binary 5pct matrix                                            
+W shock: symmetric matrix                                              
+W shock: inverse network-distance matrix               -0.3541 (0.3657)
+Fixed-Effects:                           ------------------------------
+industry_fe                                                         Yes
+year                                                                Yes
+________________________________________ ______________________________
+S.E.: Clustered                                         by: industry_fe
+Observations                                                        559
+R2                                                              0.26122
+Within R2                                                       0.00109
+---
+Signif. codes: 0 '***' 0.01 '**' 0.05 '*' 0.1 ' ' 1
